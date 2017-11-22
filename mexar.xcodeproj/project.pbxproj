@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BCF1FC5368A00627300 /* AppDelegate.swift */; };
+		CD050BD21FC5368A00627300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BD11FC5368A00627300 /* ViewController.swift */; };
+		CD050BD51FC5368A00627300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD050BD31FC5368A00627300 /* Main.storyboard */; };
+		CD050BD71FC5368A00627300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD050BD61FC5368A00627300 /* Assets.xcassets */; };
+		CD050BDA1FC5368A00627300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD050BD81FC5368A00627300 /* LaunchScreen.storyboard */; };
+		CD050BE51FC5368A00627300 /* mexarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BE41FC5368A00627300 /* mexarTests.swift */; };
+		CD050BF01FC5368A00627300 /* mexarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BEF1FC5368A00627300 /* mexarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD050BE11FC5368A00627300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD050BC41FC5368A00627300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD050BCB1FC5368A00627300;
+			remoteInfo = mexar;
+		};
+		CD050BEC1FC5368A00627300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD050BC41FC5368A00627300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD050BCB1FC5368A00627300;
+			remoteInfo = mexar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD050BCC1FC5368A00627300 /* mexar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mexar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD050BCF1FC5368A00627300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD050BD11FC5368A00627300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD050BD41FC5368A00627300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD050BD61FC5368A00627300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD050BD91FC5368A00627300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD050BDB1FC5368A00627300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD050BE01FC5368A00627300 /* mexarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mexarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD050BE41FC5368A00627300 /* mexarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mexarTests.swift; sourceTree = "<group>"; };
+		CD050BE61FC5368A00627300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD050BEB1FC5368A00627300 /* mexarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mexarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD050BEF1FC5368A00627300 /* mexarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mexarUITests.swift; sourceTree = "<group>"; };
+		CD050BF11FC5368A00627300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD050BC91FC5368A00627300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD050BDD1FC5368A00627300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD050BE81FC5368A00627300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD050BC31FC5368A00627300 = {
+			isa = PBXGroup;
+			children = (
+				CD050BCE1FC5368A00627300 /* mexar */,
+				CD050BE31FC5368A00627300 /* mexarTests */,
+				CD050BEE1FC5368A00627300 /* mexarUITests */,
+				CD050BCD1FC5368A00627300 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD050BCD1FC5368A00627300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD050BCC1FC5368A00627300 /* mexar.app */,
+				CD050BE01FC5368A00627300 /* mexarTests.xctest */,
+				CD050BEB1FC5368A00627300 /* mexarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD050BCE1FC5368A00627300 /* mexar */ = {
+			isa = PBXGroup;
+			children = (
+				CD050BCF1FC5368A00627300 /* AppDelegate.swift */,
+				CD050BD11FC5368A00627300 /* ViewController.swift */,
+				CD050BD31FC5368A00627300 /* Main.storyboard */,
+				CD050BD61FC5368A00627300 /* Assets.xcassets */,
+				CD050BD81FC5368A00627300 /* LaunchScreen.storyboard */,
+				CD050BDB1FC5368A00627300 /* Info.plist */,
+			);
+			path = mexar;
+			sourceTree = "<group>";
+		};
+		CD050BE31FC5368A00627300 /* mexarTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD050BE41FC5368A00627300 /* mexarTests.swift */,
+				CD050BE61FC5368A00627300 /* Info.plist */,
+			);
+			path = mexarTests;
+			sourceTree = "<group>";
+		};
+		CD050BEE1FC5368A00627300 /* mexarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD050BEF1FC5368A00627300 /* mexarUITests.swift */,
+				CD050BF11FC5368A00627300 /* Info.plist */,
+			);
+			path = mexarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD050BCB1FC5368A00627300 /* mexar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD050BF41FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexar" */;
+			buildPhases = (
+				CD050BC81FC5368A00627300 /* Sources */,
+				CD050BC91FC5368A00627300 /* Frameworks */,
+				CD050BCA1FC5368A00627300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mexar;
+			productName = mexar;
+			productReference = CD050BCC1FC5368A00627300 /* mexar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD050BDF1FC5368A00627300 /* mexarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD050BF71FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexarTests" */;
+			buildPhases = (
+				CD050BDC1FC5368A00627300 /* Sources */,
+				CD050BDD1FC5368A00627300 /* Frameworks */,
+				CD050BDE1FC5368A00627300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD050BE21FC5368A00627300 /* PBXTargetDependency */,
+			);
+			name = mexarTests;
+			productName = mexarTests;
+			productReference = CD050BE01FC5368A00627300 /* mexarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD050BEA1FC5368A00627300 /* mexarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD050BFA1FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexarUITests" */;
+			buildPhases = (
+				CD050BE71FC5368A00627300 /* Sources */,
+				CD050BE81FC5368A00627300 /* Frameworks */,
+				CD050BE91FC5368A00627300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD050BED1FC5368A00627300 /* PBXTargetDependency */,
+			);
+			name = mexarUITests;
+			productName = mexarUITests;
+			productReference = CD050BEB1FC5368A00627300 /* mexarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD050BC41FC5368A00627300 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = datalabor.com.mx;
+				TargetAttributes = {
+					CD050BCB1FC5368A00627300 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7S32YYNPLS;
+						ProvisioningStyle = Automatic;
+					};
+					CD050BDF1FC5368A00627300 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7S32YYNPLS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD050BCB1FC5368A00627300;
+					};
+					CD050BEA1FC5368A00627300 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7S32YYNPLS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD050BCB1FC5368A00627300;
+					};
+				};
+			};
+			buildConfigurationList = CD050BC71FC5368A00627300 /* Build configuration list for PBXProject "mexar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD050BC31FC5368A00627300;
+			productRefGroup = CD050BCD1FC5368A00627300 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD050BCB1FC5368A00627300 /* mexar */,
+				CD050BDF1FC5368A00627300 /* mexarTests */,
+				CD050BEA1FC5368A00627300 /* mexarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD050BCA1FC5368A00627300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD050BDA1FC5368A00627300 /* LaunchScreen.storyboard in Resources */,
+				CD050BD71FC5368A00627300 /* Assets.xcassets in Resources */,
+				CD050BD51FC5368A00627300 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD050BDE1FC5368A00627300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD050BE91FC5368A00627300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD050BC81FC5368A00627300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD050BD21FC5368A00627300 /* ViewController.swift in Sources */,
+				CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD050BDC1FC5368A00627300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD050BE51FC5368A00627300 /* mexarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD050BE71FC5368A00627300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD050BF01FC5368A00627300 /* mexarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD050BE21FC5368A00627300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD050BCB1FC5368A00627300 /* mexar */;
+			targetProxy = CD050BE11FC5368A00627300 /* PBXContainerItemProxy */;
+		};
+		CD050BED1FC5368A00627300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD050BCB1FC5368A00627300 /* mexar */;
+			targetProxy = CD050BEC1FC5368A00627300 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD050BD31FC5368A00627300 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD050BD41FC5368A00627300 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD050BD81FC5368A00627300 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD050BD91FC5368A00627300 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD050BF21FC5368A00627300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD050BF31FC5368A00627300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD050BF51FC5368A00627300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7S32YYNPLS;
+				INFOPLIST_FILE = mexar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD050BF61FC5368A00627300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7S32YYNPLS;
+				INFOPLIST_FILE = mexar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CD050BF81FC5368A00627300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7S32YYNPLS;
+				INFOPLIST_FILE = mexarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mexar.app/mexar";
+			};
+			name = Debug;
+		};
+		CD050BF91FC5368A00627300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7S32YYNPLS;
+				INFOPLIST_FILE = mexarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mexar.app/mexar";
+			};
+			name = Release;
+		};
+		CD050BFB1FC5368A00627300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7S32YYNPLS;
+				INFOPLIST_FILE = mexarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = mexar;
+			};
+			name = Debug;
+		};
+		CD050BFC1FC5368A00627300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7S32YYNPLS;
+				INFOPLIST_FILE = mexarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = mexar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD050BC71FC5368A00627300 /* Build configuration list for PBXProject "mexar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD050BF21FC5368A00627300 /* Debug */,
+				CD050BF31FC5368A00627300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD050BF41FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD050BF51FC5368A00627300 /* Debug */,
+				CD050BF61FC5368A00627300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD050BF71FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD050BF81FC5368A00627300 /* Debug */,
+				CD050BF91FC5368A00627300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD050BFA1FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD050BFB1FC5368A00627300 /* Debug */,
+				CD050BFC1FC5368A00627300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD050BC41FC5368A00627300 /* Project object */;
+}
