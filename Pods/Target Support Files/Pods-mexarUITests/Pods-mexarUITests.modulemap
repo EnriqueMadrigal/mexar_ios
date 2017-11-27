@@ -1,0 +1,6 @@
+framework module Pods_mexarUITests {
+  umbrella header "Pods-mexarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
