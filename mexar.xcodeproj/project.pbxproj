@@ -14,6 +14,8 @@
 		CD050BDA1FC5368A00627300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD050BD81FC5368A00627300 /* LaunchScreen.storyboard */; };
 		CD050BE51FC5368A00627300 /* mexarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BE41FC5368A00627300 /* mexarTests.swift */; };
 		CD050BF01FC5368A00627300 /* mexarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BEF1FC5368A00627300 /* mexarUITests.swift */; };
+		CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF12791FC68D7500B6EFB0 /* navloginController.swift */; };
+		CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CD050BEB1FC5368A00627300 /* mexarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mexarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD050BEF1FC5368A00627300 /* mexarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mexarUITests.swift; sourceTree = "<group>"; };
 		CD050BF11FC5368A00627300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFF12791FC68D7500B6EFB0 /* navloginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navloginController.swift; sourceTree = "<group>"; };
+		CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		CD050BCE1FC5368A00627300 /* mexar */ = {
 			isa = PBXGroup;
 			children = (
+				CDFF12781FC68CA700B6EFB0 /* navController */,
 				CD050BCF1FC5368A00627300 /* AppDelegate.swift */,
 				CD050BD11FC5368A00627300 /* ViewController.swift */,
 				CD050BD31FC5368A00627300 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				CD050BF11FC5368A00627300 /* Info.plist */,
 			);
 			path = mexarUITests;
+			sourceTree = "<group>";
+		};
+		CDFF12781FC68CA700B6EFB0 /* navController */ = {
+			isa = PBXGroup;
+			children = (
+				CDFF12791FC68D7500B6EFB0 /* navloginController.swift */,
+				CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */,
+			);
+			name = navController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD050BD21FC5368A00627300 /* ViewController.swift in Sources */,
+				CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */,
+				CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */,
 				CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S32YYNPLS;
 				INFOPLIST_FILE = mexar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S32YYNPLS;
 				INFOPLIST_FILE = mexar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +532,7 @@
 				CD050BF61FC5368A00627300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD050BF71FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexarTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +541,7 @@
 				CD050BF91FC5368A00627300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD050BFA1FC5368A00627300 /* Build configuration list for PBXNativeTarget "mexarUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +550,7 @@
 				CD050BFC1FC5368A00627300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

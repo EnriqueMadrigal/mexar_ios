@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.auth()
         return true
     }
 
@@ -41,6 +43,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    
+    func auth() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+      //  let curUID = Utils.getStringKey(namekey: "piagi_uid")
+        
+     //   if (!curUID.isEmpty) // Ya existe la información copiala a commonCopia la información a common.
+     //   {
+     //       common.curUserData = Utils.getUserInfo()
+     //       self.app(sb: sb)
+     //   }
+            
+            
+            
+      //  else  // De lo contrario hacer el login.
+      //  {
+            self.login(sb: sb)
+      //  }
+        
+        
+        
+        
+    }
+
+    
+    
+    func login(sb: UIStoryboard)  {
+        
+        //self.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        
+        let loginController = sb.instantiateViewController(withIdentifier: "loginController")
+        let NavLoginController: navloginController = navloginController(rootViewController: loginController)
+        NavLoginController.setToolbarHidden(true, animated: false)
+        
+        self.window?.rootViewController = NavLoginController
+        self.window?.makeKeyAndVisible()
+        
+        
+    }
+
+    
 
 }
 

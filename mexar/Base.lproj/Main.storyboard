@@ -1,14 +1,92 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navlogin Controller-->
+        <scene sceneID="Qu0-e5-ln1">
+            <objects>
+                <navigationController storyboardIdentifier="navloginController" id="fMe-5k-awv" customClass="navloginController" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kPl-oP-Ltz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3IR-a5-Cuo" kind="relationship" relationship="rootViewController" id="Nb3-Cw-xQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yU-xh-1t7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-798" y="-1068"/>
+        </scene>
+        <!--Iniciar sesión.-->
+        <scene sceneID="nx1-dR-stk">
+            <objects>
+                <viewController storyboardIdentifier="loginController" id="3IR-a5-Cuo" customClass="loginController" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7St-9a-xjF"/>
+                        <viewControllerLayoutGuide type="bottom" id="rYQ-Dl-fmv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wYl-6E-IZN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro2" translatesAutoresizingMaskIntoConstraints="NO" id="81c-5r-3pG">
+                                <rect key="frame" x="94" y="73.5" width="187" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="81c-5r-3pG" secondAttribute="height" multiplier="1:1" id="PZD-GF-FJv"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="CT1-Pa-peW">
+                                <rect key="frame" x="0.0" y="316" width="375" height="302"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk1-to-dzQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                        <state key="normal" image="login_google"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKb-Jw-lbE">
+                                        <rect key="frame" x="0.0" y="114" width="375" height="74"/>
+                                        <state key="normal" image="login_facebook"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxQ-LC-RjZ">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="74"/>
+                                        <state key="normal" image="login_email"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.079030797099999994" green="0.18059329709999999" blue="0.32481317929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CT1-Pa-peW" secondAttribute="height" multiplier="170:137" id="jgf-tb-d4k"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.079030797099999994" green="0.18059329709999999" blue="0.32481317929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CT1-Pa-peW" firstAttribute="width" secondItem="wYl-6E-IZN" secondAttribute="width" id="2Pj-Nn-R7U"/>
+                            <constraint firstItem="81c-5r-3pG" firstAttribute="centerX" secondItem="wYl-6E-IZN" secondAttribute="centerX" id="Sqq-zt-C19"/>
+                            <constraint firstItem="81c-5r-3pG" firstAttribute="width" secondItem="wYl-6E-IZN" secondAttribute="width" multiplier="0.5" id="URy-Pk-XYT"/>
+                            <constraint firstItem="CT1-Pa-peW" firstAttribute="centerY" secondItem="wYl-6E-IZN" secondAttribute="centerY" multiplier="1.4" id="X84-Uu-dfs"/>
+                            <constraint firstItem="81c-5r-3pG" firstAttribute="centerY" secondItem="wYl-6E-IZN" secondAttribute="centerY" multiplier="0.5" id="gaq-XN-KsU"/>
+                            <constraint firstItem="CT1-Pa-peW" firstAttribute="centerX" secondItem="wYl-6E-IZN" secondAttribute="centerX" id="iXQ-Ky-XR7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Iniciar sesión." id="oaP-c1-PxU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SKb-3t-6gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="-1068"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,4 +101,10 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="intro2" width="240" height="240"/>
+        <image name="login_email" width="340" height="63"/>
+        <image name="login_facebook" width="340" height="69"/>
+        <image name="login_google" width="340" height="62"/>
+    </resources>
 </document>
