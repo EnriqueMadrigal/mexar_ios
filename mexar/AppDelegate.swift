@@ -13,9 +13,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
+    let notificationName1 = Notification.Name("loginNT")
+    let notificationName2 = Notification.Name("logoutNT")
+    let notificationName3 = Notification.Name("wakeApp")
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loginNTF), name: notificationName1, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loginNTF), name: notificationName2, object: nil)
+        
         
         self.auth()
         return true
@@ -44,6 +54,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     
+    @objc func loginNTF(notification: NSNotification)
+    {
+        debugPrint(notification.name)
+        
+        let notificationName: String = notification.name._rawValue as String
+        
+        if ( notificationName == "loginNT")
+        {
+            
+            debugPrint("loginNT")
+            self.auth()
+            
+            
+        }
+            
+        else if (notificationName == "logoutNT")
+        {
+            debugPrint("logoutNT")
+         //  self.deauth()
+            
+        }
+        
+        
+    }
+    
+
+    
     
     func auth() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
@@ -61,7 +98,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
       //  else  // De lo contrario hacer el login.
       //  {
-            self.login(sb: sb)
+            //self.login(sb: sb)
+        self.mainWindow(sb: sb)
       //  }
         
         
@@ -85,7 +123,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
-    
+    func mainWindow(sb: UIStoryboard){
+        
+        let mainController = sb.instantiateViewController(withIdentifier: "mainController")
+        let NavMainController: navMainController = navMainController(rootViewController: mainController)
+        NavMainController.setToolbarHidden(true, animated: false)
+        
+        self.window?.rootViewController = NavMainController
+        self.window?.makeKeyAndVisible()
+        
+    }
 
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fMe-5k-awv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -81,27 +81,117 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKb-3t-6gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-1068"/>
+            <point key="canvasLocation" x="30" y="-1068"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Nav Main Controller-->
+        <scene sceneID="1wx-Tz-G3Y">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navMainController" id="2XE-0j-KOP" customClass="navMainController" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yry-Qd-Z8z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="trc-TK-qyt" kind="relationship" relationship="rootViewController" id="35D-Uj-wYV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Js-ea-vUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="-266"/>
+        </scene>
+        <!--Main Controller-->
+        <scene sceneID="PyT-9t-l4f">
+            <objects>
+                <viewController storyboardIdentifier="mainController" id="trc-TK-qyt" customClass="mainController" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="ahj-sw-A11"/>
+                        <viewControllerLayoutGuide type="bottom" id="xUq-Wb-R8U"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="N78-LM-MZS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="B7M-vt-o8N">
+                        <barButtonItem key="leftBarButtonItem" image="icon_burger" id="zqX-6y-FJx">
+                            <connections>
+                                <segue destination="9gC-K9-jcf" kind="show" id="8kV-lN-Neg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icon_search" id="YJv-cs-9Yv"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqa-Df-u7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="79" y="-267"/>
+        </scene>
+        <!--Mexar-->
+        <scene sceneID="y8U-Am-mbl">
+            <objects>
+                <tableViewController id="c8D-pp-iUE" customClass="MenuController" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7xe-tW-XBn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideBarCell" rowHeight="38" id="FSe-hn-J2H" customClass="sideBarCell" customModule="mexar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="38"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FSe-hn-J2H" id="y4k-a5-kjf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z57-GY-6Dm" userLabel="Menu Icon">
+                                            <rect key="frame" x="8" y="8" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vs-pA-ptO" userLabel="Menu Label">
+                                            <rect key="frame" x="67" y="10" width="300" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="MenuIcon" destination="Z57-GY-6Dm" id="pac-8J-C7t"/>
+                                    <outlet property="MenuLabel" destination="0Vs-pA-ptO" id="xJV-gO-lJr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c8D-pp-iUE" id="pcw-VR-y4T"/>
+                            <outlet property="delegate" destination="c8D-pp-iUE" id="29U-pz-jl9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mexar" id="AdL-F1-x48"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPV-uc-sri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="560"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="iz7-kB-F20">
+            <objects>
+                <navigationController id="9gC-K9-jcf" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qDN-bw-jRM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c8D-pp-iUE" kind="relationship" relationship="rootViewController" id="kxK-Zq-lIQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiB-vK-E9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-799" y="560"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icon_burger" width="20" height="17"/>
+        <image name="icon_search" width="18" height="18"/>
         <image name="intro2" width="240" height="240"/>
         <image name="login_email" width="340" height="63"/>
         <image name="login_facebook" width="340" height="69"/>

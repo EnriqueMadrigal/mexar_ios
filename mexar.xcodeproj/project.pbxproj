@@ -17,6 +17,11 @@
 		CD050BDA1FC5368A00627300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD050BD81FC5368A00627300 /* LaunchScreen.storyboard */; };
 		CD050BE51FC5368A00627300 /* mexarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BE41FC5368A00627300 /* mexarTests.swift */; };
 		CD050BF01FC5368A00627300 /* mexarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BEF1FC5368A00627300 /* mexarUITests.swift */; };
+		CD1F429D1FCC828800EEFAE3 /* navMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F429C1FCC828800EEFAE3 /* navMainController.swift */; };
+		CD1F429F1FCC831F00EEFAE3 /* mainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F429E1FCC831F00EEFAE3 /* mainController.swift */; };
+		CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A11FCC865200EEFAE3 /* MenuController.swift */; };
+		CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */; };
+		CD1F42A61FCC866900EEFAE3 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */; };
 		CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF12791FC68D7500B6EFB0 /* navloginController.swift */; };
 		CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +65,11 @@
 		CD050BEB1FC5368A00627300 /* mexarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mexarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD050BEF1FC5368A00627300 /* mexarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mexarUITests.swift; sourceTree = "<group>"; };
 		CD050BF11FC5368A00627300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1F429C1FCC828800EEFAE3 /* navMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navMainController.swift; sourceTree = "<group>"; };
+		CD1F429E1FCC831F00EEFAE3 /* mainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
+		CD1F42A11FCC865200EEFAE3 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarCell.swift; sourceTree = "<group>"; };
+		CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
 		CDFF12791FC68D7500B6EFB0 /* navloginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navloginController.swift; sourceTree = "<group>"; };
 		CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		DE360E8047EF3BAEF189904B /* Pods-mexar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mexar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mexar/Pods-mexar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +138,7 @@
 		CD050BCE1FC5368A00627300 /* mexar */ = {
 			isa = PBXGroup;
 			children = (
+				CD1F42A01FCC860300EEFAE3 /* menu */,
 				CDFF12781FC68CA700B6EFB0 /* navController */,
 				CD050BCF1FC5368A00627300 /* AppDelegate.swift */,
 				CD050BD11FC5368A00627300 /* ViewController.swift */,
@@ -157,11 +168,23 @@
 			path = mexarUITests;
 			sourceTree = "<group>";
 		};
+		CD1F42A01FCC860300EEFAE3 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */,
+				CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */,
+				CD1F42A11FCC865200EEFAE3 /* MenuController.swift */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
 		CDFF12781FC68CA700B6EFB0 /* navController */ = {
 			isa = PBXGroup;
 			children = (
 				CDFF12791FC68D7500B6EFB0 /* navloginController.swift */,
 				CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */,
+				CD1F429C1FCC828800EEFAE3 /* navMainController.swift */,
+				CD1F429E1FCC831F00EEFAE3 /* mainController.swift */,
 			);
 			name = navController;
 			sourceTree = "<group>";
@@ -475,10 +498,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1F429F1FCC831F00EEFAE3 /* mainController.swift in Sources */,
+				CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */,
 				CD050BD21FC5368A00627300 /* ViewController.swift in Sources */,
 				CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */,
+				CD1F429D1FCC828800EEFAE3 /* navMainController.swift in Sources */,
 				CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */,
+				CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */,
 				CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */,
+				CD1F42A61FCC866900EEFAE3 /* MenuItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
