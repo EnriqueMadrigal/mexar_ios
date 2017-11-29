@@ -14,6 +14,11 @@ class navMainController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.navigationBar.barTintColor = UIColor.mexar_blue1()
+        self.navigationBar.tintColor = UIColor.mexar_white()
+        self.navigationBar.isTranslucent = false;
+
     }
 
     override func didReceiveMemoryWarning() {
