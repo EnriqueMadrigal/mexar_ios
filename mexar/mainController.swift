@@ -91,9 +91,9 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         self.tableViewCategorias.dataSource  = self
         
         self.tableViewCategorias.rowHeight = UITableViewAutomaticDimension
-        self.tableViewCategorias.estimatedRowHeight = 120
+        self.tableViewCategorias.estimatedRowHeight = 80
         self.tableViewCategorias.separatorColor = UIColor.clear
-
+        
         
         self.categories = [Category_Class]()
         
@@ -108,15 +108,32 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+       
+        
+        if segue.identifier == "showSubCategorias"{
+        
+        if let curCategoriaId = sender as! Int?{
+            
+            let subCategoriasViewController = segue.destination as! subCategorias
+            
+            subCategoriasViewController.curCategoria = curCategoriaId
+            
+        }
+        }
+        
+        
+        
+        
     }
-    */
+
 
     
     func loadImages(){
@@ -254,17 +271,48 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         cell.categoria_name.text = cur_category.getName()
         cell.categoria_desc.text = cur_category.getDesc()
         
+        let filename: String = cur_category.getResName()
+        
+        let bundlePath = Bundle.main.path(forResource: filename, ofType: "png")
+        let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
+        
+        cell.categoria_icon.image = imageNoDisp
+        
         
      
         return cell
     }
 
+    /*
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         
-        return 120.0
+        return 80.0
     }
+    */
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        debugPrint(indexPath.row)
+        
+        let curCategoria = categories[indexPath.row]
+        
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        //    debugPrint("Se seleecion \(curProduct.getId())")
+        
+        let curId: Int = curCategoria.getId()
+        
+         debugPrint("Se seleecion \(curCategoria.getId())")
+        
+        performSegue(withIdentifier: "showSubCategorias", sender: curId)
+        
+        
+        //        performSegue(withIdentifier: "showWebContent", sender: curPath)
+        
+       
+        
+    }
+
     
 }

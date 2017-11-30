@@ -17,6 +17,35 @@
 		CD050BDA1FC5368A00627300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD050BD81FC5368A00627300 /* LaunchScreen.storyboard */; };
 		CD050BE51FC5368A00627300 /* mexarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BE41FC5368A00627300 /* mexarTests.swift */; };
 		CD050BF01FC5368A00627300 /* mexarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BEF1FC5368A00627300 /* mexarUITests.swift */; };
+		CD057EA91FCF2F760021EE27 /* pipes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EA81FCF2F760021EE27 /* pipes.png */; };
+		CD057EAB1FCF2F870021EE27 /* industrial.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EAA1FCF2F870021EE27 /* industrial.png */; };
+		CD057EAD1FCF2F9C0021EE27 /* centrifugado.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EAC1FCF2F9C0021EE27 /* centrifugado.png */; };
+		CD057EAF1FCF3CE90021EE27 /* subCategorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EAE1FCF3CE90021EE27 /* subCategorias.swift */; };
+		CD057EB11FCF7EA00021EE27 /* subcategoriasCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EB01FCF7EA00021EE27 /* subcategoriasCells.swift */; };
+		CD057EB31FCF83130021EE27 /* SubCategoria_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EB21FCF83130021EE27 /* SubCategoria_Class.swift */; };
+		CD057EB51FCF834A0021EE27 /* subcategorias.json in Resources */ = {isa = PBXBuildFile; fileRef = CD057EB41FCF834A0021EE27 /* subcategorias.json */; };
+		CD057EB71FCF8A5A0021EE27 /* cementoypvc.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EB61FCF8A5A0021EE27 /* cementoypvc.png */; };
+		CD057EB91FCF8A740021EE27 /* pastasoldar.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EB81FCF8A740021EE27 /* pastasoldar.png */; };
+		CD057EBB1FCF8A880021EE27 /* kits.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EBA1FCF8A880021EE27 /* kits.png */; };
+		CD057EBD1FCF8AA20021EE27 /* herramientas.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EBC1FCF8AA20021EE27 /* herramientas.png */; };
+		CD057EBF1FCF8AB20021EE27 /* silicon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EBE1FCF8AB20021EE27 /* silicon.png */; };
+		CD057EC11FCF8ABF0021EE27 /* selladores.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EC01FCF8ABF0021EE27 /* selladores.png */; };
+		CD057EC31FCF8AD00021EE27 /* empaque.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EC21FCF8AD00021EE27 /* empaque.png */; };
+		CD057EC51FCF8ADF0021EE27 /* soldadura_industrial.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EC41FCF8ADF0021EE27 /* soldadura_industrial.png */; };
+		CD057EC71FCF8AEC0021EE27 /* zunchadoras.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EC61FCF8AEC0021EE27 /* zunchadoras.png */; };
+		CD057EC91FCF8AF80021EE27 /* herramientas_fleje.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057EC81FCF8AF80021EE27 /* herramientas_fleje.png */; };
+		CD057ECB1FCF8B060021EE27 /* estirable.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ECA1FCF8B060021EE27 /* estirable.png */; };
+		CD057ECD1FCF8B160021EE27 /* maquinaria.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ECC1FCF8B160021EE27 /* maquinaria.png */; };
+		CD057ECF1FCF8B270021EE27 /* metales.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ECE1FCF8B270021EE27 /* metales.png */; };
+		CD057ED11FCF8B380021EE27 /* silicones.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ED01FCF8B380021EE27 /* silicones.png */; };
+		CD057ED31FCF8B420021EE27 /* accesorios.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ED21FCF8B420021EE27 /* accesorios.png */; };
+		CD057ED51FCF8B4B0021EE27 /* tech_support.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ED41FCF8B4B0021EE27 /* tech_support.png */; };
+		CD057ED71FCF8E260021EE27 /* no_disponible.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ED61FCF8E260021EE27 /* no_disponible.png */; };
+		CD057ED91FCF90ED0021EE27 /* soldadura.png in Resources */ = {isa = PBXBuildFile; fileRef = CD057ED81FCF90ED0021EE27 /* soldadura.png */; };
+		CD057EDB1FCF94C80021EE27 /* productsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EDA1FCF94C80021EE27 /* productsController.swift */; };
+		CD057EDD1FCF94F20021EE27 /* productsCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EDC1FCF94F20021EE27 /* productsCells.swift */; };
+		CD057EDF1FCFB63A0021EE27 /* productos.json in Resources */ = {isa = PBXBuildFile; fileRef = CD057EDE1FCFB63A0021EE27 /* productos.json */; };
+		CD057EE11FCFB6910021EE27 /* Product_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EE01FCFB6910021EE27 /* Product_Class.swift */; };
 		CD09E9451FCD2D5C00B51B9F /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09E9441FCD2D5C00B51B9F /* common.swift */; };
 		CD1F429D1FCC828800EEFAE3 /* navMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F429C1FCC828800EEFAE3 /* navMainController.swift */; };
 		CD1F429F1FCC831F00EEFAE3 /* mainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F429E1FCC831F00EEFAE3 /* mainController.swift */; };
@@ -73,6 +102,35 @@
 		CD050BEB1FC5368A00627300 /* mexarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mexarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD050BEF1FC5368A00627300 /* mexarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mexarUITests.swift; sourceTree = "<group>"; };
 		CD050BF11FC5368A00627300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD057EA81FCF2F760021EE27 /* pipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipes.png; sourceTree = "<group>"; };
+		CD057EAA1FCF2F870021EE27 /* industrial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial.png; sourceTree = "<group>"; };
+		CD057EAC1FCF2F9C0021EE27 /* centrifugado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centrifugado.png; sourceTree = "<group>"; };
+		CD057EAE1FCF3CE90021EE27 /* subCategorias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subCategorias.swift; sourceTree = "<group>"; };
+		CD057EB01FCF7EA00021EE27 /* subcategoriasCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subcategoriasCells.swift; sourceTree = "<group>"; };
+		CD057EB21FCF83130021EE27 /* SubCategoria_Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoria_Class.swift; sourceTree = "<group>"; };
+		CD057EB41FCF834A0021EE27 /* subcategorias.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = subcategorias.json; sourceTree = "<group>"; };
+		CD057EB61FCF8A5A0021EE27 /* cementoypvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cementoypvc.png; sourceTree = "<group>"; };
+		CD057EB81FCF8A740021EE27 /* pastasoldar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pastasoldar.png; sourceTree = "<group>"; };
+		CD057EBA1FCF8A880021EE27 /* kits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kits.png; sourceTree = "<group>"; };
+		CD057EBC1FCF8AA20021EE27 /* herramientas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = herramientas.png; sourceTree = "<group>"; };
+		CD057EBE1FCF8AB20021EE27 /* silicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silicon.png; sourceTree = "<group>"; };
+		CD057EC01FCF8ABF0021EE27 /* selladores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selladores.png; sourceTree = "<group>"; };
+		CD057EC21FCF8AD00021EE27 /* empaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empaque.png; sourceTree = "<group>"; };
+		CD057EC41FCF8ADF0021EE27 /* soldadura_industrial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soldadura_industrial.png; sourceTree = "<group>"; };
+		CD057EC61FCF8AEC0021EE27 /* zunchadoras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zunchadoras.png; sourceTree = "<group>"; };
+		CD057EC81FCF8AF80021EE27 /* herramientas_fleje.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = herramientas_fleje.png; sourceTree = "<group>"; };
+		CD057ECA1FCF8B060021EE27 /* estirable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estirable.png; sourceTree = "<group>"; };
+		CD057ECC1FCF8B160021EE27 /* maquinaria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maquinaria.png; sourceTree = "<group>"; };
+		CD057ECE1FCF8B270021EE27 /* metales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metales.png; sourceTree = "<group>"; };
+		CD057ED01FCF8B380021EE27 /* silicones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silicones.png; sourceTree = "<group>"; };
+		CD057ED21FCF8B420021EE27 /* accesorios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accesorios.png; sourceTree = "<group>"; };
+		CD057ED41FCF8B4B0021EE27 /* tech_support.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tech_support.png; sourceTree = "<group>"; };
+		CD057ED61FCF8E260021EE27 /* no_disponible.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_disponible.png; sourceTree = "<group>"; };
+		CD057ED81FCF90ED0021EE27 /* soldadura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soldadura.png; sourceTree = "<group>"; };
+		CD057EDA1FCF94C80021EE27 /* productsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productsController.swift; sourceTree = "<group>"; };
+		CD057EDC1FCF94F20021EE27 /* productsCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productsCells.swift; sourceTree = "<group>"; };
+		CD057EDE1FCFB63A0021EE27 /* productos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = productos.json; sourceTree = "<group>"; };
+		CD057EE01FCFB6910021EE27 /* Product_Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product_Class.swift; sourceTree = "<group>"; };
 		CD09E9441FCD2D5C00B51B9F /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		CD1F429C1FCC828800EEFAE3 /* navMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navMainController.swift; sourceTree = "<group>"; };
 		CD1F429E1FCC831F00EEFAE3 /* mainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
@@ -202,10 +260,31 @@
 		CDF2AAFF1FCDC7C0006B77AF /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CD057ED81FCF90ED0021EE27 /* soldadura.png */,
+				CD057ED41FCF8B4B0021EE27 /* tech_support.png */,
+				CD057ED61FCF8E260021EE27 /* no_disponible.png */,
+				CD057ED21FCF8B420021EE27 /* accesorios.png */,
+				CD057ED01FCF8B380021EE27 /* silicones.png */,
+				CD057ECE1FCF8B270021EE27 /* metales.png */,
+				CD057ECC1FCF8B160021EE27 /* maquinaria.png */,
+				CD057ECA1FCF8B060021EE27 /* estirable.png */,
+				CD057EC81FCF8AF80021EE27 /* herramientas_fleje.png */,
+				CD057EC61FCF8AEC0021EE27 /* zunchadoras.png */,
+				CD057EC41FCF8ADF0021EE27 /* soldadura_industrial.png */,
+				CD057EC21FCF8AD00021EE27 /* empaque.png */,
+				CD057EC01FCF8ABF0021EE27 /* selladores.png */,
+				CD057EBE1FCF8AB20021EE27 /* silicon.png */,
+				CD057EBC1FCF8AA20021EE27 /* herramientas.png */,
+				CD057EBA1FCF8A880021EE27 /* kits.png */,
+				CD057EB81FCF8A740021EE27 /* pastasoldar.png */,
+				CD057EB61FCF8A5A0021EE27 /* cementoypvc.png */,
+				CD057EA81FCF2F760021EE27 /* pipes.png */,
 				CDF2AB021FCDC8D9006B77AF /* banner1.png */,
 				CDF2AB031FCDC8D9006B77AF /* banner2.png */,
 				CDF2AB041FCDC8D9006B77AF /* banner3.png */,
 				CDF2AB001FCDC89B006B77AF /* productos.png */,
+				CD057EAA1FCF2F870021EE27 /* industrial.png */,
+				CD057EAC1FCF2F9C0021EE27 /* centrifugado.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -214,6 +293,8 @@
 			isa = PBXGroup;
 			children = (
 				CDF2AB091FCDE236006B77AF /* categoriasCells.swift */,
+				CD057EB01FCF7EA00021EE27 /* subcategoriasCells.swift */,
+				CD057EDC1FCF94F20021EE27 /* productsCells.swift */,
 			);
 			name = customViews;
 			sourceTree = "<group>";
@@ -222,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				CDF2AB0C1FCDED1A006B77AF /* Category_Class.swift */,
+				CD057EB21FCF83130021EE27 /* SubCategoria_Class.swift */,
+				CD057EE01FCFB6910021EE27 /* Product_Class.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -229,6 +312,8 @@
 		CDF2AB0E1FCDF6BF006B77AF /* jsons */ = {
 			isa = PBXGroup;
 			children = (
+				CD057EDE1FCFB63A0021EE27 /* productos.json */,
+				CD057EB41FCF834A0021EE27 /* subcategorias.json */,
 				CDF2AB0F1FCDF713006B77AF /* categorias.json */,
 			);
 			name = jsons;
@@ -241,6 +326,8 @@
 				CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */,
 				CD1F429C1FCC828800EEFAE3 /* navMainController.swift */,
 				CD1F429E1FCC831F00EEFAE3 /* mainController.swift */,
+				CD057EAE1FCF3CE90021EE27 /* subCategorias.swift */,
+				CD057EDA1FCF94C80021EE27 /* productsController.swift */,
 			);
 			name = navController;
 			sourceTree = "<group>";
@@ -377,14 +464,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD057EB91FCF8A740021EE27 /* pastasoldar.png in Resources */,
+				CD057ECD1FCF8B160021EE27 /* maquinaria.png in Resources */,
 				CD050BDA1FC5368A00627300 /* LaunchScreen.storyboard in Resources */,
+				CD057EB71FCF8A5A0021EE27 /* cementoypvc.png in Resources */,
 				CDF2AB101FCDF713006B77AF /* categorias.json in Resources */,
+				CD057EC51FCF8ADF0021EE27 /* soldadura_industrial.png in Resources */,
+				CD057EB51FCF834A0021EE27 /* subcategorias.json in Resources */,
+				CD057EBF1FCF8AB20021EE27 /* silicon.png in Resources */,
 				CDF2AB071FCDC8D9006B77AF /* banner3.png in Resources */,
+				CD057EC71FCF8AEC0021EE27 /* zunchadoras.png in Resources */,
+				CD057EBD1FCF8AA20021EE27 /* herramientas.png in Resources */,
+				CD057ED71FCF8E260021EE27 /* no_disponible.png in Resources */,
+				CD057ED11FCF8B380021EE27 /* silicones.png in Resources */,
+				CD057ED31FCF8B420021EE27 /* accesorios.png in Resources */,
 				CDF2AB051FCDC8D9006B77AF /* banner1.png in Resources */,
 				CD050BD71FC5368A00627300 /* Assets.xcassets in Resources */,
+				CD057EA91FCF2F760021EE27 /* pipes.png in Resources */,
 				CD050BD51FC5368A00627300 /* Main.storyboard in Resources */,
+				CD057EAD1FCF2F9C0021EE27 /* centrifugado.png in Resources */,
+				CD057EBB1FCF8A880021EE27 /* kits.png in Resources */,
+				CD057EDF1FCFB63A0021EE27 /* productos.json in Resources */,
+				CD057ED51FCF8B4B0021EE27 /* tech_support.png in Resources */,
+				CD057EC31FCF8AD00021EE27 /* empaque.png in Resources */,
 				CDF2AB061FCDC8D9006B77AF /* banner2.png in Resources */,
+				CD057ECF1FCF8B270021EE27 /* metales.png in Resources */,
+				CD057EAB1FCF2F870021EE27 /* industrial.png in Resources */,
+				CD057ECB1FCF8B060021EE27 /* estirable.png in Resources */,
 				CDF2AB011FCDC89B006B77AF /* productos.png in Resources */,
+				CD057ED91FCF90ED0021EE27 /* soldadura.png in Resources */,
+				CD057EC11FCF8ABF0021EE27 /* selladores.png in Resources */,
+				CD057EC91FCF8AF80021EE27 /* herramientas_fleje.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,14 +675,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD057EB31FCF83130021EE27 /* SubCategoria_Class.swift in Sources */,
 				CD1F429F1FCC831F00EEFAE3 /* mainController.swift in Sources */,
 				CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */,
+				CD057EAF1FCF3CE90021EE27 /* subCategorias.swift in Sources */,
 				CDF2AB0D1FCDED1A006B77AF /* Category_Class.swift in Sources */,
+				CD057EDD1FCF94F20021EE27 /* productsCells.swift in Sources */,
 				CD050BD21FC5368A00627300 /* ViewController.swift in Sources */,
 				CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */,
+				CD057EE11FCFB6910021EE27 /* Product_Class.swift in Sources */,
+				CD057EB11FCF7EA00021EE27 /* subcategoriasCells.swift in Sources */,
 				CD1F429D1FCC828800EEFAE3 /* navMainController.swift in Sources */,
 				CDF2AB0A1FCDE236006B77AF /* categoriasCells.swift in Sources */,
 				CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */,
+				CD057EDB1FCF94C80021EE27 /* productsController.swift in Sources */,
 				CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */,
 				CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */,
 				CD09E9451FCD2D5C00B51B9F /* common.swift in Sources */,
