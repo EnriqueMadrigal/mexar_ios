@@ -14,7 +14,8 @@ class productsCells: UITableViewCell {
     
     @IBOutlet weak var label_name: UILabel!
     
-    @IBOutlet weak var label_desc: UILabel!
+   // @IBOutlet weak var label_desc: UILabel!
+    @IBOutlet weak var label_desc: UITextView!
     
     
     override func awakeFromNib() {

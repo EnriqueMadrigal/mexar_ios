@@ -52,6 +52,19 @@
 		CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A11FCC865200EEFAE3 /* MenuController.swift */; };
 		CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */; };
 		CD1F42A61FCC866900EEFAE3 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */; };
+		CDBE99331FD657B40053DA11 /* llaveuniversal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99321FD657B30053DA11 /* llaveuniversal.png */; };
+		CDBE993F1FD65A940053DA11 /* kitche_bath_plumbing1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99341FD65A900053DA11 /* kitche_bath_plumbing1.png */; };
+		CDBE99401FD65A940053DA11 /* kitche_bath_plumbing.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99351FD65A910053DA11 /* kitche_bath_plumbing.png */; };
+		CDBE99411FD65A940053DA11 /* generacion2000.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99361FD65A910053DA11 /* generacion2000.png */; };
+		CDBE99421FD65A940053DA11 /* llaveuniversal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99371FD65A910053DA11 /* llaveuniversal.png */; };
+		CDBE99431FD65A940053DA11 /* kits_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99381FD65A920053DA11 /* kits_detail.png */; };
+		CDBE99441FD65A940053DA11 /* kwik_foam.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99391FD65A920053DA11 /* kwik_foam.png */; };
+		CDBE99451FD65A940053DA11 /* kwikcut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE993A1FD65A920053DA11 /* kwikcut.png */; };
+		CDBE99461FD65A940053DA11 /* kwik_seal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE993B1FD65A930053DA11 /* kwik_seal.png */; };
+		CDBE99471FD65A940053DA11 /* juegos_silicona.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE993C1FD65A930053DA11 /* juegos_silicona.png */; };
+		CDBE99481FD65A940053DA11 /* kwik_foam_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE993D1FD65A930053DA11 /* kwik_foam_1.png */; };
+		CDBE99491FD65A940053DA11 /* hule_organico.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE993E1FD65A940053DA11 /* hule_organico.png */; };
+		CDCE677B1FD72BF100C2971D /* productDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE677A1FD72BF100C2971D /* productDetailController.swift */; };
 		CDF2AB011FCDC89B006B77AF /* productos.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB001FCDC89B006B77AF /* productos.png */; };
 		CDF2AB051FCDC8D9006B77AF /* banner1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB021FCDC8D9006B77AF /* banner1.png */; };
 		CDF2AB061FCDC8D9006B77AF /* banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB031FCDC8D9006B77AF /* banner2.png */; };
@@ -59,6 +72,94 @@
 		CDF2AB0A1FCDE236006B77AF /* categoriasCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF2AB091FCDE236006B77AF /* categoriasCells.swift */; };
 		CDF2AB0D1FCDED1A006B77AF /* Category_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF2AB0C1FCDED1A006B77AF /* Category_Class.swift */; };
 		CDF2AB101FCDF713006B77AF /* categorias.json in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB0F1FCDF713006B77AF /* categorias.json */; };
+		CDF43B5A1FD1F0B70039E42D /* a335.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B321FD1F0B70039E42D /* a335.png */; };
+		CDF43B5B1FD1F0B70039E42D /* a383.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B331FD1F0B70039E42D /* a383.png */; };
+		CDF43B5C1FD1F0B70039E42D /* aleaciones_especiales.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B341FD1F0B70039E42D /* aleaciones_especiales.png */; };
+		CDF43B5D1FD1F0B70039E42D /* aleaciones1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B351FD1F0B70039E42D /* aleaciones1.png */; };
+		CDF43B5E1FD1F0B70039E42D /* alex.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B361FD1F0B70039E42D /* alex.png */; };
+		CDF43B5F1FD1F0B70039E42D /* alexplus.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B371FD1F0B70039E42D /* alexplus.png */; };
+		CDF43B601FD1F0B70039E42D /* beats_the_nail_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B381FD1F0B70039E42D /* beats_the_nail_1.png */; };
+		CDF43B611FD1F0B70039E42D /* beats_the_nail.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B391FD1F0B70039E42D /* beats_the_nail.png */; };
+		CDF43B621FD1F0B70039E42D /* borlapvc.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B3A1FD1F0B70039E42D /* borlapvc.png */; };
+		CDF43B631FD1F0B70039E42D /* centrifuga_automatica.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B3B1FD1F0B70039E42D /* centrifuga_automatica.png */; };
+		CDF43B641FD1F0B70039E42D /* centrifuga_frontal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B3C1FD1F0B70039E42D /* centrifuga_frontal.png */; };
+		CDF43B651FD1F0B70039E42D /* cintas_adhesivas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B3D1FD1F0B70039E42D /* cintas_adhesivas.png */; };
+		CDF43B661FD1F0B70039E42D /* concrete.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B3E1FD1F0B70039E42D /* concrete.png */; };
+		CDF43B671FD1F0B70039E42D /* contact202_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B3F1FD1F0B70039E42D /* contact202_1.png */; };
+		CDF43B681FD1F0B70039E42D /* contact202.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B401FD1F0B70039E42D /* contact202.png */; };
+		CDF43B691FD1F0B70039E42D /* contact204.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B411FD1F0B70039E42D /* contact204.png */; };
+		CDF43B6A1FD1F0B70039E42D /* contact205.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B421FD1F0B70039E42D /* contact205.png */; };
+		CDF43B6B1FD1F0B70039E42D /* contact206.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B431FD1F0B70039E42D /* contact206.png */; };
+		CDF43B6C1FD1F0B70039E42D /* contact212.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B441FD1F0B70039E42D /* contact212.png */; };
+		CDF43B6D1FD1F0B70039E42D /* contact216.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B451FD1F0B70039E42D /* contact216.png */; };
+		CDF43B6E1FD1F0B70039E42D /* contact222_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B461FD1F0B70039E42D /* contact222_1.png */; };
+		CDF43B6F1FD1F0B70039E42D /* contact222.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B471FD1F0B70039E42D /* contact222.png */; };
+		CDF43B701FD1F0B70039E42D /* contact227_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B481FD1F0B70039E42D /* contact227_1.png */; };
+		CDF43B711FD1F0B70039E42D /* contact227.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B491FD1F0B70039E42D /* contact227.png */; };
+		CDF43B721FD1F0B70039E42D /* contact244.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B4A1FD1F0B70039E42D /* contact244.png */; };
+		CDF43B731FD1F0B70039E42D /* crisol.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B4B1FD1F0B70039E42D /* crisol.png */; };
+		CDF43B741FD1F0B70039E42D /* cuerdasierra.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B4C1FD1F0B70039E42D /* cuerdasierra.png */; };
+		CDF43B751FD1F0B70039E42D /* defender_hp.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B4D1FD1F0B70039E42D /* defender_hp.png */; };
+		CDF43B761FD1F0B70039E42D /* defender_rta.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B4E1FD1F0B70039E42D /* defender_rta.png */; };
+		CDF43B771FD1F0B70039E42D /* electronica.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B4F1FD1F0B70039E42D /* electronica.png */; };
+		CDF43B781FD1F0B70039E42D /* encendedorpiedra.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B501FD1F0B70039E42D /* encendedorpiedra.png */; };
+		CDF43B791FD1F0B70039E42D /* especiales.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B511FD1F0B70039E42D /* especiales.png */; };
+		CDF43B7A1FD1F0B70039E42D /* esquineros.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B521FD1F0B70039E42D /* esquineros.png */; };
+		CDF43B7B1FD1F0B70039E42D /* esquineros1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B531FD1F0B70039E42D /* esquineros1.png */; };
+		CDF43B7C1FD1F0B70039E42D /* fastnfinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B541FD1F0B70039E42D /* fastnfinal.png */; };
+		CDF43B7D1FD1F0B70039E42D /* felejes.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B551FD1F0B70039E42D /* felejes.png */; };
+		CDF43B7E1FD1F0B70039E42D /* flux.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B561FD1F0B70039E42D /* flux.png */; };
+		CDF43B7F1FD1F0B70039E42D /* flux1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B571FD1F0B70039E42D /* flux1.png */; };
+		CDF43B801FD1F0B70039E42D /* flux2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B581FD1F0B70039E42D /* flux2.png */; };
+		CDF43B811FD1F0B70039E42D /* gasket_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B591FD1F0B70039E42D /* gasket_marker.png */; };
+		CDF43B991FD1F2180039E42D /* material_relleno.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B981FD1F2180039E42D /* material_relleno.png */; };
+		CDF43BA31FD1F22B0039E42D /* monarca_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B9A1FD1F22B0039E42D /* monarca_1.png */; };
+		CDF43BA41FD1F22B0039E42D /* monarca.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B9B1FD1F22B0039E42D /* monarca.png */; };
+		CDF43BA51FD1F22B0039E42D /* monarca95_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B9C1FD1F22B0039E42D /* monarca95_1.png */; };
+		CDF43BA61FD1F22B0039E42D /* monarca95.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B9D1FD1F22B0039E42D /* monarca95.png */; };
+		CDF43BA71FD1F22B0039E42D /* monarcaacido.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B9E1FD1F22B0039E42D /* monarcaacido.png */; };
+		CDF43BA81FD1F22B0039E42D /* monarcaelec_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43B9F1FD1F22B0039E42D /* monarcaelec_1.png */; };
+		CDF43BA91FD1F22B0039E42D /* monarcaelec.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BA01FD1F22B0039E42D /* monarcaelec.png */; };
+		CDF43BAA1FD1F22B0039E42D /* monarcaverde_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BA11FD1F22B0039E42D /* monarcaverde_1.png */; };
+		CDF43BAB1FD1F22B0039E42D /* monarcaverde.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BA21FD1F22B0039E42D /* monarcaverde.png */; };
+		CDF43BB01FD1F23C0039E42D /* p100.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BAC1FD1F23C0039E42D /* p100.png */; };
+		CDF43BB11FD1F23C0039E42D /* p355.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BAD1FD1F23C0039E42D /* p355.png */; };
+		CDF43BB21FD1F23C0039E42D /* p403.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BAE1FD1F23C0039E42D /* p403.png */; };
+		CDF43BB31FD1F23C0039E42D /* p715.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BAF1FD1F23C0039E42D /* p715.png */; };
+		CDF43BB61FD1F24D0039E42D /* pelicula_estirable.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BB41FD1F24D0039E42D /* pelicula_estirable.png */; };
+		CDF43BB71FD1F24D0039E42D /* pelicula_estirable1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BB51FD1F24D0039E42D /* pelicula_estirable1.png */; };
+		CDF43BB91FD1F2550039E42D /* pinturas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BB81FD1F2550039E42D /* pinturas.png */; };
+		CDF43BBF1FD1F2630039E42D /* pinturas1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BBA1FD1F2630039E42D /* pinturas1.png */; };
+		CDF43BC01FD1F2630039E42D /* pinturas2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BBB1FD1F2630039E42D /* pinturas2.png */; };
+		CDF43BC11FD1F2630039E42D /* pinturas3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BBC1FD1F2630039E42D /* pinturas3.png */; };
+		CDF43BC21FD1F2630039E42D /* pinturas4.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BBD1FD1F2630039E42D /* pinturas4.png */; };
+		CDF43BC31FD1F2630039E42D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BBE1FD1F2630039E42D /* placeholder.png */; };
+		CDF43BC51FD1F2760039E42D /* refacciones.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BC41FD1F2760039E42D /* refacciones.png */; };
+		CDF43BD31FD1F2A00039E42D /* repuestonavaja.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BC61FD1F29F0039E42D /* repuestonavaja.png */; };
+		CDF43BD41FD1F2A00039E42D /* roof.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BC71FD1F29F0039E42D /* roof.png */; };
+		CDF43BD51FD1F2A00039E42D /* sanisil_transparente.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BC81FD1F29F0039E42D /* sanisil_transparente.png */; };
+		CDF43BD61FD1F2A00039E42D /* sealant100.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BC91FD1F2A00039E42D /* sealant100.png */; };
+		CDF43BD71FD1F2A00039E42D /* servicios.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BCA1FD1F2A00039E42D /* servicios.png */; };
+		CDF43BD81FD1F2A00039E42D /* sidewinder.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BCB1FD1F2A00039E42D /* sidewinder.png */; };
+		CDF43BD91FD1F2A00039E42D /* sierra.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BCC1FD1F2A00039E42D /* sierra.png */; };
+		CDF43BDA1FD1F2A00039E42D /* sikacryl_bc.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BCD1FD1F2A00039E42D /* sikacryl_bc.png */; };
+		CDF43BDB1FD1F2A00039E42D /* sikaflex_crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BCE1FD1F2A00039E42D /* sikaflex_crystal.png */; };
+		CDF43BDC1FD1F2A00039E42D /* sikaflex.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BCF1FD1F2A00039E42D /* sikaflex.png */; };
+		CDF43BDD1FD1F2A00039E42D /* sikasil_150.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BD01FD1F2A00039E42D /* sikasil_150.png */; };
+		CDF43BDE1FD1F2A00039E42D /* sikasil_universal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BD11FD1F2A00039E42D /* sikasil_universal.png */; };
+		CDF43BDF1FD1F2A00039E42D /* silicon_multiusos.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BD21FD1F2A00039E42D /* silicon_multiusos.png */; };
+		CDF43BE61FD1F2B90039E42D /* strong_kit.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BE01FD1F2B90039E42D /* strong_kit.png */; };
+		CDF43BE71FD1F2B90039E42D /* vibradoras.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BE11FD1F2B90039E42D /* vibradoras.png */; };
+		CDF43BE81FD1F2B90039E42D /* vulcanizadoras.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BE21FD1F2B90039E42D /* vulcanizadoras.png */; };
+		CDF43BE91FD1F2B90039E42D /* weldwood.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BE31FD1F2B90039E42D /* weldwood.png */; };
+		CDF43BEA1FD1F2B90039E42D /* window_door_siding.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BE41FD1F2B90039E42D /* window_door_siding.png */; };
+		CDF43BEB1FD1F2B90039E42D /* window_door_siding1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BE51FD1F2B90039E42D /* window_door_siding1.png */; };
+		CDF43BF11FD1F7A50039E42D /* impersika.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BF01FD1F7A50039E42D /* impersika.png */; };
+		CDF43BF31FD1F7C00039E42D /* insumos.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BF21FD1F7C00039E42D /* insumos.png */; };
+		CDF43BFC1FD1F84D0039E42D /* industrial_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BF81FD1F84D0039E42D /* industrial_1.png */; };
+		CDF43BFD1FD1F84D0039E42D /* industrial_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BF91FD1F84D0039E42D /* industrial_2.png */; };
+		CDF43BFE1FD1F84D0039E42D /* industrial_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BFA1FD1F84D0039E42D /* industrial_3.png */; };
+		CDF43BFF1FD1F84D0039E42D /* industrial_centrifugamanual.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BFB1FD1F84D0039E42D /* industrial_centrifugamanual.png */; };
 		CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF12791FC68D7500B6EFB0 /* navloginController.swift */; };
 		CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */; };
 /* End PBXBuildFile section */
@@ -137,6 +238,19 @@
 		CD1F42A11FCC865200EEFAE3 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarCell.swift; sourceTree = "<group>"; };
 		CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		CDBE99321FD657B30053DA11 /* llaveuniversal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = llaveuniversal.png; sourceTree = "<group>"; };
+		CDBE99341FD65A900053DA11 /* kitche_bath_plumbing1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitche_bath_plumbing1.png; sourceTree = "<group>"; };
+		CDBE99351FD65A910053DA11 /* kitche_bath_plumbing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitche_bath_plumbing.png; sourceTree = "<group>"; };
+		CDBE99361FD65A910053DA11 /* generacion2000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generacion2000.png; sourceTree = "<group>"; };
+		CDBE99371FD65A910053DA11 /* llaveuniversal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = llaveuniversal.png; path = ../../../TempImages/llaveuniversal.png; sourceTree = "<group>"; };
+		CDBE99381FD65A920053DA11 /* kits_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kits_detail.png; sourceTree = "<group>"; };
+		CDBE99391FD65A920053DA11 /* kwik_foam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kwik_foam.png; sourceTree = "<group>"; };
+		CDBE993A1FD65A920053DA11 /* kwikcut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kwikcut.png; sourceTree = "<group>"; };
+		CDBE993B1FD65A930053DA11 /* kwik_seal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kwik_seal.png; sourceTree = "<group>"; };
+		CDBE993C1FD65A930053DA11 /* juegos_silicona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juegos_silicona.png; sourceTree = "<group>"; };
+		CDBE993D1FD65A930053DA11 /* kwik_foam_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kwik_foam_1.png; sourceTree = "<group>"; };
+		CDBE993E1FD65A940053DA11 /* hule_organico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hule_organico.png; sourceTree = "<group>"; };
+		CDCE677A1FD72BF100C2971D /* productDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailController.swift; sourceTree = "<group>"; };
 		CDF2AB001FCDC89B006B77AF /* productos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = productos.png; sourceTree = "<group>"; };
 		CDF2AB021FCDC8D9006B77AF /* banner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner1.png; sourceTree = "<group>"; };
 		CDF2AB031FCDC8D9006B77AF /* banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner2.png; sourceTree = "<group>"; };
@@ -144,6 +258,94 @@
 		CDF2AB091FCDE236006B77AF /* categoriasCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoriasCells.swift; sourceTree = "<group>"; };
 		CDF2AB0C1FCDED1A006B77AF /* Category_Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category_Class.swift; sourceTree = "<group>"; };
 		CDF2AB0F1FCDF713006B77AF /* categorias.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categorias.json; sourceTree = "<group>"; };
+		CDF43B321FD1F0B70039E42D /* a335.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a335.png; sourceTree = "<group>"; };
+		CDF43B331FD1F0B70039E42D /* a383.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a383.png; sourceTree = "<group>"; };
+		CDF43B341FD1F0B70039E42D /* aleaciones_especiales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aleaciones_especiales.png; sourceTree = "<group>"; };
+		CDF43B351FD1F0B70039E42D /* aleaciones1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aleaciones1.png; sourceTree = "<group>"; };
+		CDF43B361FD1F0B70039E42D /* alex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alex.png; sourceTree = "<group>"; };
+		CDF43B371FD1F0B70039E42D /* alexplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alexplus.png; sourceTree = "<group>"; };
+		CDF43B381FD1F0B70039E42D /* beats_the_nail_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beats_the_nail_1.png; sourceTree = "<group>"; };
+		CDF43B391FD1F0B70039E42D /* beats_the_nail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beats_the_nail.png; sourceTree = "<group>"; };
+		CDF43B3A1FD1F0B70039E42D /* borlapvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = borlapvc.png; sourceTree = "<group>"; };
+		CDF43B3B1FD1F0B70039E42D /* centrifuga_automatica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centrifuga_automatica.png; sourceTree = "<group>"; };
+		CDF43B3C1FD1F0B70039E42D /* centrifuga_frontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centrifuga_frontal.png; sourceTree = "<group>"; };
+		CDF43B3D1FD1F0B70039E42D /* cintas_adhesivas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cintas_adhesivas.png; sourceTree = "<group>"; };
+		CDF43B3E1FD1F0B70039E42D /* concrete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = concrete.png; sourceTree = "<group>"; };
+		CDF43B3F1FD1F0B70039E42D /* contact202_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact202_1.png; sourceTree = "<group>"; };
+		CDF43B401FD1F0B70039E42D /* contact202.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact202.png; sourceTree = "<group>"; };
+		CDF43B411FD1F0B70039E42D /* contact204.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact204.png; sourceTree = "<group>"; };
+		CDF43B421FD1F0B70039E42D /* contact205.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact205.png; sourceTree = "<group>"; };
+		CDF43B431FD1F0B70039E42D /* contact206.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact206.png; sourceTree = "<group>"; };
+		CDF43B441FD1F0B70039E42D /* contact212.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact212.png; sourceTree = "<group>"; };
+		CDF43B451FD1F0B70039E42D /* contact216.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact216.png; sourceTree = "<group>"; };
+		CDF43B461FD1F0B70039E42D /* contact222_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact222_1.png; sourceTree = "<group>"; };
+		CDF43B471FD1F0B70039E42D /* contact222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact222.png; sourceTree = "<group>"; };
+		CDF43B481FD1F0B70039E42D /* contact227_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact227_1.png; sourceTree = "<group>"; };
+		CDF43B491FD1F0B70039E42D /* contact227.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact227.png; sourceTree = "<group>"; };
+		CDF43B4A1FD1F0B70039E42D /* contact244.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact244.png; sourceTree = "<group>"; };
+		CDF43B4B1FD1F0B70039E42D /* crisol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crisol.png; sourceTree = "<group>"; };
+		CDF43B4C1FD1F0B70039E42D /* cuerdasierra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cuerdasierra.png; sourceTree = "<group>"; };
+		CDF43B4D1FD1F0B70039E42D /* defender_hp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defender_hp.png; sourceTree = "<group>"; };
+		CDF43B4E1FD1F0B70039E42D /* defender_rta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defender_rta.png; sourceTree = "<group>"; };
+		CDF43B4F1FD1F0B70039E42D /* electronica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electronica.png; sourceTree = "<group>"; };
+		CDF43B501FD1F0B70039E42D /* encendedorpiedra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = encendedorpiedra.png; sourceTree = "<group>"; };
+		CDF43B511FD1F0B70039E42D /* especiales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = especiales.png; sourceTree = "<group>"; };
+		CDF43B521FD1F0B70039E42D /* esquineros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esquineros.png; sourceTree = "<group>"; };
+		CDF43B531FD1F0B70039E42D /* esquineros1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esquineros1.png; sourceTree = "<group>"; };
+		CDF43B541FD1F0B70039E42D /* fastnfinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastnfinal.png; sourceTree = "<group>"; };
+		CDF43B551FD1F0B70039E42D /* felejes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felejes.png; sourceTree = "<group>"; };
+		CDF43B561FD1F0B70039E42D /* flux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flux.png; sourceTree = "<group>"; };
+		CDF43B571FD1F0B70039E42D /* flux1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flux1.png; sourceTree = "<group>"; };
+		CDF43B581FD1F0B70039E42D /* flux2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flux2.png; sourceTree = "<group>"; };
+		CDF43B591FD1F0B70039E42D /* gasket_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gasket_marker.png; sourceTree = "<group>"; };
+		CDF43B981FD1F2180039E42D /* material_relleno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_relleno.png; sourceTree = "<group>"; };
+		CDF43B9A1FD1F22B0039E42D /* monarca_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarca_1.png; sourceTree = "<group>"; };
+		CDF43B9B1FD1F22B0039E42D /* monarca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarca.png; sourceTree = "<group>"; };
+		CDF43B9C1FD1F22B0039E42D /* monarca95_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarca95_1.png; sourceTree = "<group>"; };
+		CDF43B9D1FD1F22B0039E42D /* monarca95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarca95.png; sourceTree = "<group>"; };
+		CDF43B9E1FD1F22B0039E42D /* monarcaacido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarcaacido.png; sourceTree = "<group>"; };
+		CDF43B9F1FD1F22B0039E42D /* monarcaelec_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarcaelec_1.png; sourceTree = "<group>"; };
+		CDF43BA01FD1F22B0039E42D /* monarcaelec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarcaelec.png; sourceTree = "<group>"; };
+		CDF43BA11FD1F22B0039E42D /* monarcaverde_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarcaverde_1.png; sourceTree = "<group>"; };
+		CDF43BA21FD1F22B0039E42D /* monarcaverde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monarcaverde.png; sourceTree = "<group>"; };
+		CDF43BAC1FD1F23C0039E42D /* p100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p100.png; sourceTree = "<group>"; };
+		CDF43BAD1FD1F23C0039E42D /* p355.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p355.png; sourceTree = "<group>"; };
+		CDF43BAE1FD1F23C0039E42D /* p403.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p403.png; sourceTree = "<group>"; };
+		CDF43BAF1FD1F23C0039E42D /* p715.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p715.png; sourceTree = "<group>"; };
+		CDF43BB41FD1F24D0039E42D /* pelicula_estirable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pelicula_estirable.png; sourceTree = "<group>"; };
+		CDF43BB51FD1F24D0039E42D /* pelicula_estirable1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pelicula_estirable1.png; sourceTree = "<group>"; };
+		CDF43BB81FD1F2550039E42D /* pinturas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinturas.png; sourceTree = "<group>"; };
+		CDF43BBA1FD1F2630039E42D /* pinturas1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinturas1.png; sourceTree = "<group>"; };
+		CDF43BBB1FD1F2630039E42D /* pinturas2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinturas2.png; sourceTree = "<group>"; };
+		CDF43BBC1FD1F2630039E42D /* pinturas3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinturas3.png; sourceTree = "<group>"; };
+		CDF43BBD1FD1F2630039E42D /* pinturas4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinturas4.png; sourceTree = "<group>"; };
+		CDF43BBE1FD1F2630039E42D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		CDF43BC41FD1F2760039E42D /* refacciones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refacciones.png; sourceTree = "<group>"; };
+		CDF43BC61FD1F29F0039E42D /* repuestonavaja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repuestonavaja.png; sourceTree = "<group>"; };
+		CDF43BC71FD1F29F0039E42D /* roof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roof.png; sourceTree = "<group>"; };
+		CDF43BC81FD1F29F0039E42D /* sanisil_transparente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sanisil_transparente.png; sourceTree = "<group>"; };
+		CDF43BC91FD1F2A00039E42D /* sealant100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sealant100.png; sourceTree = "<group>"; };
+		CDF43BCA1FD1F2A00039E42D /* servicios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = servicios.png; sourceTree = "<group>"; };
+		CDF43BCB1FD1F2A00039E42D /* sidewinder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidewinder.png; sourceTree = "<group>"; };
+		CDF43BCC1FD1F2A00039E42D /* sierra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sierra.png; sourceTree = "<group>"; };
+		CDF43BCD1FD1F2A00039E42D /* sikacryl_bc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sikacryl_bc.png; sourceTree = "<group>"; };
+		CDF43BCE1FD1F2A00039E42D /* sikaflex_crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sikaflex_crystal.png; sourceTree = "<group>"; };
+		CDF43BCF1FD1F2A00039E42D /* sikaflex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sikaflex.png; sourceTree = "<group>"; };
+		CDF43BD01FD1F2A00039E42D /* sikasil_150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sikasil_150.png; sourceTree = "<group>"; };
+		CDF43BD11FD1F2A00039E42D /* sikasil_universal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sikasil_universal.png; sourceTree = "<group>"; };
+		CDF43BD21FD1F2A00039E42D /* silicon_multiusos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silicon_multiusos.png; sourceTree = "<group>"; };
+		CDF43BE01FD1F2B90039E42D /* strong_kit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strong_kit.png; sourceTree = "<group>"; };
+		CDF43BE11FD1F2B90039E42D /* vibradoras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vibradoras.png; sourceTree = "<group>"; };
+		CDF43BE21FD1F2B90039E42D /* vulcanizadoras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vulcanizadoras.png; sourceTree = "<group>"; };
+		CDF43BE31FD1F2B90039E42D /* weldwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weldwood.png; sourceTree = "<group>"; };
+		CDF43BE41FD1F2B90039E42D /* window_door_siding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window_door_siding.png; sourceTree = "<group>"; };
+		CDF43BE51FD1F2B90039E42D /* window_door_siding1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window_door_siding1.png; sourceTree = "<group>"; };
+		CDF43BF01FD1F7A50039E42D /* impersika.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = impersika.png; sourceTree = "<group>"; };
+		CDF43BF21FD1F7C00039E42D /* insumos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = insumos.png; sourceTree = "<group>"; };
+		CDF43BF81FD1F84D0039E42D /* industrial_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial_1.png; sourceTree = "<group>"; };
+		CDF43BF91FD1F84D0039E42D /* industrial_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial_2.png; sourceTree = "<group>"; };
+		CDF43BFA1FD1F84D0039E42D /* industrial_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial_3.png; sourceTree = "<group>"; };
+		CDF43BFB1FD1F84D0039E42D /* industrial_centrifugamanual.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial_centrifugamanual.png; sourceTree = "<group>"; };
 		CDFF12791FC68D7500B6EFB0 /* navloginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navloginController.swift; sourceTree = "<group>"; };
 		CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		DE360E8047EF3BAEF189904B /* Pods-mexar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mexar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mexar/Pods-mexar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +414,7 @@
 		CD050BCE1FC5368A00627300 /* mexar */ = {
 			isa = PBXGroup;
 			children = (
+				CDF43B311FD1EE050039E42D /* product_images */,
 				CDF2AB0E1FCDF6BF006B77AF /* jsons */,
 				CDF2AB0B1FCDECD1006B77AF /* models */,
 				CDF2AB081FCDE20E006B77AF /* customViews */,
@@ -319,6 +522,113 @@
 			name = jsons;
 			sourceTree = "<group>";
 		};
+		CDF43B311FD1EE050039E42D /* product_images */ = {
+			isa = PBXGroup;
+			children = (
+				CDBE99381FD65A920053DA11 /* kits_detail.png */,
+				CDBE993D1FD65A930053DA11 /* kwik_foam_1.png */,
+				CDBE99391FD65A920053DA11 /* kwik_foam.png */,
+				CDBE993B1FD65A930053DA11 /* kwik_seal.png */,
+				CDBE993A1FD65A920053DA11 /* kwikcut.png */,
+				CDBE99321FD657B30053DA11 /* llaveuniversal.png */,
+				CDF43B321FD1F0B70039E42D /* a335.png */,
+				CDF43B331FD1F0B70039E42D /* a383.png */,
+				CDF43B341FD1F0B70039E42D /* aleaciones_especiales.png */,
+				CDF43B351FD1F0B70039E42D /* aleaciones1.png */,
+				CDF43B361FD1F0B70039E42D /* alex.png */,
+				CDF43B371FD1F0B70039E42D /* alexplus.png */,
+				CDF43B381FD1F0B70039E42D /* beats_the_nail_1.png */,
+				CDF43B391FD1F0B70039E42D /* beats_the_nail.png */,
+				CDF43B3A1FD1F0B70039E42D /* borlapvc.png */,
+				CDF43B3B1FD1F0B70039E42D /* centrifuga_automatica.png */,
+				CDF43B3C1FD1F0B70039E42D /* centrifuga_frontal.png */,
+				CDF43B3D1FD1F0B70039E42D /* cintas_adhesivas.png */,
+				CDF43B3E1FD1F0B70039E42D /* concrete.png */,
+				CDF43B3F1FD1F0B70039E42D /* contact202_1.png */,
+				CDF43B401FD1F0B70039E42D /* contact202.png */,
+				CDF43B411FD1F0B70039E42D /* contact204.png */,
+				CDF43B421FD1F0B70039E42D /* contact205.png */,
+				CDF43B431FD1F0B70039E42D /* contact206.png */,
+				CDF43B441FD1F0B70039E42D /* contact212.png */,
+				CDF43B451FD1F0B70039E42D /* contact216.png */,
+				CDF43B461FD1F0B70039E42D /* contact222_1.png */,
+				CDF43B471FD1F0B70039E42D /* contact222.png */,
+				CDF43B481FD1F0B70039E42D /* contact227_1.png */,
+				CDF43B491FD1F0B70039E42D /* contact227.png */,
+				CDF43B4A1FD1F0B70039E42D /* contact244.png */,
+				CDF43B4B1FD1F0B70039E42D /* crisol.png */,
+				CDF43B4C1FD1F0B70039E42D /* cuerdasierra.png */,
+				CDF43B4D1FD1F0B70039E42D /* defender_hp.png */,
+				CDF43B4E1FD1F0B70039E42D /* defender_rta.png */,
+				CDF43B4F1FD1F0B70039E42D /* electronica.png */,
+				CDF43B501FD1F0B70039E42D /* encendedorpiedra.png */,
+				CDF43B511FD1F0B70039E42D /* especiales.png */,
+				CDF43B521FD1F0B70039E42D /* esquineros.png */,
+				CDF43B531FD1F0B70039E42D /* esquineros1.png */,
+				CDF43B541FD1F0B70039E42D /* fastnfinal.png */,
+				CDF43B551FD1F0B70039E42D /* felejes.png */,
+				CDF43B561FD1F0B70039E42D /* flux.png */,
+				CDF43B571FD1F0B70039E42D /* flux1.png */,
+				CDF43B581FD1F0B70039E42D /* flux2.png */,
+				CDF43B591FD1F0B70039E42D /* gasket_marker.png */,
+				CDF43BF81FD1F84D0039E42D /* industrial_1.png */,
+				CDF43BF91FD1F84D0039E42D /* industrial_2.png */,
+				CDF43BFA1FD1F84D0039E42D /* industrial_3.png */,
+				CDF43BFB1FD1F84D0039E42D /* industrial_centrifugamanual.png */,
+				CDF43BF01FD1F7A50039E42D /* impersika.png */,
+				CDF43BF21FD1F7C00039E42D /* insumos.png */,
+				CDF43B981FD1F2180039E42D /* material_relleno.png */,
+				CDF43B9A1FD1F22B0039E42D /* monarca_1.png */,
+				CDF43B9B1FD1F22B0039E42D /* monarca.png */,
+				CDF43B9C1FD1F22B0039E42D /* monarca95_1.png */,
+				CDF43B9D1FD1F22B0039E42D /* monarca95.png */,
+				CDF43B9E1FD1F22B0039E42D /* monarcaacido.png */,
+				CDF43B9F1FD1F22B0039E42D /* monarcaelec_1.png */,
+				CDF43BA01FD1F22B0039E42D /* monarcaelec.png */,
+				CDF43BA11FD1F22B0039E42D /* monarcaverde_1.png */,
+				CDF43BA21FD1F22B0039E42D /* monarcaverde.png */,
+				CDF43BAC1FD1F23C0039E42D /* p100.png */,
+				CDF43BAD1FD1F23C0039E42D /* p355.png */,
+				CDF43BAE1FD1F23C0039E42D /* p403.png */,
+				CDF43BAF1FD1F23C0039E42D /* p715.png */,
+				CDF43BB41FD1F24D0039E42D /* pelicula_estirable.png */,
+				CDF43BB51FD1F24D0039E42D /* pelicula_estirable1.png */,
+				CDF43BB81FD1F2550039E42D /* pinturas.png */,
+				CDF43BBA1FD1F2630039E42D /* pinturas1.png */,
+				CDF43BBB1FD1F2630039E42D /* pinturas2.png */,
+				CDF43BBC1FD1F2630039E42D /* pinturas3.png */,
+				CDF43BBD1FD1F2630039E42D /* pinturas4.png */,
+				CDF43BBE1FD1F2630039E42D /* placeholder.png */,
+				CDF43BC41FD1F2760039E42D /* refacciones.png */,
+				CDF43BC61FD1F29F0039E42D /* repuestonavaja.png */,
+				CDF43BC71FD1F29F0039E42D /* roof.png */,
+				CDF43BC81FD1F29F0039E42D /* sanisil_transparente.png */,
+				CDF43BC91FD1F2A00039E42D /* sealant100.png */,
+				CDF43BCA1FD1F2A00039E42D /* servicios.png */,
+				CDF43BCB1FD1F2A00039E42D /* sidewinder.png */,
+				CDF43BCC1FD1F2A00039E42D /* sierra.png */,
+				CDF43BCD1FD1F2A00039E42D /* sikacryl_bc.png */,
+				CDF43BCE1FD1F2A00039E42D /* sikaflex_crystal.png */,
+				CDF43BCF1FD1F2A00039E42D /* sikaflex.png */,
+				CDF43BD01FD1F2A00039E42D /* sikasil_150.png */,
+				CDF43BD11FD1F2A00039E42D /* sikasil_universal.png */,
+				CDF43BD21FD1F2A00039E42D /* silicon_multiusos.png */,
+				CDF43BE01FD1F2B90039E42D /* strong_kit.png */,
+				CDF43BE11FD1F2B90039E42D /* vibradoras.png */,
+				CDF43BE21FD1F2B90039E42D /* vulcanizadoras.png */,
+				CDF43BE31FD1F2B90039E42D /* weldwood.png */,
+				CDF43BE41FD1F2B90039E42D /* window_door_siding.png */,
+				CDF43BE51FD1F2B90039E42D /* window_door_siding1.png */,
+				CDBE99361FD65A910053DA11 /* generacion2000.png */,
+				CDBE993E1FD65A940053DA11 /* hule_organico.png */,
+				CDBE993C1FD65A930053DA11 /* juegos_silicona.png */,
+				CDBE99351FD65A910053DA11 /* kitche_bath_plumbing.png */,
+				CDBE99341FD65A900053DA11 /* kitche_bath_plumbing1.png */,
+				CDBE99371FD65A910053DA11 /* llaveuniversal.png */,
+			);
+			name = product_images;
+			sourceTree = "<group>";
+		};
 		CDFF12781FC68CA700B6EFB0 /* navController */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +638,7 @@
 				CD1F429E1FCC831F00EEFAE3 /* mainController.swift */,
 				CD057EAE1FCF3CE90021EE27 /* subCategorias.swift */,
 				CD057EDA1FCF94C80021EE27 /* productsController.swift */,
+				CDCE677A1FD72BF100C2971D /* productDetailController.swift */,
 			);
 			name = navController;
 			sourceTree = "<group>";
@@ -464,36 +775,136 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF43BE81FD1F2B90039E42D /* vulcanizadoras.png in Resources */,
 				CD057EB91FCF8A740021EE27 /* pastasoldar.png in Resources */,
+				CDF43B801FD1F0B70039E42D /* flux2.png in Resources */,
 				CD057ECD1FCF8B160021EE27 /* maquinaria.png in Resources */,
+				CDF43BD91FD1F2A00039E42D /* sierra.png in Resources */,
 				CD050BDA1FC5368A00627300 /* LaunchScreen.storyboard in Resources */,
 				CD057EB71FCF8A5A0021EE27 /* cementoypvc.png in Resources */,
+				CDF43BD71FD1F2A00039E42D /* servicios.png in Resources */,
+				CDF43BC11FD1F2630039E42D /* pinturas3.png in Resources */,
+				CDF43B6C1FD1F0B70039E42D /* contact212.png in Resources */,
+				CDF43BD31FD1F2A00039E42D /* repuestonavaja.png in Resources */,
+				CDF43B991FD1F2180039E42D /* material_relleno.png in Resources */,
 				CDF2AB101FCDF713006B77AF /* categorias.json in Resources */,
+				CDF43BB31FD1F23C0039E42D /* p715.png in Resources */,
+				CDF43B6D1FD1F0B70039E42D /* contact216.png in Resources */,
+				CDF43B5C1FD1F0B70039E42D /* aleaciones_especiales.png in Resources */,
+				CDF43B791FD1F0B70039E42D /* especiales.png in Resources */,
+				CDF43B671FD1F0B70039E42D /* contact202_1.png in Resources */,
+				CDF43B781FD1F0B70039E42D /* encendedorpiedra.png in Resources */,
+				CDF43BAB1FD1F22B0039E42D /* monarcaverde.png in Resources */,
+				CDF43B5B1FD1F0B70039E42D /* a383.png in Resources */,
+				CDF43B7B1FD1F0B70039E42D /* esquineros1.png in Resources */,
+				CDF43BA61FD1F22B0039E42D /* monarca95.png in Resources */,
 				CD057EC51FCF8ADF0021EE27 /* soldadura_industrial.png in Resources */,
+				CDF43BB91FD1F2550039E42D /* pinturas.png in Resources */,
 				CD057EB51FCF834A0021EE27 /* subcategorias.json in Resources */,
 				CD057EBF1FCF8AB20021EE27 /* silicon.png in Resources */,
+				CDF43B7A1FD1F0B70039E42D /* esquineros.png in Resources */,
+				CDF43B7C1FD1F0B70039E42D /* fastnfinal.png in Resources */,
+				CDF43BDA1FD1F2A00039E42D /* sikacryl_bc.png in Resources */,
+				CDF43BA51FD1F22B0039E42D /* monarca95_1.png in Resources */,
 				CDF2AB071FCDC8D9006B77AF /* banner3.png in Resources */,
+				CDF43BC21FD1F2630039E42D /* pinturas4.png in Resources */,
+				CDF43BC31FD1F2630039E42D /* placeholder.png in Resources */,
+				CDBE99441FD65A940053DA11 /* kwik_foam.png in Resources */,
 				CD057EC71FCF8AEC0021EE27 /* zunchadoras.png in Resources */,
+				CDF43BD41FD1F2A00039E42D /* roof.png in Resources */,
 				CD057EBD1FCF8AA20021EE27 /* herramientas.png in Resources */,
 				CD057ED71FCF8E260021EE27 /* no_disponible.png in Resources */,
 				CD057ED11FCF8B380021EE27 /* silicones.png in Resources */,
+				CDF43BC01FD1F2630039E42D /* pinturas2.png in Resources */,
+				CDF43BA81FD1F22B0039E42D /* monarcaelec_1.png in Resources */,
+				CDF43B601FD1F0B70039E42D /* beats_the_nail_1.png in Resources */,
+				CDF43BEB1FD1F2B90039E42D /* window_door_siding1.png in Resources */,
+				CDF43BB21FD1F23C0039E42D /* p403.png in Resources */,
+				CDF43BFF1FD1F84D0039E42D /* industrial_centrifugamanual.png in Resources */,
+				CDF43BBF1FD1F2630039E42D /* pinturas1.png in Resources */,
 				CD057ED31FCF8B420021EE27 /* accesorios.png in Resources */,
+				CDF43BEA1FD1F2B90039E42D /* window_door_siding.png in Resources */,
+				CDF43BD61FD1F2A00039E42D /* sealant100.png in Resources */,
 				CDF2AB051FCDC8D9006B77AF /* banner1.png in Resources */,
+				CDF43B731FD1F0B70039E42D /* crisol.png in Resources */,
+				CDF43B661FD1F0B70039E42D /* concrete.png in Resources */,
+				CDBE99401FD65A940053DA11 /* kitche_bath_plumbing.png in Resources */,
+				CDF43B631FD1F0B70039E42D /* centrifuga_automatica.png in Resources */,
+				CDF43BB61FD1F24D0039E42D /* pelicula_estirable.png in Resources */,
+				CDF43B6F1FD1F0B70039E42D /* contact222.png in Resources */,
+				CDF43BD51FD1F2A00039E42D /* sanisil_transparente.png in Resources */,
+				CDBE99461FD65A940053DA11 /* kwik_seal.png in Resources */,
+				CDF43B701FD1F0B70039E42D /* contact227_1.png in Resources */,
+				CDF43BD81FD1F2A00039E42D /* sidewinder.png in Resources */,
+				CDF43BB11FD1F23C0039E42D /* p355.png in Resources */,
+				CDF43BFD1FD1F84D0039E42D /* industrial_2.png in Resources */,
 				CD050BD71FC5368A00627300 /* Assets.xcassets in Resources */,
 				CD057EA91FCF2F760021EE27 /* pipes.png in Resources */,
 				CD050BD51FC5368A00627300 /* Main.storyboard in Resources */,
 				CD057EAD1FCF2F9C0021EE27 /* centrifugado.png in Resources */,
+				CDF43BDE1FD1F2A00039E42D /* sikasil_universal.png in Resources */,
 				CD057EBB1FCF8A880021EE27 /* kits.png in Resources */,
+				CDF43B691FD1F0B70039E42D /* contact204.png in Resources */,
+				CDBE99451FD65A940053DA11 /* kwikcut.png in Resources */,
 				CD057EDF1FCFB63A0021EE27 /* productos.json in Resources */,
+				CDF43B771FD1F0B70039E42D /* electronica.png in Resources */,
+				CDBE99471FD65A940053DA11 /* juegos_silicona.png in Resources */,
+				CDF43B741FD1F0B70039E42D /* cuerdasierra.png in Resources */,
+				CDF43B621FD1F0B70039E42D /* borlapvc.png in Resources */,
+				CDBE99431FD65A940053DA11 /* kits_detail.png in Resources */,
+				CDF43BFC1FD1F84D0039E42D /* industrial_1.png in Resources */,
+				CDF43BA31FD1F22B0039E42D /* monarca_1.png in Resources */,
 				CD057ED51FCF8B4B0021EE27 /* tech_support.png in Resources */,
+				CDF43B711FD1F0B70039E42D /* contact227.png in Resources */,
+				CDF43BB01FD1F23C0039E42D /* p100.png in Resources */,
 				CD057EC31FCF8AD00021EE27 /* empaque.png in Resources */,
+				CDF43B5A1FD1F0B70039E42D /* a335.png in Resources */,
+				CDF43BE71FD1F2B90039E42D /* vibradoras.png in Resources */,
+				CDF43BDC1FD1F2A00039E42D /* sikaflex.png in Resources */,
+				CDBE99331FD657B40053DA11 /* llaveuniversal.png in Resources */,
+				CDF43BA41FD1F22B0039E42D /* monarca.png in Resources */,
+				CDF43B681FD1F0B70039E42D /* contact202.png in Resources */,
+				CDF43B7E1FD1F0B70039E42D /* flux.png in Resources */,
+				CDF43BA91FD1F22B0039E42D /* monarcaelec.png in Resources */,
 				CDF2AB061FCDC8D9006B77AF /* banner2.png in Resources */,
+				CDF43BB71FD1F24D0039E42D /* pelicula_estirable1.png in Resources */,
 				CD057ECF1FCF8B270021EE27 /* metales.png in Resources */,
+				CDF43B5F1FD1F0B70039E42D /* alexplus.png in Resources */,
+				CDF43B6A1FD1F0B70039E42D /* contact205.png in Resources */,
+				CDBE99481FD65A940053DA11 /* kwik_foam_1.png in Resources */,
+				CDF43B811FD1F0B70039E42D /* gasket_marker.png in Resources */,
+				CDF43B641FD1F0B70039E42D /* centrifuga_frontal.png in Resources */,
+				CDF43BFE1FD1F84D0039E42D /* industrial_3.png in Resources */,
+				CDF43BE91FD1F2B90039E42D /* weldwood.png in Resources */,
+				CDF43BF11FD1F7A50039E42D /* impersika.png in Resources */,
+				CDF43B751FD1F0B70039E42D /* defender_hp.png in Resources */,
 				CD057EAB1FCF2F870021EE27 /* industrial.png in Resources */,
+				CDF43B7F1FD1F0B70039E42D /* flux1.png in Resources */,
+				CDF43B5E1FD1F0B70039E42D /* alex.png in Resources */,
+				CDF43BDD1FD1F2A00039E42D /* sikasil_150.png in Resources */,
+				CDF43BE61FD1F2B90039E42D /* strong_kit.png in Resources */,
+				CDF43BF31FD1F7C00039E42D /* insumos.png in Resources */,
+				CDF43B7D1FD1F0B70039E42D /* felejes.png in Resources */,
+				CDF43B651FD1F0B70039E42D /* cintas_adhesivas.png in Resources */,
+				CDF43BDF1FD1F2A00039E42D /* silicon_multiusos.png in Resources */,
 				CD057ECB1FCF8B060021EE27 /* estirable.png in Resources */,
+				CDF43B721FD1F0B70039E42D /* contact244.png in Resources */,
+				CDF43B6B1FD1F0B70039E42D /* contact206.png in Resources */,
+				CDF43BDB1FD1F2A00039E42D /* sikaflex_crystal.png in Resources */,
+				CDF43B5D1FD1F0B70039E42D /* aleaciones1.png in Resources */,
+				CDF43BAA1FD1F22B0039E42D /* monarcaverde_1.png in Resources */,
+				CDF43BC51FD1F2760039E42D /* refacciones.png in Resources */,
 				CDF2AB011FCDC89B006B77AF /* productos.png in Resources */,
+				CDBE99421FD65A940053DA11 /* llaveuniversal.png in Resources */,
 				CD057ED91FCF90ED0021EE27 /* soldadura.png in Resources */,
+				CDF43B611FD1F0B70039E42D /* beats_the_nail.png in Resources */,
+				CDBE993F1FD65A940053DA11 /* kitche_bath_plumbing1.png in Resources */,
+				CDBE99491FD65A940053DA11 /* hule_organico.png in Resources */,
+				CDF43B6E1FD1F0B70039E42D /* contact222_1.png in Resources */,
+				CDF43BA71FD1F22B0039E42D /* monarcaacido.png in Resources */,
+				CDBE99411FD65A940053DA11 /* generacion2000.png in Resources */,
 				CD057EC11FCF8ABF0021EE27 /* selladores.png in Resources */,
+				CDF43B761FD1F0B70039E42D /* defender_rta.png in Resources */,
 				CD057EC91FCF8AF80021EE27 /* herramientas_fleje.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +1103,7 @@
 				CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */,
 				CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */,
 				CD09E9451FCD2D5C00B51B9F /* common.swift in Sources */,
+				CDCE677B1FD72BF100C2971D /* productDetailController.swift in Sources */,
 				CD1F42A61FCC866900EEFAE3 /* MenuItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -177,7 +177,7 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
      
      
-     return 142.0
+     return 180.0
      }
    
     
@@ -191,11 +191,11 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         //    debugPrint("Se seleecion \(curProduct.getId())")
         
         let curId: Int = curCategoria.getId()
-        let curSubCategoria: Int = curCategoria.getIdCategoria()
+       // let curSubCategoria: Int = curCategoria.getIdCategoria()
         
         debugPrint("Se seleecion \(curCategoria.getId())")
         
-        performSegue(withIdentifier: "showProducts", sender: curSubCategoria)
+        performSegue(withIdentifier: "showProducts", sender: curId)
         
         
         //        performSegue(withIdentifier: "showWebContent", sender: curPath)

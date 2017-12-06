@@ -78,7 +78,7 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
         self.scrollViewWidth = self.scrollView.frame.width
         self.scrollViewHeight = self.scrollView.frame.height
-        self.scrollViewHeight = 220
+        self.scrollViewHeight = 200
         
         self.scrollView.delegate = self
         self.pageController.currentPage = 0

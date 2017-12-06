@@ -1684,6 +1684,7 @@
 		"images": ["servicios"],
 		"resname": "servicios",
 		"ficha_tecnica":"",
+        "redes":"",
 		"aplicaciones":[],
 		"especificaciones":[],
 		"caracteristicas":[],

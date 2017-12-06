@@ -94,7 +94,7 @@ class Product_Class{
 
 
 class Productos: Mappable{
-    var productos: (Producto)?
+    var productos: [Producto]?
     
     required init?(map: Map){
         
@@ -129,24 +129,24 @@ class Producto: Mappable{
 
 class Product_Data: Mappable{
     
-    var _id: Int?
-    var _name: String?
-    var _idsubcategoria: Int?
-    var _desc: String?
-    var _desc_completa: String?
-    var _presentaciones: [String]?
-    var _images: [String]?
-    var _resname: String?
-    var _ficha_tecnica: String?
-    var _redes: String?
-    var _aplicaciones: [String]?
-    var _especificaciones: [String]?
-    var _caracteristicas: [String]?
-    var _colors: [String]?
-    var _adhieres: [String]?
-    var _ventajas: [String]?
-    var _usos: [String]?
-    var _nota: String?
+    var id: Int?
+    var name: String?
+    var idsubcategoria: Int?
+    var desc: String?
+    var desc_completa: String?
+    var presentaciones: [String]?
+    var images: [String]?
+    var resname: String?
+    var ficha_tecnica: String?
+    var redes: String?
+    var aplicaciones: [String]?
+    var especificaciones: [String]?
+    var caracteristicas: [String]?
+    var colors: [String]?
+    var adhieres: [String]?
+    var ventajas: [String]?
+    var usos: [String]?
+    var nota: String?
 
     
     required init?(map: Map){
@@ -156,24 +156,24 @@ class Product_Data: Mappable{
     
     func mapping(map: Map) {
     
-        self._id <- map["id"]
-        self._name <- map["name"]
-        self._idsubcategoria <- map["idsubcategoria"]
-        self._desc <- map["desc"]
-        self._desc_completa <- map["desc_completa"]
-        self._presentaciones <- map["presentaciones"]
-        self._images <- map["images"]
-        self._resname <- map["resname"]
-        self._ficha_tecnica <- map["ficha_tecnica"]
-        self._redes <- map["redes"]
-        self._aplicaciones <- map["aplicaciones"]
-        self._especificaciones <- map["especificaciones"]
-        self._caracteristicas <- map["caracteristicas"]
-        self._colors <- map["colos"]
-        self._adhieres <- map["adhieres"]
-        self._ventajas <- map["ventajas"]
-        self._usos <- map["usos"]
-        self._nota <- map["nota"]
+        self.id <- map["id"]
+        self.name <- map["name"]
+        self.idsubcategoria <- map["idsubcategoria"]
+        self.desc <- map["desc"]
+        self.desc_completa <- map["desc_completa"]
+        self.presentaciones <- map["presentaciones"]
+        self.images <- map["images"]
+        self.resname <- map["resname"]
+        self.ficha_tecnica <- map["ficha_tecnica"]
+        self.redes <- map["redes"]
+        self.aplicaciones <- map["aplicaciones"]
+        self.especificaciones <- map["especificaciones"]
+        self.caracteristicas <- map["caracteristicas"]
+        self.colors <- map["colors"]
+        self.adhieres <- map["adhieres"]
+        self.ventajas <- map["ventajas"]
+        self.usos <- map["usos"]
+        self.nota <- map["nota"]
 
     
     }
