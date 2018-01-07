@@ -15,8 +15,18 @@ class productDetailController: UIViewController , UIScrollViewDelegate{
     @IBOutlet weak var label_description: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var label_detail: UILabel!
     
-    @IBOutlet weak var label_detail: UITextView!
+    @IBOutlet weak var stackView: UIStackView!
+    
+    
+    //@IBOutlet weak var label_detail: UITextView!
+    // @IBOutlet weak var label_detail: UITextView!
+    //@IBOutlet weak var label_detail: UILabel!
+    //@IBOutlet weak var label_detail: UILabel!
+   
+   
+    
     
     @IBOutlet weak var pageController: UIPageControl!
     private var scrollViewWidth:CGFloat = 0
@@ -28,6 +38,8 @@ class productDetailController: UIViewController , UIScrollViewDelegate{
 
         // Do any additional setup after loading the view.
         
+        let logoImage:UIImage = UIImage(named: "icon_mexar")!
+        self.navigationItem.titleView = UIImageView(image: logoImage)
         
         //Scroll Images
         
@@ -36,10 +48,12 @@ class productDetailController: UIViewController , UIScrollViewDelegate{
         
         self.scrollView.frame = CGRect(x:0, y:0, width:self.view.frame.width, height:self.scrollView.frame.height)
         
-        self.scrollViewWidth = self.scrollView.frame.width
-        self.scrollViewWidth = 200
+        let curImageSize: CGFloat = common.SCREEN_WIDTH * 0.60
+        
+        //self.scrollViewWidth = self.scrollView.frame.width
+        self.scrollViewWidth = curImageSize
         //self.scrollViewHeight = self.scrollView.frame.height
-        self.scrollViewHeight = 200
+        self.scrollViewHeight = curImageSize
         
         self.scrollView.delegate = self
         self.pageController.currentPage = 0
@@ -52,11 +66,21 @@ class productDetailController: UIViewController , UIScrollViewDelegate{
         if ((curProduct) != nil)
         {
             label_description.text = curProduct.getName()
-            label_detail.text = curProduct.getDesc_Completa()
             loadImages()
+            loadText()
+            
+            if (curProduct.getRedes().count<1) {
+            self.stackView.isHidden = true
+            }
+            
             
         }
         
+        
+        
+       // var frame = self.label_detail.frame
+       // frame.size.height = self.label_detail.contentSize.height
+       // self.label_detail.frame = frame
         
     }
 
@@ -76,6 +100,75 @@ class productDetailController: UIViewController , UIScrollViewDelegate{
     }
     */
 
+    func loadText(){
+        
+    
+        
+        
+        let formatedString = NSMutableAttributedString()
+        
+        formatedString.append(muestraTextString(title: "Descripción", curValue: curProduct.getDesc_Completa()))
+        
+        formatedString.append(muestraArrayString(title: "Características y beneficios:", curValues: curProduct.getCaracteristicas()))
+        formatedString.append(muestraArrayString(title: "Aplicaciones:", curValues: curProduct.getAplicaciones()))
+        formatedString.append(muestraArrayString(title: "Especifícaciones:", curValues: curProduct.getEspecificaciones()))
+        formatedString.append(muestraArrayString(title: "Adhiere a:", curValues: curProduct.getAdhieres()))
+        formatedString.append(muestraArrayString(title: "Colores disponibles:", curValues: curProduct.getColors()))
+        formatedString.append(muestraArrayString(title: "Usos:", curValues: curProduct.getUsos()))
+        formatedString.append(muestraArrayString(title: "Ventajas:", curValues: curProduct.getVentajas()))
+        formatedString.append(muestraArrayString(title: "Presentaciones", curValues: curProduct.getPresentaciones()))
+        formatedString.append(muestraTextString(title: "Nota", curValue: curProduct.getNota()))
+        self.label_detail.attributedText = formatedString
+        
+        
+        
+    }
+    
+    
+    func muestraTextString(title: String , curValue: String)->NSMutableAttributedString
+    {
+        
+        if (curValue.count < 1)
+        {
+          return NSMutableAttributedString(string: "")
+        }
+        
+        let formatedStr = NSMutableAttributedString()
+        formatedStr
+            .bold(title)
+            .normal("\n")
+            .normal(curValue)
+            .normal("\n\n")
+        return formatedStr
+        
+        
+    }
+    
+    func muestraArrayString(title: String , curValues: [String])->NSMutableAttributedString
+    {
+    var str_array : String = ""
+        
+   if (curValues.count<1)
+   {
+    return NSMutableAttributedString(string: "")
+   }
+        
+    for curValue in curValues
+    {
+    str_array = str_array + curValue + "\n"
+    }
+    
+    
+    let formatedStr = NSMutableAttributedString()
+    formatedStr
+    .bold(title)
+    .normal("\n")
+    .normal(str_array)
+    .normal("\n")
+    
+   return formatedStr
+        
+    }
     
     func loadImages(){
         
@@ -131,5 +224,25 @@ class productDetailController: UIViewController , UIScrollViewDelegate{
         // Change the text accordingly
         
     }
+ 
+    
+    @IBAction func facebook_click(_ sender: Any) {
+        let url = NSURL(string: "https://www.facebook.com/sharer/sharer.php?u=" + curProduct.getRedes())!
+        UIApplication.shared.openURL(url as URL)
+        
+    }
+    @IBAction func twitter_click(_ sender: Any) {
+        let url = NSURL(string: "http://twitter.com/home?status=Texto%20para%20compartir%20" + curProduct.getRedes())!
+        UIApplication.shared.openURL(url as URL)
+        
+    }
+    @IBAction func google_click(_ sender: Any) {
+        let url = NSURL(string: "https://plus.google.com/share?url=Texto%20para%20compartir%20" + curProduct.getRedes())!
+        UIApplication.shared.openURL(url as URL)
+    }
+    
     
 }
+
+
+

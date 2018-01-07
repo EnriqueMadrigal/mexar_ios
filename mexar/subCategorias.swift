@@ -26,7 +26,7 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         self.tableViewSubCategorias.dataSource  = self
         
         //self.tableViewSubCategorias.rowHeight = UITableViewAutomaticDimension
-        //self.tableViewSubCategorias.estimatedRowHeight = 142
+        self.tableViewSubCategorias.estimatedRowHeight = 180
         self.tableViewSubCategorias.separatorColor = UIColor.clear
 
         
@@ -173,13 +173,15 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         
         return cell
     }
-    
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-     
-     
-     return 180.0
-     }
    
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            let curImageWidth: CGFloat = common.SCREEN_WIDTH * 0.65
+            let curImageHeight: CGFloat = (curImageWidth * 0.55) + 18
+            
+       return curImageHeight
+     //return 180.0
+     }
+  
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         debugPrint(indexPath.row)

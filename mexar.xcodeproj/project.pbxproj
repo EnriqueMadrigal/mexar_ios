@@ -10,6 +10,7 @@
 		5C30A7CE00A44BD31BF05FF4 /* Pods_mexarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EB2A13155D7C4CE2D3A746 /* Pods_mexarTests.framework */; };
 		671E40CB984719E80D8C9C2C /* Pods_mexarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013AE683F1F637C093B3EAF1 /* Pods_mexarUITests.framework */; };
 		8D271958436C9C90794370DA /* Pods_mexar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE49845AACA06D81FBA75749 /* Pods_mexar.framework */; };
+		CD01668F1FFCABF8006F57A0 /* calcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01668E1FFCABF8006F57A0 /* calcController.swift */; };
 		CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BCF1FC5368A00627300 /* AppDelegate.swift */; };
 		CD050BD21FC5368A00627300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD050BD11FC5368A00627300 /* ViewController.swift */; };
 		CD050BD51FC5368A00627300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD050BD31FC5368A00627300 /* Main.storyboard */; };
@@ -52,6 +53,19 @@
 		CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A11FCC865200EEFAE3 /* MenuController.swift */; };
 		CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */; };
 		CD1F42A61FCC866900EEFAE3 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */; };
+		CD7DAC3820015B9200349A97 /* distribuidoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DAC3720015B9200349A97 /* distribuidoresController.swift */; };
+		CD7DAC3A2001766900349A97 /* DistribuidoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DAC392001766900349A97 /* DistribuidoresCell.swift */; };
+		CD7DAC3C2001C97900349A97 /* homeDepotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DAC3B2001C97900349A97 /* homeDepotController.swift */; };
+		CD7DAC3E2001CFBF00349A97 /* homedepot.json in Resources */ = {isa = PBXBuildFile; fileRef = CD7DAC3D2001CFBF00349A97 /* homedepot.json */; };
+		CDBB45241FFD458A00D2B42B /* DropMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB45231FFD458A00D2B42B /* DropMenuButton.swift */; };
+		CDBB45261FFD45D900D2B42B /* fontaneriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB45251FFD45D900D2B42B /* fontaneriaController.swift */; };
+		CDBB45281FFD65F800D2B42B /* dropDownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB45271FFD65F800D2B42B /* dropDownTableView.swift */; };
+		CDBB452C1FFD9AE500D2B42B /* calculadora.json in Resources */ = {isa = PBXBuildFile; fileRef = CDBB45291FFD9AE500D2B42B /* calculadora.json */; };
+		CDBB452D1FFD9AE500D2B42B /* piezas.json in Resources */ = {isa = PBXBuildFile; fileRef = CDBB452A1FFD9AE500D2B42B /* piezas.json */; };
+		CDBB452E1FFD9AE500D2B42B /* presentaciones.json in Resources */ = {isa = PBXBuildFile; fileRef = CDBB452B1FFD9AE500D2B42B /* presentaciones.json */; };
+		CDBB45301FFD9B7600D2B42B /* Presentation_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB452F1FFD9B7600D2B42B /* Presentation_Class.swift */; };
+		CDBB45321FFD9FDA00D2B42B /* Pieza_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB45311FFD9FDA00D2B42B /* Pieza_Class.swift */; };
+		CDBC1F291FDF9F49002DE788 /* ScreenBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBC1F281FDF9F49002DE788 /* ScreenBounds.swift */; };
 		CDBE99331FD657B40053DA11 /* llaveuniversal.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99321FD657B30053DA11 /* llaveuniversal.png */; };
 		CDBE993F1FD65A940053DA11 /* kitche_bath_plumbing1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99341FD65A900053DA11 /* kitche_bath_plumbing1.png */; };
 		CDBE99401FD65A940053DA11 /* kitche_bath_plumbing.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE99351FD65A910053DA11 /* kitche_bath_plumbing.png */; };
@@ -65,6 +79,8 @@
 		CDBE99481FD65A940053DA11 /* kwik_foam_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE993D1FD65A930053DA11 /* kwik_foam_1.png */; };
 		CDBE99491FD65A940053DA11 /* hule_organico.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE993E1FD65A940053DA11 /* hule_organico.png */; };
 		CDCE677B1FD72BF100C2971D /* productDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE677A1FD72BF100C2971D /* productDetailController.swift */; };
+		CDD8CE402000153E0000432C /* distribuidores.json in Resources */ = {isa = PBXBuildFile; fileRef = CDD8CE3F2000153E0000432C /* distribuidores.json */; };
+		CDD8CE42200015A60000432C /* Distribuidor_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD8CE41200015A60000432C /* Distribuidor_Class.swift */; };
 		CDF2AB011FCDC89B006B77AF /* productos.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB001FCDC89B006B77AF /* productos.png */; };
 		CDF2AB051FCDC8D9006B77AF /* banner1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB021FCDC8D9006B77AF /* banner1.png */; };
 		CDF2AB061FCDC8D9006B77AF /* banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB031FCDC8D9006B77AF /* banner2.png */; };
@@ -160,6 +176,12 @@
 		CDF43BFD1FD1F84D0039E42D /* industrial_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BF91FD1F84D0039E42D /* industrial_2.png */; };
 		CDF43BFE1FD1F84D0039E42D /* industrial_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BFA1FD1F84D0039E42D /* industrial_3.png */; };
 		CDF43BFF1FD1F84D0039E42D /* industrial_centrifugamanual.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF43BFB1FD1F84D0039E42D /* industrial_centrifugamanual.png */; };
+		CDF8956D1FFFEF56007DE0FC /* contactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF8956C1FFFEF56007DE0FC /* contactoController.swift */; };
+		CDF8956F1FFFFF71007DE0FC /* Gerente_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF8956E1FFFFF71007DE0FC /* Gerente_Class.swift */; };
+		CDFA3D981FFE9C8E000DDE70 /* Calculo_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA3D971FFE9C8E000DDE70 /* Calculo_Class.swift */; };
+		CDFA3D9B1FFED061000DDE70 /* gerentes.json in Resources */ = {isa = PBXBuildFile; fileRef = CDFA3D991FFED061000DDE70 /* gerentes.json */; };
+		CDFA3D9C1FFED061000DDE70 /* sucursales.json in Resources */ = {isa = PBXBuildFile; fileRef = CDFA3D9A1FFED061000DDE70 /* sucursales.json */; };
+		CDFA3D9E1FFED108000DDE70 /* Sucursal_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA3D9D1FFED108000DDE70 /* Sucursal_Class.swift */; };
 		CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF12791FC68D7500B6EFB0 /* navloginController.swift */; };
 		CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */; };
 /* End PBXBuildFile section */
@@ -190,6 +212,7 @@
 		97EB2A13155D7C4CE2D3A746 /* Pods_mexarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mexarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9917D3000457E189C2B2EA1D /* Pods-mexar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mexar.release.xcconfig"; path = "Pods/Target Support Files/Pods-mexar/Pods-mexar.release.xcconfig"; sourceTree = "<group>"; };
 		AE49845AACA06D81FBA75749 /* Pods_mexar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mexar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD01668E1FFCABF8006F57A0 /* calcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcController.swift; sourceTree = "<group>"; };
 		CD050BCC1FC5368A00627300 /* mexar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mexar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD050BCF1FC5368A00627300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD050BD11FC5368A00627300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +261,19 @@
 		CD1F42A11FCC865200EEFAE3 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarCell.swift; sourceTree = "<group>"; };
 		CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		CD7DAC3720015B9200349A97 /* distribuidoresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = distribuidoresController.swift; sourceTree = "<group>"; };
+		CD7DAC392001766900349A97 /* DistribuidoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistribuidoresCell.swift; sourceTree = "<group>"; };
+		CD7DAC3B2001C97900349A97 /* homeDepotController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeDepotController.swift; sourceTree = "<group>"; };
+		CD7DAC3D2001CFBF00349A97 /* homedepot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homedepot.json; sourceTree = "<group>"; };
+		CDBB45231FFD458A00D2B42B /* DropMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMenuButton.swift; sourceTree = "<group>"; };
+		CDBB45251FFD45D900D2B42B /* fontaneriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontaneriaController.swift; sourceTree = "<group>"; };
+		CDBB45271FFD65F800D2B42B /* dropDownTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropDownTableView.swift; sourceTree = "<group>"; };
+		CDBB45291FFD9AE500D2B42B /* calculadora.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = calculadora.json; sourceTree = "<group>"; };
+		CDBB452A1FFD9AE500D2B42B /* piezas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = piezas.json; sourceTree = "<group>"; };
+		CDBB452B1FFD9AE500D2B42B /* presentaciones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = presentaciones.json; sourceTree = "<group>"; };
+		CDBB452F1FFD9B7600D2B42B /* Presentation_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentation_Class.swift; sourceTree = "<group>"; };
+		CDBB45311FFD9FDA00D2B42B /* Pieza_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pieza_Class.swift; sourceTree = "<group>"; };
+		CDBC1F281FDF9F49002DE788 /* ScreenBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBounds.swift; sourceTree = "<group>"; };
 		CDBE99321FD657B30053DA11 /* llaveuniversal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = llaveuniversal.png; sourceTree = "<group>"; };
 		CDBE99341FD65A900053DA11 /* kitche_bath_plumbing1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitche_bath_plumbing1.png; sourceTree = "<group>"; };
 		CDBE99351FD65A910053DA11 /* kitche_bath_plumbing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitche_bath_plumbing.png; sourceTree = "<group>"; };
@@ -251,6 +287,8 @@
 		CDBE993D1FD65A930053DA11 /* kwik_foam_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kwik_foam_1.png; sourceTree = "<group>"; };
 		CDBE993E1FD65A940053DA11 /* hule_organico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hule_organico.png; sourceTree = "<group>"; };
 		CDCE677A1FD72BF100C2971D /* productDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailController.swift; sourceTree = "<group>"; };
+		CDD8CE3F2000153E0000432C /* distribuidores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = distribuidores.json; sourceTree = "<group>"; };
+		CDD8CE41200015A60000432C /* Distribuidor_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distribuidor_Class.swift; sourceTree = "<group>"; };
 		CDF2AB001FCDC89B006B77AF /* productos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = productos.png; sourceTree = "<group>"; };
 		CDF2AB021FCDC8D9006B77AF /* banner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner1.png; sourceTree = "<group>"; };
 		CDF2AB031FCDC8D9006B77AF /* banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner2.png; sourceTree = "<group>"; };
@@ -346,6 +384,12 @@
 		CDF43BF91FD1F84D0039E42D /* industrial_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial_2.png; sourceTree = "<group>"; };
 		CDF43BFA1FD1F84D0039E42D /* industrial_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial_3.png; sourceTree = "<group>"; };
 		CDF43BFB1FD1F84D0039E42D /* industrial_centrifugamanual.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = industrial_centrifugamanual.png; sourceTree = "<group>"; };
+		CDF8956C1FFFEF56007DE0FC /* contactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactoController.swift; sourceTree = "<group>"; };
+		CDF8956E1FFFFF71007DE0FC /* Gerente_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gerente_Class.swift; sourceTree = "<group>"; };
+		CDFA3D971FFE9C8E000DDE70 /* Calculo_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculo_Class.swift; sourceTree = "<group>"; };
+		CDFA3D991FFED061000DDE70 /* gerentes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gerentes.json; sourceTree = "<group>"; };
+		CDFA3D9A1FFED061000DDE70 /* sucursales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sucursales.json; sourceTree = "<group>"; };
+		CDFA3D9D1FFED108000DDE70 /* Sucursal_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sucursal_Class.swift; sourceTree = "<group>"; };
 		CDFF12791FC68D7500B6EFB0 /* navloginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navloginController.swift; sourceTree = "<group>"; };
 		CDFF127B1FC68E2B00B6EFB0 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		DE360E8047EF3BAEF189904B /* Pods-mexar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mexar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mexar/Pods-mexar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -498,6 +542,9 @@
 				CDF2AB091FCDE236006B77AF /* categoriasCells.swift */,
 				CD057EB01FCF7EA00021EE27 /* subcategoriasCells.swift */,
 				CD057EDC1FCF94F20021EE27 /* productsCells.swift */,
+				CDBB45231FFD458A00D2B42B /* DropMenuButton.swift */,
+				CDBB45271FFD65F800D2B42B /* dropDownTableView.swift */,
+				CD7DAC392001766900349A97 /* DistribuidoresCell.swift */,
 			);
 			name = customViews;
 			sourceTree = "<group>";
@@ -508,6 +555,13 @@
 				CDF2AB0C1FCDED1A006B77AF /* Category_Class.swift */,
 				CD057EB21FCF83130021EE27 /* SubCategoria_Class.swift */,
 				CD057EE01FCFB6910021EE27 /* Product_Class.swift */,
+				CDBC1F281FDF9F49002DE788 /* ScreenBounds.swift */,
+				CDBB452F1FFD9B7600D2B42B /* Presentation_Class.swift */,
+				CDBB45311FFD9FDA00D2B42B /* Pieza_Class.swift */,
+				CDFA3D971FFE9C8E000DDE70 /* Calculo_Class.swift */,
+				CDF8956E1FFFFF71007DE0FC /* Gerente_Class.swift */,
+				CDFA3D9D1FFED108000DDE70 /* Sucursal_Class.swift */,
+				CDD8CE41200015A60000432C /* Distribuidor_Class.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -515,6 +569,13 @@
 		CDF2AB0E1FCDF6BF006B77AF /* jsons */ = {
 			isa = PBXGroup;
 			children = (
+				CD7DAC3D2001CFBF00349A97 /* homedepot.json */,
+				CDD8CE3F2000153E0000432C /* distribuidores.json */,
+				CDFA3D991FFED061000DDE70 /* gerentes.json */,
+				CDFA3D9A1FFED061000DDE70 /* sucursales.json */,
+				CDBB45291FFD9AE500D2B42B /* calculadora.json */,
+				CDBB452A1FFD9AE500D2B42B /* piezas.json */,
+				CDBB452B1FFD9AE500D2B42B /* presentaciones.json */,
 				CD057EDE1FCFB63A0021EE27 /* productos.json */,
 				CD057EB41FCF834A0021EE27 /* subcategorias.json */,
 				CDF2AB0F1FCDF713006B77AF /* categorias.json */,
@@ -639,6 +700,11 @@
 				CD057EAE1FCF3CE90021EE27 /* subCategorias.swift */,
 				CD057EDA1FCF94C80021EE27 /* productsController.swift */,
 				CDCE677A1FD72BF100C2971D /* productDetailController.swift */,
+				CD01668E1FFCABF8006F57A0 /* calcController.swift */,
+				CDBB45251FFD45D900D2B42B /* fontaneriaController.swift */,
+				CDF8956C1FFFEF56007DE0FC /* contactoController.swift */,
+				CD7DAC3720015B9200349A97 /* distribuidoresController.swift */,
+				CD7DAC3B2001C97900349A97 /* homeDepotController.swift */,
 			);
 			name = navController;
 			sourceTree = "<group>";
@@ -818,6 +884,7 @@
 				CDF43BC01FD1F2630039E42D /* pinturas2.png in Resources */,
 				CDF43BA81FD1F22B0039E42D /* monarcaelec_1.png in Resources */,
 				CDF43B601FD1F0B70039E42D /* beats_the_nail_1.png in Resources */,
+				CD7DAC3E2001CFBF00349A97 /* homedepot.json in Resources */,
 				CDF43BEB1FD1F2B90039E42D /* window_door_siding1.png in Resources */,
 				CDF43BB21FD1F23C0039E42D /* p403.png in Resources */,
 				CDF43BFF1FD1F84D0039E42D /* industrial_centrifugamanual.png in Resources */,
@@ -826,6 +893,7 @@
 				CDF43BEA1FD1F2B90039E42D /* window_door_siding.png in Resources */,
 				CDF43BD61FD1F2A00039E42D /* sealant100.png in Resources */,
 				CDF2AB051FCDC8D9006B77AF /* banner1.png in Resources */,
+				CDD8CE402000153E0000432C /* distribuidores.json in Resources */,
 				CDF43B731FD1F0B70039E42D /* crisol.png in Resources */,
 				CDF43B661FD1F0B70039E42D /* concrete.png in Resources */,
 				CDBE99401FD65A940053DA11 /* kitche_bath_plumbing.png in Resources */,
@@ -838,6 +906,7 @@
 				CDF43BD81FD1F2A00039E42D /* sidewinder.png in Resources */,
 				CDF43BB11FD1F23C0039E42D /* p355.png in Resources */,
 				CDF43BFD1FD1F84D0039E42D /* industrial_2.png in Resources */,
+				CDBB452D1FFD9AE500D2B42B /* piezas.json in Resources */,
 				CD050BD71FC5368A00627300 /* Assets.xcassets in Resources */,
 				CD057EA91FCF2F760021EE27 /* pipes.png in Resources */,
 				CD050BD51FC5368A00627300 /* Main.storyboard in Resources */,
@@ -858,6 +927,7 @@
 				CDF43B711FD1F0B70039E42D /* contact227.png in Resources */,
 				CDF43BB01FD1F23C0039E42D /* p100.png in Resources */,
 				CD057EC31FCF8AD00021EE27 /* empaque.png in Resources */,
+				CDBB452C1FFD9AE500D2B42B /* calculadora.json in Resources */,
 				CDF43B5A1FD1F0B70039E42D /* a335.png in Resources */,
 				CDF43BE71FD1F2B90039E42D /* vibradoras.png in Resources */,
 				CDF43BDC1FD1F2A00039E42D /* sikaflex.png in Resources */,
@@ -875,6 +945,7 @@
 				CDF43B811FD1F0B70039E42D /* gasket_marker.png in Resources */,
 				CDF43B641FD1F0B70039E42D /* centrifuga_frontal.png in Resources */,
 				CDF43BFE1FD1F84D0039E42D /* industrial_3.png in Resources */,
+				CDBB452E1FFD9AE500D2B42B /* presentaciones.json in Resources */,
 				CDF43BE91FD1F2B90039E42D /* weldwood.png in Resources */,
 				CDF43BF11FD1F7A50039E42D /* impersika.png in Resources */,
 				CDF43B751FD1F0B70039E42D /* defender_hp.png in Resources */,
@@ -893,8 +964,10 @@
 				CDF43BDB1FD1F2A00039E42D /* sikaflex_crystal.png in Resources */,
 				CDF43B5D1FD1F0B70039E42D /* aleaciones1.png in Resources */,
 				CDF43BAA1FD1F22B0039E42D /* monarcaverde_1.png in Resources */,
+				CDFA3D9C1FFED061000DDE70 /* sucursales.json in Resources */,
 				CDF43BC51FD1F2760039E42D /* refacciones.png in Resources */,
 				CDF2AB011FCDC89B006B77AF /* productos.png in Resources */,
+				CDFA3D9B1FFED061000DDE70 /* gerentes.json in Resources */,
 				CDBE99421FD65A940053DA11 /* llaveuniversal.png in Resources */,
 				CD057ED91FCF90ED0021EE27 /* soldadura.png in Resources */,
 				CDF43B611FD1F0B70039E42D /* beats_the_nail.png in Resources */,
@@ -1088,12 +1161,21 @@
 			files = (
 				CD057EB31FCF83130021EE27 /* SubCategoria_Class.swift in Sources */,
 				CD1F429F1FCC831F00EEFAE3 /* mainController.swift in Sources */,
+				CDBB45281FFD65F800D2B42B /* dropDownTableView.swift in Sources */,
+				CD7DAC3C2001C97900349A97 /* homeDepotController.swift in Sources */,
 				CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */,
 				CD057EAF1FCF3CE90021EE27 /* subCategorias.swift in Sources */,
+				CD01668F1FFCABF8006F57A0 /* calcController.swift in Sources */,
+				CDFA3D981FFE9C8E000DDE70 /* Calculo_Class.swift in Sources */,
+				CDF8956F1FFFFF71007DE0FC /* Gerente_Class.swift in Sources */,
 				CDF2AB0D1FCDED1A006B77AF /* Category_Class.swift in Sources */,
+				CD7DAC3820015B9200349A97 /* distribuidoresController.swift in Sources */,
+				CDBB45301FFD9B7600D2B42B /* Presentation_Class.swift in Sources */,
 				CD057EDD1FCF94F20021EE27 /* productsCells.swift in Sources */,
 				CD050BD21FC5368A00627300 /* ViewController.swift in Sources */,
 				CDFF127C1FC68E2B00B6EFB0 /* loginController.swift in Sources */,
+				CD7DAC3A2001766900349A97 /* DistribuidoresCell.swift in Sources */,
+				CDBC1F291FDF9F49002DE788 /* ScreenBounds.swift in Sources */,
 				CD057EE11FCFB6910021EE27 /* Product_Class.swift in Sources */,
 				CD057EB11FCF7EA00021EE27 /* subcategoriasCells.swift in Sources */,
 				CD1F429D1FCC828800EEFAE3 /* navMainController.swift in Sources */,
@@ -1102,8 +1184,14 @@
 				CD057EDB1FCF94C80021EE27 /* productsController.swift in Sources */,
 				CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */,
 				CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */,
+				CDF8956D1FFFEF56007DE0FC /* contactoController.swift in Sources */,
+				CDBB45261FFD45D900D2B42B /* fontaneriaController.swift in Sources */,
+				CDD8CE42200015A60000432C /* Distribuidor_Class.swift in Sources */,
 				CD09E9451FCD2D5C00B51B9F /* common.swift in Sources */,
+				CDBB45321FFD9FDA00D2B42B /* Pieza_Class.swift in Sources */,
+				CDBB45241FFD458A00D2B42B /* DropMenuButton.swift in Sources */,
 				CDCE677B1FD72BF100C2971D /* productDetailController.swift in Sources */,
+				CDFA3D9E1FFED108000DDE70 /* Sucursal_Class.swift in Sources */,
 				CD1F42A61FCC866900EEFAE3 /* MenuItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

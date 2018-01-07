@@ -101,29 +101,34 @@ class MenuController: UITableViewController {
  
             self.cur_page = 0
             self.dismiss(animated: true, completion: nil)
+            
+          
+            
             break
         
             
-        case 1: // Log Book
+        case 1: // Tutoriales
             self.dismiss(animated: true, completion: nil)
-            
+            let url = NSURL(string: "https://www.youtube.com/channel/UClb61WrMZ9xT5mMne_-9pMw")!
+            UIApplication.shared.openURL(url as URL)
                        break
             
 
-        case 2: // Show Tips
+        case 2: // Show Calc
             
         self.dismiss(animated: true, completion: nil)
-     //   performSegue(withIdentifier: "showTips", sender: nil)
+        performSegue(withIdentifier: "showCalc", sender: nil)
         self.cur_page = 2
         
             break
    
             
             
-        case 3:  // Show Perfil
+        case 3:  // Show distruibuidores
             self.dismiss(animated: true, completion: nil)
-            self.cur_page = 3
-       //     performSegue(withIdentifier: "showPerfil", sender: nil)
+            performSegue(withIdentifier: "showDistribuidor", sender: nil)
+            self.cur_page = 2
+     
             
             
             break
@@ -141,11 +146,10 @@ class MenuController: UITableViewController {
             
             
             
-        case 5:  // Reporte
+        case 5:  // Contacto
             self.dismiss(animated: true, completion: nil)
-            
-           // UIApplication.shared.openURL(NSURL(string: "http://pgdlweb.piagui.mx:9096/?Encryp=d9c2ba29cf1799e879f74db70142e040")! as URL)
-            
+            performSegue(withIdentifier: "showContacto", sender: nil)
+           
             break
             
             

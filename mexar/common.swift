@@ -11,7 +11,13 @@ import UIKit
 
 class common {
     
-    
+    //screen sizes
+    public static var multiplier: CGFloat = 1.0
+    public static var curScreen: ScreenBounds!
+    public static var curOrientation: String!
+    public static var curScale: CGFloat = 1.0
+    public static var SCREEN_WIDTH: CGFloat = 0
+    public static var SCREEN_HEIGHT: CGFloat = 0
        
     
 }
@@ -49,8 +55,32 @@ extension UIColor
     }
     
     
+    class func mexar_gray1() -> UIColor
+    {
+        return UIColor(red: 93/255, green: 93/255, blue: 93/255, alpha: 1.0)
+    }
+    
     
     
     
 
 }
+
+extension NSMutableAttributedString {
+    @discardableResult func bold(_ text:String) -> NSMutableAttributedString {
+        //let attrs:[String:AnyObject] = [NSFontAttributeName: UIFont(name: "AvenirNext-Medium", size: 14)!]
+        let attrs = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 14), NSForegroundColorAttributeName : UIColor.mexar_gray1()]
+        let boldString = NSMutableAttributedString(string: text, attributes:attrs)
+        self.append(boldString)
+        return self
+    }
+    
+    @discardableResult func normal(_ text:String)->NSMutableAttributedString {
+        let attrs = [NSFontAttributeName : UIFont.systemFont(ofSize: 14)]
+        let normal =  NSMutableAttributedString(string: text, attributes:attrs)
+        self.append(normal)
+        return self
+    }
+}
+
+

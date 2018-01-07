@@ -37,7 +37,8 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.calculateVars()
+        
         // Do any additional setup after loading the view.
         
         let logoImage:UIImage = UIImage(named: "icon_mexar")!
@@ -77,8 +78,9 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         self.scrollView.frame = CGRect(x:0, y:0, width:self.view.frame.width, height:self.scrollView.frame.height)
         
         self.scrollViewWidth = self.scrollView.frame.width
-        self.scrollViewHeight = self.scrollView.frame.height
-        self.scrollViewHeight = 200
+        self.scrollViewHeight = self.scrollView.frame.height * common.curScale
+        self.scrollViewWidth = common.SCREEN_WIDTH
+        self.scrollViewHeight = common.SCREEN_WIDTH * 0.48
         
         self.scrollView.delegate = self
         self.pageController.currentPage = 0
@@ -91,7 +93,7 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         self.tableViewCategorias.dataSource  = self
         
         self.tableViewCategorias.rowHeight = UITableViewAutomaticDimension
-        self.tableViewCategorias.estimatedRowHeight = 80
+        self.tableViewCategorias.estimatedRowHeight = 160
         self.tableViewCategorias.separatorColor = UIColor.clear
         
         
@@ -283,13 +285,13 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         return cell
     }
 
-    /*
+  
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        
-        return 80.0
+        let curCellHeight:CGFloat = common.SCREEN_WIDTH * 0.25
+        return curCellHeight
+        //return 80.0
     }
-    */
+   
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -314,5 +316,131 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
     }
 
+    
+    //// Screen Size
+    
+    func calculateVars()
+    {
+        
+        var deviceType: String = ""
+        var physicalx: Int = 0
+        var physicaly: Int = 0
+        
+        struct ScreenSize
+        {
+            static let SCREEN_WIDTH         = UIScreen.main.bounds.size.width
+            static let SCREEN_HEIGHT        = UIScreen.main.bounds.size.height
+            static let scale                = UIScreen.main.scale
+            static let SCREEN_MAX_LENGTH    = max(ScreenSize.SCREEN_WIDTH, ScreenSize.SCREEN_HEIGHT)
+            static let SCREEN_MIN_LENGTH    = min(ScreenSize.SCREEN_WIDTH, ScreenSize.SCREEN_HEIGHT)
+        }
+        
+        
+        let SCREEN_WIDTH = UIScreen.main.bounds.size.width
+        let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
+        let scale = UIScreen.main.scale
+        
+        //let SCREEN_MAX_LENGTH    = max(SCREEN_WIDTH, SCREEN_HEIGHT)
+        //let SCREEN_MIN_LENGTH    = min(SCREEN_WIDTH, SCREEN_HEIGHT)
+        
+        
+        
+        
+        if (UIDevice.current.userInterfaceIdiom == .pad) {deviceType = "Ipad"}
+        if (UIDevice.current.userInterfaceIdiom == .phone){deviceType = "Iphone"}
+        
+        
+        if (deviceType == "Iphone")
+        {
+            if (SCREEN_HEIGHT == 480 && SCREEN_WIDTH == 320)
+            {
+                // Iphone 4
+                physicalx = 640
+                physicaly = 960
+            }
+            
+            
+            
+            if (SCREEN_HEIGHT == 568 && SCREEN_WIDTH == 320)
+            {
+                // Iphone 5
+                physicalx = 960
+                physicaly = 1136
+            }
+            
+            
+            
+            /*
+             if (ScreenSize.SCREEN_HEIGHT == 320 && ScreenSize.SCREEN_WIDTH == 568)
+             {
+             // Iphone 5
+             self.physicalx = 1136
+             self.physicaly = 640
+             }
+             */
+            
+            
+            if (SCREEN_HEIGHT == 667 && SCREEN_WIDTH == 375)
+            {
+                // Iphone 6
+                physicalx = 750
+                physicaly = 1134
+            }
+            
+            
+            if (SCREEN_HEIGHT == 736 && SCREEN_WIDTH == 414)
+            {
+                // Iphone 6
+                physicalx = 1080
+                physicaly = 1920
+            }
+            
+            
+        }
+        
+        
+        if (deviceType == "Ipad")
+        {
+            
+            if (scale == 1.0)
+            {
+                // Ipad, Ipad2 , Ipad mini
+                
+                physicalx = 760
+                physicaly = 1024
+            }
+            
+            if (scale == 2.0)
+            {
+                // Ipad Air, Ipad Mini Retina
+                
+                physicalx = 1536
+                physicaly = 2048
+            }
+            
+            
+            
+            
+        }
+        
+        common.curScreen = ScreenBounds(newWidth: physicalx, newHeight: physicaly, typeDevice: deviceType)
+        ////
+        
+        //// Multiplier
+        
+        if (deviceType == "Ipad"){ common.multiplier = 2.0}
+        
+        
+        
+        //common.curOrientation = getDeviceOrientation()
+        common.curScale = ScreenSize.scale
+        common.SCREEN_WIDTH = SCREEN_WIDTH
+        common.SCREEN_HEIGHT = SCREEN_HEIGHT
+        
+        
+    }
+    
+    
+    
     
 }

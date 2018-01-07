@@ -13,9 +13,11 @@ class categoriasCells: UITableViewCell {
     @IBOutlet weak var categoria_icon: UIImageView!
     
     @IBOutlet weak var categoria_name: UILabel!
+    //@IBOutlet weak var categoria_desc: UILabel!
+    
+    //@IBOutlet weak var categoria_desc: UITextView!
+    
     @IBOutlet weak var categoria_desc: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
