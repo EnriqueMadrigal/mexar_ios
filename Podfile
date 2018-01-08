@@ -9,6 +9,9 @@ target 'mexar' do
 pod 'SideMenu'
 pod 'Alamofire', '~> 4.4'
 pod 'AlamofireObjectMapper', '~> 4.0'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+pod 'KeychainSwift', '~> 8.0'
 
 
   target 'mexarTests' do

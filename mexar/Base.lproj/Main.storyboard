@@ -787,6 +787,9 @@
                                 <rect key="frame" x="206" y="93" width="65" height="30"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Ver Mapa"/>
+                                <connections>
+                                    <action selector="vermapaclick:" destination="TwR-W4-fD7" eventType="touchUpInside" id="aSt-YJ-ifg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un estado." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xzi-4b-Cik">
                                 <rect key="frame" x="16" y="72" width="168" height="21"/>
@@ -855,11 +858,49 @@
                         <outlet property="btn_estado" destination="4rP-Hi-QTF" id="hxw-f1-QcH"/>
                         <outlet property="tableView_Distribuidores" destination="PDt-IJ-Mfz" id="aL5-5v-cKb"/>
                         <outlet property="tableView_Estados" destination="W5D-9w-cxn" id="P0h-Dg-CWr"/>
+                        <segue destination="58G-IK-K4q" kind="show" identifier="verMapaHomeDepot" id="Rgk-oL-fxA"/>
+                        <segue destination="uty-mU-sml" kind="show" identifier="showMapHomeDepot" id="SFF-ZG-xaX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOa-xO-Zqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="126" y="2009"/>
+        </scene>
+        <!--Google Map2 Controller-->
+        <scene sceneID="Jon-dq-Qxa">
+            <objects>
+                <viewController id="58G-IK-K4q" customClass="googleMap2Controller" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jbe-an-ejN"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWJ-nW-0VK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VRv-XD-T3W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2A6-pX-bne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="2008"/>
+        </scene>
+        <!--Google Map4 Controller-->
+        <scene sceneID="8NM-il-G5z">
+            <objects>
+                <viewController id="uty-mU-sml" customClass="googleMap4Controller" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GLA-dU-UvS"/>
+                        <viewControllerLayoutGuide type="bottom" id="GMX-WH-ce4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HKu-8l-f9i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9S-Ax-0QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="2008"/>
         </scene>
         <!--Distribuidores-->
         <scene sceneID="9bn-pU-9wx">
@@ -1021,6 +1062,9 @@
                                 <rect key="frame" x="206" y="93" width="65" height="30"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Ver Mapa"/>
+                                <connections>
+                                    <action selector="verMapaclick:" destination="ZFE-du-VN6" eventType="touchUpInside" id="ra4-CE-Txc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1047,6 +1091,8 @@
                         <outlet property="btn_estado" destination="CIV-95-C59" id="y5V-BV-MbG"/>
                         <outlet property="tableView_Distribuidores" destination="7Om-ag-App" id="owb-Cw-bww"/>
                         <outlet property="tableView_Estados" destination="f4m-1m-wSq" id="ePN-Jf-afJ"/>
+                        <segue destination="bb6-Hp-LLt" kind="show" identifier="verMapaDistrbuidores" id="EeV-K2-FWb"/>
+                        <segue destination="rl6-qF-Ohx" kind="show" identifier="showMapDistribuidor" id="nZh-sa-UwQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pD-FO-G3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1070,6 +1116,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PBb-TF-jJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-802" y="1687"/>
+        </scene>
+        <!--Google Map1 Controller-->
+        <scene sceneID="rj0-F6-SQB">
+            <objects>
+                <viewController id="bb6-Hp-LLt" customClass="googleMap1Controller" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bRf-ju-Yv3"/>
+                        <viewControllerLayoutGuide type="bottom" id="hBn-EC-2u5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7AB-vx-naN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nif-Bp-yUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="1343"/>
+        </scene>
+        <!--Google Map3 Controller-->
+        <scene sceneID="Frx-WU-LXH">
+            <objects>
+                <viewController id="rl6-qF-Ohx" customClass="googleMap3Controller" customModule="mexar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dm3-S3-3iv"/>
+                        <viewControllerLayoutGuide type="bottom" id="SqK-mN-Yz6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cvn-cd-Hqe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7z-06-R1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="1342"/>
         </scene>
         <!--Contacto Controller-->
         <scene sceneID="spR-3Z-NZl">
@@ -1158,7 +1240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHW-Z6-o03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="1509"/>
+            <point key="canvasLocation" x="2604" y="1521"/>
         </scene>
         <!--Fontaneria Controller-->
         <scene sceneID="rc8-zi-7Ya">

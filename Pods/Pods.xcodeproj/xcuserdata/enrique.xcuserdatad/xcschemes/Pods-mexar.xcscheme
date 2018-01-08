@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F307B92F0D18DB3A4CD29228FCCF074"
+               BlueprintIdentifier = "007107FCA215D9375C5E3447C6BF033F"
                BuildableName = "Pods_mexar.framework"
                BlueprintName = "Pods-mexar"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0F307B92F0D18DB3A4CD29228FCCF074"
+            BlueprintIdentifier = "007107FCA215D9375C5E3447C6BF033F"
             BuildableName = "Pods_mexar.framework"
             BlueprintName = "Pods-mexar"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -53,6 +53,10 @@
 		CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A11FCC865200EEFAE3 /* MenuController.swift */; };
 		CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */; };
 		CD1F42A61FCC866900EEFAE3 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */; };
+		CD4063F120033C7500EEE926 /* googleMap1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4063F020033C7500EEE926 /* googleMap1Controller.swift */; };
+		CD4063F32003466600EEE926 /* googleMap2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4063F22003466600EEE926 /* googleMap2Controller.swift */; };
+		CD4063F5200348B400EEE926 /* googleMap3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4063F4200348B400EEE926 /* googleMap3Controller.swift */; };
+		CD4063F7200348E100EEE926 /* googleMap4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4063F6200348E100EEE926 /* googleMap4Controller.swift */; };
 		CD7DAC3820015B9200349A97 /* distribuidoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DAC3720015B9200349A97 /* distribuidoresController.swift */; };
 		CD7DAC3A2001766900349A97 /* DistribuidoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DAC392001766900349A97 /* DistribuidoresCell.swift */; };
 		CD7DAC3C2001C97900349A97 /* homeDepotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DAC3B2001C97900349A97 /* homeDepotController.swift */; };
@@ -261,6 +265,10 @@
 		CD1F42A11FCC865200EEFAE3 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		CD1F42A31FCC865C00EEFAE3 /* sideBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideBarCell.swift; sourceTree = "<group>"; };
 		CD1F42A51FCC866900EEFAE3 /* MenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		CD4063F020033C7500EEE926 /* googleMap1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMap1Controller.swift; sourceTree = "<group>"; };
+		CD4063F22003466600EEE926 /* googleMap2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMap2Controller.swift; sourceTree = "<group>"; };
+		CD4063F4200348B400EEE926 /* googleMap3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMap3Controller.swift; sourceTree = "<group>"; };
+		CD4063F6200348E100EEE926 /* googleMap4Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMap4Controller.swift; sourceTree = "<group>"; };
 		CD7DAC3720015B9200349A97 /* distribuidoresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = distribuidoresController.swift; sourceTree = "<group>"; };
 		CD7DAC392001766900349A97 /* DistribuidoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistribuidoresCell.swift; sourceTree = "<group>"; };
 		CD7DAC3B2001C97900349A97 /* homeDepotController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeDepotController.swift; sourceTree = "<group>"; };
@@ -705,6 +713,10 @@
 				CDF8956C1FFFEF56007DE0FC /* contactoController.swift */,
 				CD7DAC3720015B9200349A97 /* distribuidoresController.swift */,
 				CD7DAC3B2001C97900349A97 /* homeDepotController.swift */,
+				CD4063F020033C7500EEE926 /* googleMap1Controller.swift */,
+				CD4063F22003466600EEE926 /* googleMap2Controller.swift */,
+				CD4063F4200348B400EEE926 /* googleMap3Controller.swift */,
+				CD4063F6200348E100EEE926 /* googleMap4Controller.swift */,
 			);
 			name = navController;
 			sourceTree = "<group>";
@@ -1071,9 +1083,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mexar/Pods-mexar-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1107,6 +1123,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-mexar/Pods-mexar-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 			);
@@ -1114,6 +1131,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 			);
@@ -1161,10 +1179,12 @@
 			files = (
 				CD057EB31FCF83130021EE27 /* SubCategoria_Class.swift in Sources */,
 				CD1F429F1FCC831F00EEFAE3 /* mainController.swift in Sources */,
+				CD4063F5200348B400EEE926 /* googleMap3Controller.swift in Sources */,
 				CDBB45281FFD65F800D2B42B /* dropDownTableView.swift in Sources */,
 				CD7DAC3C2001C97900349A97 /* homeDepotController.swift in Sources */,
 				CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */,
 				CD057EAF1FCF3CE90021EE27 /* subCategorias.swift in Sources */,
+				CD4063F32003466600EEE926 /* googleMap2Controller.swift in Sources */,
 				CD01668F1FFCABF8006F57A0 /* calcController.swift in Sources */,
 				CDFA3D981FFE9C8E000DDE70 /* Calculo_Class.swift in Sources */,
 				CDF8956F1FFFFF71007DE0FC /* Gerente_Class.swift in Sources */,
@@ -1183,11 +1203,13 @@
 				CDFF127A1FC68D7500B6EFB0 /* navloginController.swift in Sources */,
 				CD057EDB1FCF94C80021EE27 /* productsController.swift in Sources */,
 				CD1F42A41FCC865C00EEFAE3 /* sideBarCell.swift in Sources */,
+				CD4063F7200348E100EEE926 /* googleMap4Controller.swift in Sources */,
 				CD050BD01FC5368A00627300 /* AppDelegate.swift in Sources */,
 				CDF8956D1FFFEF56007DE0FC /* contactoController.swift in Sources */,
 				CDBB45261FFD45D900D2B42B /* fontaneriaController.swift in Sources */,
 				CDD8CE42200015A60000432C /* Distribuidor_Class.swift in Sources */,
 				CD09E9451FCD2D5C00B51B9F /* common.swift in Sources */,
+				CD4063F120033C7500EEE926 /* googleMap1Controller.swift in Sources */,
 				CDBB45321FFD9FDA00D2B42B /* Pieza_Class.swift in Sources */,
 				CDBB45241FFD458A00D2B42B /* DropMenuButton.swift in Sources */,
 				CDCE677B1FD72BF100C2971D /* productDetailController.swift in Sources */,
@@ -1349,7 +1371,7 @@
 				INFOPLIST_FILE = mexar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datalabor.mexar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1364,7 +1386,7 @@
 				INFOPLIST_FILE = mexar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = datalabor.mexar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datalabor.mexar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -58,15 +58,26 @@ class homeDepotController: UIViewController , UITableViewDelegate,  UITableViewD
     }
     
     
-    /*
+ 
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showMapHomeDepot"{
+            
+            if let curDistribuidor = sender as! Distribuidor_Class?{
+                
+                let googlemapView = segue.destination as! googleMap4Controller
+                googlemapView.curDistribuidor = curDistribuidor
+                
+            }
+        }
+        
      }
-     */
+    
     /*
     @IBAction func btn_estado_click(_ sender: Any) {
         self.tableView_Estados.isHidden = !self.tableView_Estados.isHidden
@@ -258,22 +269,13 @@ class homeDepotController: UIViewController , UITableViewDelegate,  UITableViewD
             self.tableView_Distribuidores.setContentOffset(CGPoint.zero, animated: false)
             self.tableView_Distribuidores.isHidden = false
         }
-        /*
-         if (tableView == self.piezaTable)
-         {
-         
-         let curPieza = piezas[indexPath.row]
-         self.cur_pza = indexPath.row + 1
-         
-         UIView.performWithoutAnimation {
-         self.btn_pieza.setTitle(curPieza.getName(), for: .normal)
-         self.btn_pieza.layoutIfNeeded()
-         }
-         self.piezaTable.isHidden = true
-         
-         
-         }
-         */
+        
+        if (tableView == self.tableView_Distribuidores)
+        {
+            let curDistribuidor = distribuidores_mostrar[indexPath.row]
+            performSegue(withIdentifier: "showMapHomeDepot", sender: curDistribuidor)
+            
+        }
         
     }
     
@@ -313,6 +315,12 @@ class homeDepotController: UIViewController , UITableViewDelegate,  UITableViewD
         
     }
     
+    @IBAction func vermapaclick(_ sender: Any) {
+        
+        //
+        
+         performSegue(withIdentifier: "verMapaHomeDepot", sender: nil)
+    }
     
 }
 
