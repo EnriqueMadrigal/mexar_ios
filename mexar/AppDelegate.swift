@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -36,6 +37,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    //this function is added only
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url as URL!,
+                                                 sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -77,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else if (notificationName == "logoutNT")
         {
             debugPrint("logoutNT")
-         //  self.deauth()
+           self.deauth()
             
         }
         
@@ -90,22 +98,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func auth() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
+        let curUserName = Utils.getStringKey(namekey: common.VAR_USER_NAME)
+    
         
-      //  let curUID = Utils.getStringKey(namekey: "piagi_uid")
-        
-     //   if (!curUID.isEmpty) // Ya existe la información copiala a commonCopia la información a common.
-     //   {
-     //       common.curUserData = Utils.getUserInfo()
-     //       self.app(sb: sb)
-     //   }
+        if (!curUserName.isEmpty) // Ya existe la información copiala a commonCopia la información a common.
+        {
+           // common.curUserData = Utils.getUserInfo()
+            self.mainWindow(sb: sb)
+        }
             
             
             
-      //  else  // De lo contrario hacer el login.
-      //  {
-            //self.login(sb: sb)
-        self.mainWindow(sb: sb)
-      //  }
+        else  // De lo contrario hacer el login.
+        {
+           self.login(sb: sb)
+          }
         
         
         
@@ -139,5 +146,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
+    
+    func deauth(){
+        
+       Utils.removeUserInfo()
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        self.login(sb: sb)
+        
+    }
+    
+    
 }
 

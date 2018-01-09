@@ -215,4 +215,27 @@ class contactoController: UIViewController {
         
     }
     
+    
+    @IBAction func btn_emailclick(_ sender: Any) {
+        let email = "ventas.mexar@conquestind.com.mx"
+        if let url = URL(string: "mailto:\(email)") {
+            UIApplication.shared.openURL(url as URL)
+        }
+        
+        
+    }
+    
+   
+    @IBAction func btn_callclick(_ sender: Any) {
+        
+        let phoneNumber:String = "33"
+        if let phoneCallURL = URL(string: "tel://\(phoneNumber)") {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                UIApplication.shared.openURL(phoneCallURL as URL)
+                //application.open(phoneCallURL, options:an [:], completionHandler: nil)
+            }
+        }
+    }
 }

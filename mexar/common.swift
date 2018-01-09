@@ -18,7 +18,12 @@ class common {
     public static var curScale: CGFloat = 1.0
     public static var SCREEN_WIDTH: CGFloat = 0
     public static var SCREEN_HEIGHT: CGFloat = 0
-       
+    
+    public static var VAR_USER_NAME: String = "USER_NAME"
+    public static var VAR_LOGIN_TYPE: String = "LOGIN_TYPE"
+    public static var VAR_USER_EMAIL: String = "USER_EMAIL"
+    
+    public static var API_URL_BASE: String = "http://104.131.34.72/backend/appserver/public/index.php/api/"
     
 }
 

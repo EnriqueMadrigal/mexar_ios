@@ -35,6 +35,7 @@ class googleMap2Controller: UIViewController {
             marker.position = CLLocationCoordinate2D(latitude: curDistribuidor.getLat(), longitude: curDistribuidor.getLng())
             marker.title = curDistribuidor.getName()
             marker.snippet = curDistribuidor.getComercial_Name()
+            marker.icon = UIImage(named: "home_depot_marker")
             marker.map = mapView
             
             

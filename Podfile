@@ -11,6 +11,8 @@ pod 'Alamofire', '~> 4.4'
 pod 'AlamofireObjectMapper', '~> 4.0'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
+pod 'Google/SignIn'
+#pod 'GoogleSignIn'
 pod 'KeychainSwift', '~> 8.0'
 
 

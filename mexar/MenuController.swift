@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import GoogleSignIn
 
 
 class MenuController: UITableViewController {
@@ -21,6 +22,8 @@ class MenuController: UITableViewController {
 
     
     var cur_page: (Int) = 0
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -156,16 +159,20 @@ class MenuController: UITableViewController {
         case 6:  // Cerrar Sessión
            
             self.dismiss(animated: true, completion: nil)
+           // NotificationCenter.default.post(name: self.notificationName2, object: nil)
+            let loginType: String = Utils.getStringKey(namekey: common.VAR_LOGIN_TYPE)
             
-            
-         /*
+            if (loginType == "google"){
+                GIDSignIn.sharedInstance().signOut()
+            }
+         
              let when = DispatchTime.now() + 2 // change 2 to desired number of seconds
              DispatchQueue.main.asyncAfter(deadline: when) {  // Tiempo para permitir al menu que se cierre
                 // Your code with delay
                 NotificationCenter.default.post(name: self.notificationName2, object: nil)
                 
             }
-           */
+           
             
         break
              

@@ -35,6 +35,7 @@ class googleMap1Controller: UIViewController {
             marker.position = CLLocationCoordinate2D(latitude: curDistribuidor.getLat(), longitude: curDistribuidor.getLng())
             marker.title = curDistribuidor.getName()
             marker.snippet = curDistribuidor.getComercial_Name()
+            marker.icon = UIImage(named: "mexar_marker")
             marker.map = mapView
             
             

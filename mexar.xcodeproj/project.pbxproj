@@ -47,6 +47,7 @@
 		CD057EDD1FCF94F20021EE27 /* productsCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EDC1FCF94F20021EE27 /* productsCells.swift */; };
 		CD057EDF1FCFB63A0021EE27 /* productos.json in Resources */ = {isa = PBXBuildFile; fileRef = CD057EDE1FCFB63A0021EE27 /* productos.json */; };
 		CD057EE11FCFB6910021EE27 /* Product_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD057EE01FCFB6910021EE27 /* Product_Class.swift */; };
+		CD085C402003E3E900C52F3C /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD085C3F2003E3E900C52F3C /* utils.swift */; };
 		CD09E9451FCD2D5C00B51B9F /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09E9441FCD2D5C00B51B9F /* common.swift */; };
 		CD1F429D1FCC828800EEFAE3 /* navMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F429C1FCC828800EEFAE3 /* navMainController.swift */; };
 		CD1F429F1FCC831F00EEFAE3 /* mainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F429E1FCC831F00EEFAE3 /* mainController.swift */; };
@@ -85,6 +86,9 @@
 		CDCE677B1FD72BF100C2971D /* productDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE677A1FD72BF100C2971D /* productDetailController.swift */; };
 		CDD8CE402000153E0000432C /* distribuidores.json in Resources */ = {isa = PBXBuildFile; fileRef = CDD8CE3F2000153E0000432C /* distribuidores.json */; };
 		CDD8CE42200015A60000432C /* Distribuidor_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD8CE41200015A60000432C /* Distribuidor_Class.swift */; };
+		CDDEBB822004533000E7B81D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDEBB812004533000E7B81D /* GoogleService-Info.plist */; };
+		CDDEBB832004533000E7B81D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDEBB812004533000E7B81D /* GoogleService-Info.plist */; };
+		CDDEBB842004533000E7B81D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDEBB812004533000E7B81D /* GoogleService-Info.plist */; };
 		CDF2AB011FCDC89B006B77AF /* productos.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB001FCDC89B006B77AF /* productos.png */; };
 		CDF2AB051FCDC8D9006B77AF /* banner1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB021FCDC8D9006B77AF /* banner1.png */; };
 		CDF2AB061FCDC8D9006B77AF /* banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF2AB031FCDC8D9006B77AF /* banner2.png */; };
@@ -259,6 +263,7 @@
 		CD057EDC1FCF94F20021EE27 /* productsCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productsCells.swift; sourceTree = "<group>"; };
 		CD057EDE1FCFB63A0021EE27 /* productos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = productos.json; sourceTree = "<group>"; };
 		CD057EE01FCFB6910021EE27 /* Product_Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product_Class.swift; sourceTree = "<group>"; };
+		CD085C3F2003E3E900C52F3C /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		CD09E9441FCD2D5C00B51B9F /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		CD1F429C1FCC828800EEFAE3 /* navMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navMainController.swift; sourceTree = "<group>"; };
 		CD1F429E1FCC831F00EEFAE3 /* mainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
@@ -297,6 +302,7 @@
 		CDCE677A1FD72BF100C2971D /* productDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailController.swift; sourceTree = "<group>"; };
 		CDD8CE3F2000153E0000432C /* distribuidores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = distribuidores.json; sourceTree = "<group>"; };
 		CDD8CE41200015A60000432C /* Distribuidor_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distribuidor_Class.swift; sourceTree = "<group>"; };
+		CDDEBB812004533000E7B81D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDF2AB001FCDC89B006B77AF /* productos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = productos.png; sourceTree = "<group>"; };
 		CDF2AB021FCDC8D9006B77AF /* banner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner1.png; sourceTree = "<group>"; };
 		CDF2AB031FCDC8D9006B77AF /* banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner2.png; sourceTree = "<group>"; };
@@ -444,6 +450,7 @@
 		CD050BC31FC5368A00627300 = {
 			isa = PBXGroup;
 			children = (
+				CDDEBB812004533000E7B81D /* GoogleService-Info.plist */,
 				CD050BCE1FC5368A00627300 /* mexar */,
 				CD050BE31FC5368A00627300 /* mexarTests */,
 				CD050BEE1FC5368A00627300 /* mexarUITests */,
@@ -480,6 +487,7 @@
 				CD050BD81FC5368A00627300 /* LaunchScreen.storyboard */,
 				CD050BDB1FC5368A00627300 /* Info.plist */,
 				CD09E9441FCD2D5C00B51B9F /* common.swift */,
+				CD085C3F2003E3E900C52F3C /* utils.swift */,
 			);
 			path = mexar;
 			sourceTree = "<group>";
@@ -930,6 +938,7 @@
 				CD057EDF1FCFB63A0021EE27 /* productos.json in Resources */,
 				CDF43B771FD1F0B70039E42D /* electronica.png in Resources */,
 				CDBE99471FD65A940053DA11 /* juegos_silicona.png in Resources */,
+				CDDEBB822004533000E7B81D /* GoogleService-Info.plist in Resources */,
 				CDF43B741FD1F0B70039E42D /* cuerdasierra.png in Resources */,
 				CDF43B621FD1F0B70039E42D /* borlapvc.png in Resources */,
 				CDBE99431FD65A940053DA11 /* kits_detail.png in Resources */,
@@ -998,6 +1007,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDEBB832004533000E7B81D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,6 +1015,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDEBB842004533000E7B81D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,6 +1097,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-mexar/Pods-mexar-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1123,6 +1135,9 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-mexar/Pods-mexar-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
@@ -1131,6 +1146,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
@@ -1183,6 +1201,7 @@
 				CDBB45281FFD65F800D2B42B /* dropDownTableView.swift in Sources */,
 				CD7DAC3C2001C97900349A97 /* homeDepotController.swift in Sources */,
 				CD1F42A21FCC865200EEFAE3 /* MenuController.swift in Sources */,
+				CD085C402003E3E900C52F3C /* utils.swift in Sources */,
 				CD057EAF1FCF3CE90021EE27 /* subCategorias.swift in Sources */,
 				CD4063F32003466600EEE926 /* googleMap2Controller.swift in Sources */,
 				CD01668F1FFCABF8006F57A0 /* calcController.swift in Sources */,
