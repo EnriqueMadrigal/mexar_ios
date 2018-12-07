@@ -11,6 +11,7 @@ import ObjectMapper
 
 class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSource {
 
+     public weak var delegate: SubCategoriesDelegate?
     @IBOutlet weak var tableViewSubCategorias: UITableView!
     
     public var curCategoria: Int!
@@ -26,12 +27,13 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         self.tableViewSubCategorias.dataSource  = self
         
         //self.tableViewSubCategorias.rowHeight = UITableViewAutomaticDimension
-        self.tableViewSubCategorias.estimatedRowHeight = 180
+        self.tableViewSubCategorias.estimatedRowHeight = 100
         self.tableViewSubCategorias.separatorColor = UIColor.clear
 
         
-        let logoImage:UIImage = UIImage(named: "icon_mexar")!
-        self.navigationItem.titleView = UIImageView(image: logoImage)
+       // let logoImage:UIImage = UIImage(named: "icon_mexar")!
+        //self.navigationItem.titleView = UIImageView(image: logoImage)
+        //self.navigationController!.navigationBar.topItem!.title = "Regresar"
         
         self.subcategorias = [SubCategory_Class]()
         getSubCategories()
@@ -152,10 +154,10 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         
         let filename: String = cur_category.getResName()
         
-        let bundlePath = Bundle.main.path(forResource: filename, ofType: "png")
+        //let bundlePath = Bundle.main.path(forResource: filename, ofType: "png")
+        let imageNoDisp = UIImage(named: filename)
         
-        if ((bundlePath) != nil){
-            let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
+        if ((imageNoDisp) != nil){
             cell.icon_subcategoria.image = imageNoDisp
             
         }
@@ -163,9 +165,7 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         else
         {
             
-            let bundlePath = Bundle.main.path(forResource: "no_disponible", ofType: "png")
-            let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
-            cell.icon_subcategoria.image = imageNoDisp
+            cell.icon_subcategoria.image = UIImage(named: "placeholder")
             
         }
         
@@ -175,11 +175,11 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
     }
    
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            let curImageWidth: CGFloat = common.SCREEN_WIDTH * 0.65
-            let curImageHeight: CGFloat = (curImageWidth * 0.55) + 18
+         //   let curImageWidth: CGFloat = common.SCREEN_WIDTH * 0.45
+       //     let curImageHeight: CGFloat = (curImageWidth * 0.55) + 18
             
-       return curImageHeight
-     //return 180.0
+     //  return curImageHeight
+     return 100.0
      }
   
     
@@ -197,10 +197,10 @@ class subCategorias: UIViewController,  UITableViewDelegate,  UITableViewDataSou
         
         debugPrint("Se seleecion \(curCategoria.getId())")
         
-        performSegue(withIdentifier: "showProducts", sender: curId)
+        //performSegue(withIdentifier: "showProducts", sender: curId)
+        delegate?.showSubCategoria(subCat: curId)
         
-        
-        //        performSegue(withIdentifier: "showWebContent", sender: curPath)
+      
         
         
         

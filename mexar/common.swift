@@ -24,6 +24,15 @@ class common {
     public static var VAR_USER_EMAIL: String = "USER_EMAIL"
     
     public static var API_URL_BASE: String = "http://104.131.34.72/backend/appserver/public/index.php/api/"
+    private static var curUserName: String = ""
+    
+    public static func setUserName(newName :String){
+    self.curUserName = newName
+    }
+    
+    public static func getUserName()->String {
+        return self.curUserName
+    }
     
 }
 

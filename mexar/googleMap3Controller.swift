@@ -21,6 +21,9 @@ class googleMap3Controller: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+       // let logoImage:UIImage = UIImage(named: "icon_mexar")!
+       // self.navigationItem.titleView = UIImageView(image: logoImage)
+        //self.navigationController!.navigationBar.topItem!.title = "Regresar"
         
         if ((curDistribuidor) != nil)
         {

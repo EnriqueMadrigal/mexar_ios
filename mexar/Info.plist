@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>2.7</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -28,13 +28,26 @@
 				<string>com.googleusercontent.apps.977660917579-odo8gkf3a0d2mt3mn4s1eq4nse6bsil3</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb124155868271692</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0</string>
+	<key>FacebookAppID</key>
+	<string>124155868271692</string>
+	<key>FacebookDisplayName</key>
+	<string>Mexar App</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechromes</string>
 		<string>comgooglemaps</string>
+		<string>fbauth2</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -63,6 +76,8 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Esta aplicación utiliza la camara para el scaner y realidad aumentada</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>$(PRODUCT_NAME) location use.</string>
 	<key>UILaunchStoryboardName</key>

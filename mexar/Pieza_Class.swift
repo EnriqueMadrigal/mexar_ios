@@ -16,20 +16,22 @@ class Pieza_Class{
     private var _id: Int = 0
     private var _name: String = ""
     private var _resname: String = ""
+    private var _productos: [Int] = []
     
     init()
     {
-        
+        self._productos = [Int] ()
     }
     
     public func setId(id: Int){self._id = id}
     public func setName(name: String){self._name = name}
     public func setResName(resname: String){self._resname = resname}
+    public func setProductos(datos: [Int]) {self._productos = datos}
     
     public func getId()->Int {return self._id}
     public func getName()->String {return self._name}
     public func getResName()->String {return self._resname}
-    
+    public func getProductos()->[Int] {return self._productos}
     
 }
 
@@ -69,6 +71,7 @@ class Pieza_Data: Mappable{
     var name: String?
     var id: Int?
     var resname: String?
+    var productos: [Int]?
     
     required init?(map: Map){
         
@@ -79,6 +82,7 @@ class Pieza_Data: Mappable{
         self.name <- map["name"]
         self.id <- map["id"]
         self.resname <- map["resname"]
+        self.productos <- map["productos"]
     }
     
     

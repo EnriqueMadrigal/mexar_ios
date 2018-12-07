@@ -9,6 +9,8 @@
 import UIKit
 import UserNotifications
 import GoogleSignIn
+import FacebookCore
+import FacebookLogin
 
 
 class MenuController: UITableViewController {
@@ -18,7 +20,7 @@ class MenuController: UITableViewController {
     
     let notificationName1 = Notification.Name("loginNT")
     let notificationName2 = Notification.Name("logoutNT")
-    let notificationName3 = Notification.Name("updateApp")
+    let notificationName3 = Notification.Name("showMain")
 
     
     var cur_page: (Int) = 0
@@ -154,9 +156,29 @@ class MenuController: UITableViewController {
             performSegue(withIdentifier: "showContacto", sender: nil)
            
             break
+        
+            
+        case 6:  // Escanner
+            self.dismiss(animated: true, completion: nil)
+            
+            if #available(iOS 11.3, *){
+            performSegue(withIdentifier: "showAr", sender: nil)
+            }
+            
+            break
+            
+        case 7:  // Escanner barras
+            self.dismiss(animated: true, completion: nil)
+            
+           
+                performSegue(withIdentifier: "showBarCode", sender: nil)
+          
+            
+            break
             
             
-        case 6:  // Cerrar Sessión
+            
+        case 8:  // Cerrar Sessión
            
             self.dismiss(animated: true, completion: nil)
            // NotificationCenter.default.post(name: self.notificationName2, object: nil)
@@ -166,6 +188,13 @@ class MenuController: UITableViewController {
                 GIDSignIn.sharedInstance().signOut()
             }
          
+            if (loginType == "facebook"){
+                let loginManager = LoginManager()
+                loginManager.logOut()
+                
+            }
+            
+            
              let when = DispatchTime.now() + 2 // change 2 to desired number of seconds
              DispatchQueue.main.asyncAfter(deadline: when) {  // Tiempo para permitir al menu que se cierre
                 // Your code with delay

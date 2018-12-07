@@ -1,0 +1,38 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "resources" : [
+    {
+      "filename" : "Book.arreferenceimage"
+    },
+    {
+      "filename" : "Contact202.arreferenceimage"
+    },
+    {
+      "filename" : "Contact204.arreferenceimage"
+    },
+    {
+      "filename" : "Contact205.arreferenceimage"
+    },
+    {
+      "filename" : "Contact206.arreferenceimage"
+    },
+    {
+      "filename" : "Contact212.arreferenceimage"
+    },
+    {
+      "filename" : "Contact216.arreferenceimage"
+    },
+    {
+      "filename" : "Contact222.arreferenceimage"
+    },
+    {
+      "filename" : "Contact227.arreferenceimage"
+    },
+    {
+      "filename" : "Contact244.arreferenceimage"
+    }
+  ]
+}

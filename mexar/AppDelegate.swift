@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Google
 import GoogleMaps
 import GooglePlaces
 import GoogleSignIn
+import FacebookCore
+import FacebookLogin
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,18 +23,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let notificationName1 = Notification.Name("loginNT")
     let notificationName2 = Notification.Name("logoutNT")
-    let notificationName3 = Notification.Name("wakeApp")
+    let notificationName3 = Notification.Name("showMain")
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo
+        var configureError: NSError?
         
         GMSServices.provideAPIKey("AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo")
         GMSPlacesClient.provideAPIKey("AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo")
         
+        
+        GGLContext.sharedInstance().configureWithError(&configureError)
+      
+        
+
+       //assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
+        
+        FacebookCore.SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        
         NotificationCenter.default.addObserver(self, selector: #selector(self.loginNTF), name: notificationName1, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.loginNTF), name: notificationName2, object: nil)
+         NotificationCenter.default.addObserver(self, selector: #selector(self.loginNTF), name: notificationName3, object: nil)
         
         
         self.auth()
@@ -38,9 +55,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     //this function is added only
+    /*
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url as URL!,
                                                  sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        if (url.absoluteString.range(of:"FACEBOOK_ID") != nil)  {
+            return FacebookCore.SDKApplicationDelegate.shared.application(_:open:options:)
+            
+            return FacebookCore.SDKApplicationDelegate.shared.application(app, open: url as URL, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation] ?? [])
+           
+        }
+        else {
+            return GIDSignIn.sharedInstance().handle(url as URL!,
+                                                     sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation]) }
+    }
+    */
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        debugPrint("applation")
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    
+        if (url.absoluteString.hasPrefix("fb"))  {
+        return SDKApplicationDelegate.shared.application(app, open: url, options: options)
+        }
+        
+        else {
+            return GIDSignIn.sharedInstance().handle(url as URL?,
+                                                     sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        }
+    
     }
     
     
@@ -71,7 +121,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         debugPrint(notification.name)
         
-        let notificationName: String = notification.name._rawValue as String
+       // let notificationName: String = notification.name._rawValue as String
+        let notificationName: String = notification.name.rawValue as String
         
         if ( notificationName == "loginNT")
         {
@@ -89,6 +140,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
+     
+        else if (notificationName == "showMain")
+        {
+            //debugPrint("logoutNT")
+            //self.mainWindow(sb: sb)
+            self.showMainWindow()
+            
+        }
+        
         
     }
     
@@ -99,20 +159,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
         let curUserName = Utils.getStringKey(namekey: common.VAR_USER_NAME)
-    
+      
         
         if (!curUserName.isEmpty) // Ya existe la información copiala a commonCopia la información a common.
         {
            // common.curUserData = Utils.getUserInfo()
-            self.mainWindow(sb: sb)
+            //self.mainWindow(sb: sb)
+            self.showPre(sb: sb)
+            return
         }
             
-            
-            
-        else  // De lo contrario hacer el login.
+        if (common.getUserName() == "anonymous") // Ya existe la información copiala a commonCopia la información a common.
         {
-           self.login(sb: sb)
-          }
+            // common.curUserData = Utils.getUserInfo()
+            //self.mainWindow(sb: sb)
+            self.showPre(sb: sb)
+            return
+        }
+            
+          self.login(sb: sb)
+        
         
         
         
@@ -137,7 +203,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func mainWindow(sb: UIStoryboard){
         
-        let mainController = sb.instantiateViewController(withIdentifier: "mainController")
+        //let mainController = sb.instantiateViewController(withIdentifier: "mainController")
+        let mainController = sb.instantiateViewController(withIdentifier: "mainTabviewController")
+        
         let NavMainController: navMainController = navMainController(rootViewController: mainController)
         NavMainController.setToolbarHidden(true, animated: false)
         
@@ -145,6 +213,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
     }
+    
+    func showPre(sb: UIStoryboard){
+        
+        let mainController = sb.instantiateViewController(withIdentifier: "presentationController")
+        let NavMainController: navPresentationController = navPresentationController(rootViewController: mainController)
+        NavMainController.setToolbarHidden(true, animated: false)
+        
+        self.window?.rootViewController = NavMainController
+        self.window?.makeKeyAndVisible()
+        
+    }
+    
+    
+    func showMainWindow(){
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        self.mainWindow(sb: sb)
+        
+        
+    }
+    
 
     
     func deauth(){
@@ -156,6 +244,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.login(sb: sb)
         
     }
+    // Extra
+    
+
     
     
 }

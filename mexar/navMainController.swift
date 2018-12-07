@@ -15,8 +15,11 @@ class navMainController: UINavigationController {
 
         // Do any additional setup after loading the view.
         
-        self.navigationBar.barTintColor = UIColor.mexar_blue1()
-        self.navigationBar.tintColor = UIColor.mexar_white()
+       // self.navigationBar.barTintColor = UIColor.mexar_blue1()
+      //  self.navigationBar.tintColor = UIColor.mexar_white()
+        
+        self.navigationBar.barTintColor = UIColor.mexar_white()
+        self.navigationBar.tintColor = UIColor.mexar_blue1()
         self.navigationBar.isTranslucent = false;
 
     }

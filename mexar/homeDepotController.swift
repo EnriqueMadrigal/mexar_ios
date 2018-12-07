@@ -30,8 +30,9 @@ class homeDepotController: UIViewController , UITableViewDelegate,  UITableViewD
         
         // Do any additional setup after loading the view.
         
-        let logoImage:UIImage = UIImage(named: "icon_mexar")!
-        self.navigationItem.titleView = UIImageView(image: logoImage)
+       // let logoImage:UIImage = UIImage(named: "icon_mexar")!
+       // self.navigationItem.titleView = UIImageView(image: logoImage)
+       // self.navigationController!.navigationBar.topItem!.title = "Regresar"
         
         self.tableView_Estados.delegate = self
         self.tableView_Estados.dataSource = self

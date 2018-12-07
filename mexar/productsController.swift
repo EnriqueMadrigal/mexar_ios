@@ -11,9 +11,11 @@ import ObjectMapper
 
 class productsController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
 
+      public weak var delegate: ProductDelegate?
     @IBOutlet weak var tableViewProducts: UITableView!
     
      public var curSubCategoria: Int!
+    public var curBusqueda: String!
     
     var products: [Product_Class] = []
     
@@ -30,12 +32,18 @@ class productsController: UIViewController, UITableViewDelegate,  UITableViewDat
         self.tableViewProducts.separatorColor = UIColor.clear
         
         
-        let logoImage:UIImage = UIImage(named: "icon_mexar")!
-        self.navigationItem.titleView = UIImageView(image: logoImage)
+        //let logoImage:UIImage = UIImage(named: "icon_mexar")!
+        //self.navigationItem.titleView = UIImageView(image: logoImage)
+        //self.navigationController!.navigationBar.topItem!.title = "Regresar"
         
         self.products = [Product_Class]()
+        if (curBusqueda != nil)
+        {
+         getProductsSearch(searchString: curBusqueda)
+        }
+        else{
         getProducts()
-
+        }
         
         
         
@@ -115,6 +123,9 @@ class productsController: UIViewController, UITableViewDelegate,  UITableViewDat
                         newProduct.setVentajas(datos: cur_product_data.ventajas!)
                         newProduct.setUsos(datos: cur_product_data.usos!)
                         newProduct.setNota(dato: cur_product_data.nota!)
+                        newProduct.setSeguridades(datos: cur_product_data.seguridades!)
+                        newProduct.setPrecauciones(dato: cur_product_data.precauciones!)
+                        newProduct.setAlmacenaje(dato: cur_product_data.almacen!)
                         
                         
                         if (SubCategoria == self.curSubCategoria)
@@ -141,6 +152,82 @@ class productsController: UIViewController, UITableViewDelegate,  UITableViewDat
         }
     }
 
+    
+    func getProductsSearch(searchString :String)
+    {
+        
+        self.products.removeAll()
+        
+        if let bundlePath = Bundle.main.url(forResource: "productos", withExtension: "json"){
+            do {
+                //let data = try Data(contentsOf: bundlePath)
+                let text2 = try String(contentsOf: bundlePath, encoding: .utf8)
+                
+                
+                
+                //////
+                
+                let list: Array<Productos> = Mapper<Productos>().mapArray(JSONString: text2)!
+                let curProducts: Array<Producto> = (list.first?.productos)!
+                
+                for curProduct: Producto in curProducts{
+                    
+                    if let cur_product_data = curProduct.producto{
+                        
+                        
+                        let newProduct = Product_Class()
+                        newProduct.setId(dato: cur_product_data.id!)
+                        newProduct.setName(dato: cur_product_data.name!)
+                        newProduct.setIdSubCategoria(dato: cur_product_data.idsubcategoria!)
+                        newProduct.setDesc(dato: cur_product_data.desc!)
+                        newProduct.setDesc_Completa(dato: cur_product_data.desc_completa!)
+                        newProduct.setPresentaciones(datos: cur_product_data.presentaciones!)
+                        newProduct.setImages(datos: cur_product_data.images!)
+                        newProduct.setResName(dato: cur_product_data.resname!)
+                        newProduct.setFichaTecnica(dato: cur_product_data.ficha_tecnica!)
+                        newProduct.setRedes(dato: cur_product_data.redes!)
+                        newProduct.setAplicaciones(datos: cur_product_data.aplicaciones!)
+                        newProduct.setEspecificaciones(datos: cur_product_data.especificaciones!)
+                        newProduct.setCaracteristicas(datos: cur_product_data.caracteristicas!)
+                        newProduct.setColors(datos: cur_product_data.colors!)
+                        newProduct.setAdhieres(datos: cur_product_data.adhieres!)
+                        newProduct.setVentajas(datos: cur_product_data.ventajas!)
+                        newProduct.setUsos(datos: cur_product_data.usos!)
+                        newProduct.setNota(dato: cur_product_data.nota!)
+                        
+                        
+                        let busqueda1 = cur_product_data.name!
+                        let busqueda2 = cur_product_data.desc_completa!
+                        
+                        let busqueda1l = busqueda1.lowercased()
+                        let busqueda2l = busqueda2.lowercased()
+                        let busquedaActual = searchString.lowercased()
+                    
+                        
+                        if ((busqueda1l.range(of: busquedaActual) != nil) || (busqueda2l.range(of: busquedaActual) != nil)) {
+                            self.products.append(newProduct)
+                            
+                        }
+                        
+                        
+                        
+                    }
+                    
+                }
+                
+                ////
+                
+            }
+                
+            catch {
+                print(error)
+                return
+            }
+            
+            
+            
+        }
+    }
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -172,10 +259,11 @@ class productsController: UIViewController, UITableViewDelegate,  UITableViewDat
         
         let filename = cur_product.getResName()
         
-        let bundlePath = Bundle.main.path(forResource: filename, ofType: "png")
+       // let bundlePath = Bundle.main.path(forResource: filename, ofType: "png")
         
-        if ((bundlePath) != nil){
-            let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
+        let imageNoDisp = UIImage(named: filename)
+        
+        if ((imageNoDisp) != nil){
             cell.product_image.image = imageNoDisp
             
         }
@@ -183,9 +271,7 @@ class productsController: UIViewController, UITableViewDelegate,  UITableViewDat
         else
         {
             
-            let bundlePath = Bundle.main.path(forResource: "no_disponible", ofType: "png")
-            let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
-            cell.product_image.image = imageNoDisp
+            cell.product_image.image = UIImage(named: "placeholder")
             
         }
         
@@ -214,10 +300,10 @@ class productsController: UIViewController, UITableViewDelegate,  UITableViewDat
         
         debugPrint("Se seleecion \(curProduct.getId())")
         
-        performSegue(withIdentifier: "showProductDetail", sender: curProduct)
+        //performSegue(withIdentifier: "showProductDetail", sender: curProduct)
         
-        
-        //        performSegue(withIdentifier: "showWebContent", sender: curPath)
+        delegate?.showProduct(curProduct: curProduct)
+       
         
         
         

@@ -11,75 +11,18 @@ import ObjectMapper
 
 class contactoController: UIViewController {
 
-    @IBOutlet weak var labelSucursal: UILabel!
-    @IBOutlet weak var labelGerente: UILabel!
+   
     
-    private var sucursales: [Sucursal_Class] = []
-    private var gerentes: [Gerente_Class] = []
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let logoImage:UIImage = UIImage(named: "icon_mexar")!
-        self.navigationItem.titleView = UIImageView(image: logoImage)
+        //let logoImage:UIImage = UIImage(named: "icon_mexar")!
+        //self.navigationItem.titleView = UIImageView(image: logoImage)
+        //self.navigationController!.navigationBar.topItem!.title = "Regresar"
         
-        getSucursales()
-        getGerentes()
-        
-        let formatedString = NSMutableAttributedString()
-        
-        for curSucursal: Sucursal_Class in self.sucursales{
-            
-            let formatedStr = NSMutableAttributedString()
-            formatedStr
-                .bold(curSucursal.getName())
-                .normal("\n")
-                .normal(curSucursal.getDireccion())
-                .normal("\n")
-                .normal(curSucursal.getColonia())
-                .normal(curSucursal.getMunicipio())
-                .normal("\n")
-                .normal(curSucursal.getCiudad())
-                .normal("\n")
-                .normal(curSucursal.getPhone())
-                .normal("\n\n")
-            
-            
-            
-            formatedString.append(formatedStr)
-            
-        }
-        
-        
-        labelSucursal.attributedText = formatedString
-        
-        
-        let formatedString2 = NSMutableAttributedString()
-        
-        for curGerente: Gerente_Class in self.gerentes{
-            
-            let formatedStr = NSMutableAttributedString()
-            formatedStr
-                .bold(curGerente.getName())
-                .normal("\n")
-                .normal(curGerente.getTitle())
-                .normal("\n")
-                .normal(curGerente.getEmail())
-                .normal("\n")
-                .normal(curGerente.getPhone())
-                .normal("\n")
-                .normal(curGerente.getCel())
-                .normal("\n\n")
-            
-            
-            formatedString2.append(formatedStr)
-            
-        }
-        
-        labelGerente.attributedText = formatedString2
-        
-        
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -88,132 +31,28 @@ class contactoController: UIViewController {
     }
     
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
-    
-    func getSucursales()
-    {
-       ////
-        self.sucursales.removeAll()
         
-        if let bundlePath = Bundle.main.url(forResource: "sucursales", withExtension: "json"){
-            do {
-                //let data = try Data(contentsOf: bundlePath)
-                let text2 = try String(contentsOf: bundlePath, encoding: .utf8)
+        if segue.identifier == "showSucursal"{
+            
+            if let curDistribuidor = sender as! Distribuidor_Class?{
                 
-                
-                
-                //////
-                
-                let list: Array<Sucursales> = Mapper<Sucursales>().mapArray(JSONString: text2)!
-                let curCats: Array<Sucursal> = (list.first?.sucursales)!
-                
-                for curCat: Sucursal in curCats{
-                    
-                    if let cur_cat_data = curCat.sucursal{
-                        let name: String = cur_cat_data.name!
-                        let id: Int = cur_cat_data.id!
-                        let direccion: String = cur_cat_data.direccion!
-                        let colonia: String = cur_cat_data.colonia!
-                        let municipio: String = cur_cat_data.municipio!
-                        let ciudad: String = cur_cat_data.ciudad!
-                        let phone: String = cur_cat_data.phone!
-                        
-                        let new_class = Sucursal_Class()
-                        new_class.setId(id: id)
-                        new_class.setName(name: name)
-                        new_class.setDireccion(dato: direccion)
-                        new_class.setColonia(dato: colonia)
-                        new_class.setMunicipio(dato: municipio)
-                        new_class.setCiudad(dato: ciudad)
-                        new_class.setPhone(dato: phone)
-                        self.sucursales.append(new_class)
-                    }
-                    
-                }
-                
-                ////
+                let googlemapView = segue.destination as! googleMap3Controller
+                googlemapView.curDistribuidor = curDistribuidor
                 
             }
-                
-            catch {
-                print(error)
-                return
-            }
-            
-            
-            
         }
-        
-        ////
         
         
     }
 
-    
-    func getGerentes()
-    {
-        ////
-        self.gerentes.removeAll()
-        
-        if let bundlePath = Bundle.main.url(forResource: "gerentes", withExtension: "json"){
-            do {
-                //let data = try Data(contentsOf: bundlePath)
-                let text2 = try String(contentsOf: bundlePath, encoding: .utf8)
-                
-                
-                
-                //////
-                
-                let list: Array<Gerentes> = Mapper<Gerentes>().mapArray(JSONString: text2)!
-                let curCats: Array<Gerente> = (list.first?.gerentes)!
-                
-                for curCat: Gerente in curCats{
-                    
-                    if let cur_cat_data = curCat.gerente{
-                        let name: String = cur_cat_data.name!
-                        let id: Int = cur_cat_data.id!
-                        let title: String = cur_cat_data.title!
-                        let email: String = cur_cat_data.email!
-                        let cel: String = cur_cat_data.cel!
-                        let phone: String = cur_cat_data.phone!
-                        
-                        let new_class = Gerente_Class()
-                        new_class.setId(id: id)
-                        new_class.setName(name: name)
-                        new_class.setTitle(dato: title)
-                        new_class.setEmail(dato: email)
-                        new_class.setCel(dato: cel)
-                        new_class.setPhone(dato: phone)
-                        self.gerentes.append(new_class)
-                    }
-                    
-                }
-                
-                ////
-                
-            }
-                
-            catch {
-                print(error)
-                return
-            }
-            
-            
-            
-        }
-        
-        ////
-        
-        
-    }
+   
     
     
     @IBAction func btn_emailclick(_ sender: Any) {
@@ -238,4 +77,42 @@ class contactoController: UIViewController {
             }
         }
     }
+    
+    @IBAction func showMapa1(_ sender: Any) {
+        
+        let new_pre = Distribuidor_Class()
+        new_pre.setId(id: 0)
+        new_pre.setName(name: "Matrix Guadalajara")
+        new_pre.setComercial_Name(dato: "Av. Camino a Bosque de San Isidro 2300")
+        new_pre.setLat(dato: Double(20.759525))
+        new_pre.setLng(dato: Double(-103.38258))
+        performSegue(withIdentifier: "showSucursal", sender: new_pre)
+        
+    }
+    
+    @IBAction func showMapa2(_ sender: Any) {
+        let new_pre = Distribuidor_Class()
+        new_pre.setId(id: 0)
+        new_pre.setName(name: "Mexico D.F.")
+        new_pre.setComercial_Name(dato: "11 de Enero de 1861")
+        new_pre.setLat(dato: Double(19.378725))
+        new_pre.setLng(dato: Double(-99.066779))
+        performSegue(withIdentifier: "showSucursal", sender: new_pre)
+    }
+    
+    @IBAction func showMap3(_ sender: Any) {
+        let new_pre = Distribuidor_Class()
+        new_pre.setId(id: 0)
+        new_pre.setName(name: "Monterrey")
+        new_pre.setComercial_Name(dato: "ebastián Lerdo de Tejada 1222")
+        new_pre.setLat(dato: Double(25.711059))
+        new_pre.setLng(dato: Double(-100.32633))
+        performSegue(withIdentifier: "showSucursal", sender: new_pre)
+    }
+    
+    @IBAction func tutoriales_click(_ sender: Any) {
+        let url = NSURL(string: "https://www.youtube.com/channel/UClb61WrMZ9xT5mMne_-9pMw")!
+        UIApplication.shared.openURL(url as URL)
+    }
+    
 }

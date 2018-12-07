@@ -10,6 +10,8 @@ import UIKit
 import Alamofire
 import Google
 import GoogleSignIn
+import FacebookCore
+import FacebookLogin
 
 class loginController: UIViewController , GIDSignInUIDelegate, GIDSignInDelegate{
 
@@ -17,8 +19,9 @@ class loginController: UIViewController , GIDSignInUIDelegate, GIDSignInDelegate
     let notificationName2 = Notification.Name("logoutNT")
     
     
+    @IBOutlet weak var check_button: UIButton!
     
-    @IBOutlet weak var googleButton: GIDSignInButton!
+    @IBOutlet weak var googleButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,12 +47,17 @@ class loginController: UIViewController , GIDSignInUIDelegate, GIDSignInDelegate
         
         //getting the signin button and adding it to view
         let googleSignInButton = GIDSignInButton()
-        self.googleButton = googleSignInButton
+       // self.googleButton = googleSignInButton
         
-       // googleSignInButton.center = view.center
-       // view.addSubview(googleSignInButton)
         
+       // let frameGoogle = self.googleButton.frame
        
+        //googleSignInButton.center = view.center
+        //view.addSubview(googleSignInButton)
+        
+      //  googleSignInButton.frame = frameGoogle
+      //  view.addSubview(googleSignInButton)
+        
         
     }
     
@@ -100,7 +108,12 @@ class loginController: UIViewController , GIDSignInUIDelegate, GIDSignInDelegate
     func showInputDialog() {
         //Creating UIAlertController and
         //Setting title and message for the alert dialog
-        let alertController = UIAlertController(title: "Entra detalles?", message: "Entra tu nombre y dirección de correo:", preferredStyle: .alert)
+        if (!self.check_button.isSelected) {
+            self.showAlert(title: "! Aviso !", desc: "Por favor acepte el Aviso de Privacidad.", btn: "Aceptar")
+            return
+        }
+        
+        let alertController = UIAlertController(title: "Detalles?", message: "Entra tu nombre y dirección de correo:", preferredStyle: .alert)
         
         //the confirm action taking the inputs
         let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
@@ -150,17 +163,88 @@ class loginController: UIViewController , GIDSignInUIDelegate, GIDSignInDelegate
    
     @IBAction func login_google_click(_ sender: Any) {
         
-         GIDSignIn.sharedInstance().signIn()
+        if (!self.check_button.isSelected) {
+            self.showAlert(title: "! Aviso !", desc: "Por favor acepte el Aviso de Privacidad.", btn: "Aceptar")
+            return
+        }
+        
+        
+        GIDSignIn.sharedInstance().signIn()
     }
     
     @IBAction func login_facebook_click(_ sender: Any) {
+        if (!self.check_button.isSelected) {
+            self.showAlert(title: "! Aviso !", desc: "Por favor acepte el Aviso de Privacidad.", btn: "Aceptar")
+            return
+        }
+        
+        let loginManager = LoginManager()
+            loginManager.logIn(readPermissions: [ReadPermission.publicProfile, ReadPermission.email], viewController : self) { loginResult in
+               
+                switch loginResult {
+                case .failed(let error):
+                    print(error)
+                case .cancelled:
+                    print("User cancelled login")
+                //case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+                    case .success( _, _, _):
+                    print("Logged in")
+                
+                    ////
+                    let request = GraphRequest(graphPath: "me", parameters: ["fields":"email,name"], accessToken: AccessToken.current, httpMethod: .GET, apiVersion: FacebookCore.GraphAPIVersion.defaultVersion)
+                    request.start { (response, result) in
+                        var curEmail: String = ""
+                        var curName: String = ""
+                        
+                        switch result {
+                        case .success(let value):
+                            //print(value.dictionaryValue ?? "no value")
+                            if let name = value.dictionaryValue!["name"]{
+                                debugPrint(name)
+                                curName = name as! String
+                            }
+                            
+                            if let email = value.dictionaryValue!["email"]{
+                                debugPrint(email)
+                                curEmail = email as! String
+                            }
+                            
+                            Utils.setStringKey(namekey: common.VAR_USER_NAME, value: curName)
+                            Utils.setStringKey(namekey: common.VAR_USER_EMAIL, value: curEmail)
+                            Utils.setStringKey(namekey: common.VAR_LOGIN_TYPE, value: "facebook")
+                            self.setParameters(name: curName, email: curEmail, acceso: "facebook")
+                            NotificationCenter.default.post(name: self.notificationName1, object: nil)
+                            
+                            
+                        case .failed(let error):
+                            print(error)
+                        }
+                    }
+                    ///
+                
+                }
+            
+        }
+        
+        
     }
-    
     @IBAction func login_email_click(_ sender: Any) {
         showInputDialog()
         
     }
     
+    @IBAction func continuar_click(_ sender: Any) {
+        if (!self.check_button.isSelected) {
+            self.showAlert(title: "! Aviso !", desc: "Por favor acepte el Aviso de Privacidad.", btn: "Aceptar")
+            return
+        }
+        //Utils.setStringKey(namekey: common.VAR_USER_NAME, value: "anonymous")
+        //Utils.setStringKey(namekey: common.VAR_USER_EMAIL, value: "")
+        //Utils.setStringKey(namekey: common.VAR_LOGIN_TYPE, value: "none")
+        //self.setParameters(name: "anonymous", email: "", acceso: "none")
+        common.setUserName(newName: "anonymous")
+         NotificationCenter.default.post(name: self.notificationName1, object: nil)
+    }
     
     func isValidEmail(testStr:String) -> Bool {
         //let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -224,6 +308,19 @@ class loginController: UIViewController , GIDSignInUIDelegate, GIDSignInDelegate
     }
     
 
+    @IBAction func check_click(_ sender: Any) {
+        self.check_button.isSelected = !self.check_button.isSelected
+        
+        if(self.check_button.isSelected){
+              self.check_button.setImage(UIImage(named: "check_on"), for: .normal)
+            
+        }
+        
+        else {
+              self.check_button.setImage(UIImage(named: "check_off"), for: .normal)
+        }
+        
+    }
     
     
     

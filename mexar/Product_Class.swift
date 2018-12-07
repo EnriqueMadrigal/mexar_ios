@@ -28,6 +28,10 @@ class Product_Class{
     private var _ventajas: [String] = []
     private var _usos: [String] = []
     private var _nota: String = ""
+    private var _seguridades: [String] = []
+    private var _almacenaje: String = ""
+    private var _precauciones: String = ""
+    
     
     init ()
     {
@@ -40,6 +44,7 @@ class Product_Class{
         self._adhieres = [String]()
         self._ventajas = [String]()
         self._usos = [String]()
+        self._seguridades = [String]()
         
     }
     
@@ -53,6 +58,8 @@ class Product_Class{
     public func setFichaTecnica(dato: String){self._ficha_tecnica = dato}
     public func setRedes(dato: String){self._redes = dato}
     public func setNota(dato: String){self._nota = dato}
+    public func setAlmacenaje(dato: String){self._almacenaje = dato}
+    public func setPrecauciones(dato: String){self._precauciones = dato}
     
     public func setPresentaciones(datos: [String]){self._presentaciones = datos}
     public func setImages(datos: [String]){self._images = datos}
@@ -63,6 +70,7 @@ class Product_Class{
     public func setAdhieres(datos: [String]){self._adhieres = datos}
     public func setVentajas(datos: [String]){self._ventajas = datos}
     public func setUsos(datos: [String]){self._usos = datos}
+    public func setSeguridades(datos: [String]){self._seguridades = datos}
     
     
     public func getId()->Int{return self._id}
@@ -75,6 +83,8 @@ class Product_Class{
     public func getFicha_Tecnica()->String{return self._ficha_tecnica}
     public func getRedes()->String{return self._redes}
     public func getNota()->String{return self._nota}
+    public func getAlmacenaje()->String{return self._almacenaje}
+    public func getPrecauciones()->String{return self._precauciones}
     
     
     public func getPresentaciones()->[String]   {return self._presentaciones}
@@ -86,7 +96,7 @@ class Product_Class{
     public func getAdhieres()->[String]{return self._adhieres}
     public func getVentajas()->[String]{return self._ventajas}
     public func getUsos()->[String]{return self._usos}
-    
+    public func getSeguridades()->[String]{return self._seguridades}
     
     
 }
@@ -146,7 +156,10 @@ class Product_Data: Mappable{
     var adhieres: [String]?
     var ventajas: [String]?
     var usos: [String]?
+    var seguridades: [String]?
     var nota: String?
+    var almacen: String?
+    var precauciones: String?
 
     
     required init?(map: Map){
@@ -174,6 +187,9 @@ class Product_Data: Mappable{
         self.ventajas <- map["ventajas"]
         self.usos <- map["usos"]
         self.nota <- map["nota"]
+        self.almacen <- map["almacenaje"]
+        self.precauciones <- map["precaucion"]
+        self.seguridades <- map["seguridad"]
 
     
     }

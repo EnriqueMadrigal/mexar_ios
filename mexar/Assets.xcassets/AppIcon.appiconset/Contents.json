@@ -89,7 +89,7 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "icon-80@2x-2.png",
+      "filename" : "icon-152.png",
       "scale" : "2x"
     },
     {
@@ -99,8 +99,9 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ios-marketing",
       "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "mexar1024(noAlpha).png",
       "scale" : "1x"
     }
   ],

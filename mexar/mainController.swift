@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SideMenu
+
 import ObjectMapper
 
 
@@ -15,6 +15,7 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
 
 //    class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource{
 
+    public weak var delegate: CategoriesDelegate?
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageController: UIPageControl!
@@ -25,14 +26,15 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
 
     
     var Images = [
-       "productos",
        "banner1",
-       "banner2",
-       "banner3"
-    ]
+       "banner2"
+      ]
     
     private var categories: [Category_Class] = []
     
+   
+    private var IsSearchBarVisible: Bool = false
+    var searchActive : Bool = false
     
     
     override func viewDidLoad() {
@@ -41,34 +43,13 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
         // Do any additional setup after loading the view.
         
-        let logoImage:UIImage = UIImage(named: "icon_mexar")!
-        self.navigationItem.titleView = UIImageView(image: logoImage)
+        //let logoImage:UIImage = UIImage(named: "icon_mexar")!
+       // self.navigationItem.titleView = UIImageView(image: logoImage)
         
-        // Define the menus
-        //let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: (MenuController.self as? UISideMenuNavigationController)!)
-        ///menuLeftNavigationController.leftSide = true
-        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration
-        // of it here like setting its viewControllers. If you're using storyboards, you'll want to do something like:
-        let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "MenuNavController") as! UISideMenuNavigationController
-        //let menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "MenuNavController") as! UISideMenuNavigationController
+       // searchBar.placeholder = "Busqueda"
+       // searchBar.delegate = self
         
-        menuLeftNavigationController.leftSide = true
-        
-        
-        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
-        
-        //let menuRightNavigationController = UISideMenuNavigationController(rootViewController: menuController)
-        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration
-        // of it here like setting its viewControllers. If you're using storyboards, you'll want to do something like:
-        // let menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as! UISideMenuNavigationController
-        //SideMenuManager.menuRightNavigationController = menuRightNavigationController
-        //SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
-        
-        // Enable gestures. The left and/or right menus must be set up above for these to work.
-        // Note that these continue to work on the Navigation Controller independent of the view controller it displays!
-        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        SideMenuManager.menuPresentMode = .menuSlideIn
+       
         
             //Scroll View
 
@@ -80,7 +61,7 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         self.scrollViewWidth = self.scrollView.frame.width
         self.scrollViewHeight = self.scrollView.frame.height * common.curScale
         self.scrollViewWidth = common.SCREEN_WIDTH
-        self.scrollViewHeight = common.SCREEN_WIDTH * 0.48
+        self.scrollViewHeight = common.SCREEN_WIDTH * 0.6667
         
         self.scrollView.delegate = self
         self.pageController.currentPage = 0
@@ -131,7 +112,17 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         }
         }
         
-        
+        //searchProducts
+        if segue.identifier == "searchProducts"{
+            
+            if let curBusqueda = sender as! String?{
+                
+                let productsViewController = segue.destination as! productsController
+                productsViewController.curBusqueda = curBusqueda
+                
+                
+            }
+        }
         
         
     }
@@ -163,8 +154,10 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
         for image in Images{
             
-            let bundlePath = Bundle.main.path(forResource: image, ofType: "png")
-            let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
+            //let bundlePath = Bundle.main.path(forResource: image, ofType: "png")
+            //let imageNoDisp = UIImage(named: "banners.\(image)")
+            let imageNoDisp = UIImage(named: image)
+           // let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
             
             let newImage = UIImageView(frame: CGRect(x:self.scrollViewWidth * CGFloat(currentImage), y:0, width:self.scrollViewWidth, height:self.scrollViewHeight))
             newImage.image = imageNoDisp
@@ -275,8 +268,10 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
         let filename: String = cur_category.getResName()
         
-        let bundlePath = Bundle.main.path(forResource: filename, ofType: "png")
-        let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
+        //let bundlePath = Bundle.main.path(forResource: filename, ofType: "png")
+        let imageNoDisp = UIImage(named: filename)
+        
+        //let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
         
         cell.categoria_icon.image = imageNoDisp
         
@@ -285,13 +280,13 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         return cell
     }
 
-  
+  /*
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let curCellHeight:CGFloat = common.SCREEN_WIDTH * 0.25
-        return curCellHeight
-        //return 80.0
+        //return curCellHeight
+        return 140.0
     }
-   
+   */
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -307,10 +302,9 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
          debugPrint("Se seleecion \(curCategoria.getId())")
         
-        performSegue(withIdentifier: "showSubCategorias", sender: curId)
+        //performSegue(withIdentifier: "showSubCategorias", sender: curId)
+        delegate?.showSelected(newCat: curId)
         
-        
-        //        performSegue(withIdentifier: "showWebContent", sender: curPath)
         
        
         
@@ -441,6 +435,6 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
     }
     
     
-    
+   
     
 }

@@ -11,9 +11,15 @@ pod 'Alamofire', '~> 4.4'
 pod 'AlamofireObjectMapper', '~> 4.0'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
+pod 'Google'
 pod 'Google/SignIn'
-#pod 'GoogleSignIn'
+#pod 'FBSDKLoginKit'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
 pod 'KeychainSwift', '~> 8.0'
+pod 'BarcodeScanner'
+
 
 
   target 'mexarTests' do

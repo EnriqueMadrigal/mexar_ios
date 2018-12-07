@@ -17,6 +17,8 @@ class MenuItems: NSObject {
     "Distribuidores",
     "Promociones",
     "Contacto",
+    "Scanner",
+    "Barras",
     "Cerrar sesiòn"
     ]
     
@@ -27,6 +29,8 @@ class MenuItems: NSObject {
     "icon_distribuidores",
     "icon_promociones",
     "icon_contacto",
+    "icon_ar",
+    "icon_bars",
     "icon_cerrar"
     ]
     
