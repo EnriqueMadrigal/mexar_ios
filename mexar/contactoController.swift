@@ -67,7 +67,7 @@ class contactoController: UIViewController {
    
     @IBAction func btn_callclick(_ sender: Any) {
         
-        let phoneNumber:String = "33"
+        let phoneNumber:String = "3336563637"
         if let phoneCallURL = URL(string: "tel://\(phoneNumber)") {
             
             let application:UIApplication = UIApplication.shared

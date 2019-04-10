@@ -42,4 +42,20 @@ class distController: UIViewController {
         self.delegate?.showDistribuidor(curDist: 2)
     }
     
+    
+    @IBAction func facebook_click(_ sender: Any) {
+        self.delegate?.showDistribuidor(curDist: 1)
+    }
+    
+    @IBAction func twitter_click(_ sender: Any) {
+        self.delegate?.showDistribuidor(curDist: 2)
+    }
+    
+    @IBAction func linkedin_click(_ sender: Any) {
+        self.delegate?.showDistribuidor(curDist: 3)
+    }
+    
+    @IBAction func instagram_click(_ sender: Any) {
+        self.delegate?.showDistribuidor(curDist: 4)
+    }
 }

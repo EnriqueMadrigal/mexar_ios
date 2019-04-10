@@ -13,16 +13,14 @@ import ObjectMapper
 
 class barsController: UIViewController,BarcodeScannerCodeDelegate, BarcodeScannerErrorDelegate, BarcodeScannerDismissalDelegate {
 
-    @IBOutlet weak var ar_button: UIButton!
+  
     
     public weak var delegate: ProductDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if #available(iOS 11.3, *){
-            self.ar_button.isEnabled = true
-        }
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,9 +56,7 @@ class barsController: UIViewController,BarcodeScannerCodeDelegate, BarcodeScanne
         //performSegue(withIdentifier: "showBarCode", sender: nil)
     }
     
-    @IBAction func ar_click(_ sender: Any) {
-        performSegue(withIdentifier: "showAr", sender: nil)
-    }
+  
     
     
     func barcodeScanner(_ controller: BarcodeScannerController, didReceiveError error: Error) {

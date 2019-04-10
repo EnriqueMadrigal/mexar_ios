@@ -11,24 +11,18 @@ import UIKit
 import ObjectMapper
 
 
-class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelegate,  UITableViewDataSource{
+class mainController: UIViewController ,  UITableViewDelegate,  UITableViewDataSource{
 
 //    class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource{
 
     public weak var delegate: CategoriesDelegate?
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var pageController: UIPageControl!
     
     @IBOutlet weak var tableViewCategorias: UITableView!
     private var scrollViewWidth:CGFloat = 0
     private var scrollViewHeight:CGFloat = 0
 
     
-    var Images = [
-       "banner1",
-       "banner2"
-      ]
     
     private var categories: [Category_Class] = []
     
@@ -53,35 +47,19 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
             //Scroll View
 
-        self.scrollView.setNeedsLayout()
-        self.scrollView.updateConstraints()
-        
-        self.scrollView.frame = CGRect(x:0, y:0, width:self.view.frame.width, height:self.scrollView.frame.height)
-        
-        self.scrollViewWidth = self.scrollView.frame.width
-        self.scrollViewHeight = self.scrollView.frame.height * common.curScale
-        self.scrollViewWidth = common.SCREEN_WIDTH
-        self.scrollViewHeight = common.SCREEN_WIDTH * 0.6667
-        
-        self.scrollView.delegate = self
-        self.pageController.currentPage = 0
-        self.pageController.pageIndicatorTintColor = UIColor.greenColor2()
-        self.pageController.currentPageIndicatorTintColor = UIColor.greenColor1()
-
-
+     
         
         self.tableViewCategorias.delegate = self
         self.tableViewCategorias.dataSource  = self
         
-        self.tableViewCategorias.rowHeight = UITableViewAutomaticDimension
-        self.tableViewCategorias.estimatedRowHeight = 160
+        //self.tableViewCategorias.rowHeight = UITableViewAutomaticDimension
+        //self.tableViewCategorias.estimatedRowHeight = 160
         self.tableViewCategorias.separatorColor = UIColor.clear
         
         
         self.categories = [Category_Class]()
         
-        loadImages()
-        getCategories()
+         getCategories()
         
     }
 
@@ -129,61 +107,6 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
 
 
     
-    func loadImages(){
-        
-        //////// Borrar contenido si existe
-        
-        let subViews = self.scrollView.subviews
-        for subview in subViews{
-            subview.removeFromSuperview()
-        }
-        
-        
-        
-        //////
-        
-         var currentImage: Int = 0
-        let totImages: CGFloat = CGFloat(Images.count)
-        
-         self.scrollView.contentSize = CGSize(width:self.scrollView.frame.width * totImages, height:self.scrollViewHeight)
-        
-        self.pageController.numberOfPages = Images.count
-        self.pageController.currentPage = 0
-        
-        
-        
-        for image in Images{
-            
-            //let bundlePath = Bundle.main.path(forResource: image, ofType: "png")
-            //let imageNoDisp = UIImage(named: "banners.\(image)")
-            let imageNoDisp = UIImage(named: image)
-           // let imageNoDisp = UIImage(contentsOfFile: bundlePath!)
-            
-            let newImage = UIImageView(frame: CGRect(x:self.scrollViewWidth * CGFloat(currentImage), y:0, width:self.scrollViewWidth, height:self.scrollViewHeight))
-            newImage.image = imageNoDisp
-            
-            newImage.clipsToBounds = true
-            newImage.contentMode = .scaleToFill
-             self.scrollView.addSubview(newImage)
-            
-            currentImage = currentImage + 1
-            
-        }
-        
-        
-        
-    }
-    
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
-        // Test the offset and calculate the current page after scrolling ends
-        let pageWidth:CGFloat = scrollView.frame.width
-        let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
-        // Change the indicator
-        self.pageController.currentPage = Int(currentPage);
-        // Change the text accordingly
-        
-    }
     
     func getCategories()
     {
@@ -247,7 +170,14 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let curWidth: CGFloat = CGFloat(common.SCREEN_WIDTH)
+        let newHeight: CGFloat = (curWidth * 0.6667) + 72
+        
+        return newHeight
+        
+        
+    }
  
     
     
@@ -263,7 +193,7 @@ class mainController: UIViewController , UIScrollViewDelegate, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoriasCells", for: indexPath) as! categoriasCells
         
         let cur_category = categories[indexPath.row]
-        cell.categoria_name.text = cur_category.getName()
+        //cell.categoria_name.text = cur_category.getName()
         cell.categoria_desc.text = cur_category.getDesc()
         
         let filename: String = cur_category.getResName()

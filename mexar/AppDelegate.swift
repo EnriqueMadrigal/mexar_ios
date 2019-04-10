@@ -31,8 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo
         var configureError: NSError?
         
-        GMSServices.provideAPIKey("AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo")
-        GMSPlacesClient.provideAPIKey("AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo")
+        //GMSServices.provideAPIKey("AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo")
+        //GMSPlacesClient.provideAPIKey("AIzaSyB0Go84LSXVHm095ueyiH0Mr_SLkjHPCdo")
+        
+        GMSServices.provideAPIKey("AIzaSyBCo3qf_LSmVhQsipBbeRbRUxvpwWtzvu8")
+        GMSPlacesClient.provideAPIKey("AIzaSyBCo3qf_LSmVhQsipBbeRbRUxvpwWtzvu8")
+        
         
         
         GGLContext.sharedInstance().configureWithError(&configureError)

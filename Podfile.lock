@@ -1,33 +1,28 @@
 PODS:
-  - Alamofire (4.5.1)
-  - AlamofireObjectMapper (4.1.0):
-    - Alamofire (~> 4.1)
-    - ObjectMapper (~> 2.0)
+  - Alamofire (4.8.0)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
   - BarcodeScanner (2.1.2)
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
-  - FacebookCore (0.3.0):
-    - Bolts (~> 1.8)
-    - FBSDKCoreKit (~> 4.27)
-  - FacebookLogin (0.3.0):
-    - Bolts (~> 1.8)
-    - FacebookCore (~> 0.3)
-    - FBSDKCoreKit (~> 4.27)
-    - FBSDKLoginKit (~> 4.27)
-  - FacebookShare (0.3.0):
-    - Bolts (~> 1.8)
-    - FacebookCore (~> 0.3)
-    - FBSDKCoreKit (~> 4.27)
-    - FBSDKShareKit (~> 4.27)
-  - FBSDKCoreKit (4.28.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.28.0):
-    - FBSDKCoreKit
-  - FBSDKShareKit (4.28.0):
+  - Bolts/Tasks (1.9.0)
+  - FacebookCore (0.5.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit (~> 4.37)
+  - FacebookLogin (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKLoginKit (~> 4.37)
+  - FBSDKCoreKit (4.38.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.38.1):
     - FBSDKCoreKit
   - FirebaseAnalytics (3.9.0):
     - FirebaseCore (~> 3.6)
@@ -44,65 +39,57 @@ PODS:
   - Google/SignIn (3.1.0):
     - Google/Core
     - GoogleSignIn (~> 4.0)
-  - GoogleMaps (2.5.0):
-    - GoogleMaps/Maps (= 2.5.0)
-  - GoogleMaps/Base (2.5.0)
-  - GoogleMaps/Maps (2.5.0):
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
-  - GooglePlaces (2.5.0):
-    - GoogleMaps/Base (= 2.5.0)
-  - GoogleSignIn (4.1.1):
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
+  - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
-    - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/DebugUtils (2.1.3):
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/Defines (2.1.3)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3)":
-    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.1.3)"
-  - GTMOAuth2 (1.1.5):
-    - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.1.12):
-    - GTMSessionFetcher/Full (= 1.1.12)
-  - GTMSessionFetcher/Core (1.1.12)
-  - GTMSessionFetcher/Full (1.1.12):
-    - GTMSessionFetcher/Core (= 1.1.12)
-  - KeychainSwift (8.0.2)
-  - ObjectMapper (2.2.9)
-  - SideMenu (3.1.5)
+  - GoogleToolboxForMac/DebugUtils (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.0)":
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
+  - GTMSessionFetcher/Core (1.2.1)
+  - KeychainSwift (8.0.3)
+  - ObjectMapper (3.4.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
-  - AlamofireObjectMapper (~> 4.0)
+  - AlamofireImage (~> 3.1)
+  - AlamofireObjectMapper (~> 5.0)
   - BarcodeScanner
-  - FacebookCore
-  - FacebookLogin
-  - FacebookShare
+  - FacebookCore (= 0.5.0)
+  - FacebookLogin (= 0.5.0)
+  - FBSDKCoreKit (~> 4.38.0)
+  - FBSDKLoginKit (~> 4.38.0)
   - Google
   - Google/SignIn
   - GoogleMaps
   - GooglePlaces
   - KeychainSwift (~> 8.0)
-  - SideMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AlamofireImage
     - AlamofireObjectMapper
     - BarcodeScanner
     - Bolts
     - FacebookCore
     - FacebookLogin
-    - FacebookShare
     - FBSDKCoreKit
     - FBSDKLoginKit
-    - FBSDKShareKit
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
@@ -111,37 +98,32 @@ SPEC REPOS:
     - GooglePlaces
     - GoogleSignIn
     - GoogleToolboxForMac
-    - GTMOAuth2
     - GTMSessionFetcher
     - KeychainSwift
     - ObjectMapper
-    - SideMenu
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   BarcodeScanner: 84b6e5c75b7efad823381ee9bde846b13171a009
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
-  FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
-  FacebookShare: 0469964297ebd75f052be2c5083389a4208e82b7
-  FBSDKCoreKit: ca961e279113f691fd83dc634c0bbad9d4e3f370
-  FBSDKLoginKit: b077381c27d800f21661757e8140cf2c80a91e4a
-  FBSDKShareKit: 4f525556e0df4cf0f574cb3f01c675434f29d477
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FacebookCore: 74288d0add931d361b1596beae787ab72c438249
+  FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
+  FBSDKCoreKit: 8d47857400e2f5bdea697a80daff882e91c84ef6
+  FBSDKLoginKit: 4621c690d9dd8628031a4791497062183ea34b0d
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
   FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
   Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
-  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
-  GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
-  GoogleSignIn: 3fdaa34a2ba04dbd7a25d7db39aecb0da98d5bdc
-  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  GTMOAuth2: be83fd28d63ae3087e7d351b1f39c1a7e24ab6e7
-  GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
-  KeychainSwift: 213db04dfe7244988e61f77c72a2afb2f775954a
-  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
-  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  KeychainSwift: be9554c0e5f4b1686c775930dc5c6bd9396992ed
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
 
-PODFILE CHECKSUM: 9841d4ab6934010b716b30a7db03ff93d3c51c56
+PODFILE CHECKSUM: 6a289e58003a583813217424283565a3f3147fc7
 
 COCOAPODS: 1.5.3
